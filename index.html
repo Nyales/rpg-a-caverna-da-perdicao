@@ -1,0 +1,89 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+
+	<!-- Título da narrativa-->
+	<title>Título da Narrativa</title>
+
+	<!-- Descrição do conteúdo do site e palavras-chave-->
+	<meta name="description" content="Contém a descrição que os mecanismos de busca utilizam para procura da página."/>
+
+	<!-- Fontes utilizadas no site-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa|Amatic+SC">
+
+	<!-- Arquivo de estilo do site-->
+	<link rel = "stylesheet" href = "css/style.css">
+
+	<!-- Arquivo JavaScript principal, com o conteúdo da narrativa-->
+	<script src = "js/main.js"></script>
+
+	<!-- Arquivo JavaScript com as caixas de alerta customizadas-->
+	<script src="js/sweetalert_min.js"></script>
+
+	<!-- Função para Redenderizar Ficha em Camada superior-->
+	<script type="text/javascript">
+		function toggleFAB()
+		{
+			var modal=document.getElementById('janelaModal');
+			var modalImg=document.getElementById("imgModal");
+			var captionTexto=document.getElementById("txtImg");
+			var btFechar=document.getElementsByClassName("fechar")[0];
+
+			//Trecho que carrega a imgaem da ficha de personagem e título (HMTL)
+			modal.style.display="block";
+			modalImg.src="img/ficha_em_branco.webp";
+			modalImg.alt="Ficha em branco do OPERA RPG";
+			captionTexto.innerHTML="Ficha em Branco";
+
+			btFechar.onclick=function()
+			{
+				modal.style.display="none";
+			}
+		}
+	</script>
+</head>
+<body>
+	<!-- Conteúdo da página principal, divido em cabeçalho, content e botões-->
+	<div id = "cabecalho">
+	<center><img src = "img/imagem_cabecalho.webp"></center>
+	</div>
+	<div id = "content">
+	<h2>Bem vindo a esta narrativa interativa!</h2>
+	<h3>Aqui está o texto inicial da narrativa. O texto a seguir, é uma ideia para o texto de apresentação ao interator.</h3>
+    <h3>Em um jogo de interpretação com o mestre-de-jogo presente, ele geralmente não dá dicas sobre quais opções um personagem pode seguir, o mestre-de-jogo apenas vai contando a história e cabe ao jogador imaginar a situação, calcular as opções e falar a sua decisão ao mestre-de-jogo.</h3>
+    <h3>Adaptando essa conversa para a escrita, enquanto a história foi escrita, foram previstas algumas alternativas que um jogador imaginaria e você pode escolher qual caminho seguir escolhendo o texto a ser lido.</h3>
+	<center><input type="button" id = "button0" class="button button0" data-destination="introducao" name="choices" value="Comece a aventura!"></center>
+	<center><input type="button" id = "button1" class="button button1" data-destination="" name="choices" value="Outras Narrativas?"></center>
+	<center><input type="button" id = "button2" class="button button2" data-destination="instrucoes" name="choices" value="Quer saber como jogar?"></center>
+	<center><input type="button" id = "button3" class="button button3" data-destination="creditos" name="choices" value="Créditos"></center>
+	</div>
+
+	<!-- Botão para visualização da ficha de personagem-->
+	<div class="fab">
+		<button class="main" onclick="toggleFAB();">
+		</button>
+	</div>
+
+	<!-- Camada para visualização da ficha de personagem-->
+	<div id="janelaModal" class="modalVisual">
+		<span class="fechar"}>X</span>
+		<img class="modalConteudo" id="imgModal">
+		<div id="txtImg"></div>
+	</div>
+
+	<!-- Trecho para reprodução de música-->
+	<center>
+	<div>
+	  <button onclick="document.getElementById('player').play()">Play</button>
+	  <button onclick="document.getElementById('player').pause()">Pause</button>
+	  <button onclick="document.getElementById('player').volume+=0.1">Aumentar volume</button>
+	  <button onclick="document.getElementById('player').volume-=0.1">Diminuir volume</button>
+	</div>
+	<!-- Trecho para carregar a música-->
+	<audio id="player" autoplay="autoplay" loop="loop">
+	  <source src="music/Trecho_Espionage__Fox_amp_Mew.mp3" type="audio/mp3" />
+	  seu navegador não suporta HTML5
+	</audio>
+	</center>
+</body> 
+</html>
