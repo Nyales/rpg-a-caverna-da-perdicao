@@ -17,9 +17,24 @@ var item = false;
 function getStory() {
 	return {
 
-		currentScene: "introducao",
+		currentScene: "AtoI",
+
+		AtoI: {
+			title: "Inicio da jornada",
+			story: `
+			<h1>Ato I</h1>
+			<h2>O Chamado da Caverna</h2>
+			`,
+			choices: [
+				{
+					choice: "Iniciar jornada",
+					destination: "introducao"
+				}
+			]
+		},
+
 		introducao: {
-			title: "A Caverna da Perdição",
+			title: "O Inicio",
 			image: "",
 			story: `<h3>O frio úmido da caverna rastejava pela pele de Thaynara como dedos invisíveis, e cada passo que ela dava era acompanhado pelo eco surdo de suas botas contra a pedra antiga. O ar cheirava a terra molhada, com um leve toque de ferrugem – ou talvez fosse sangue. Seus olhos, abençoados por sua linhagem élfica, mal conseguem enxergar na escuridão opressora ao seu redor, e sombras dançavam nas paredes irregulares como criaturas espectrais espreitando das fendas</h3>
 			<h3>O silêncio era absoluto… demasiado absoluto. Não havia o som de água pingando, nem o farfalhar de pequenos animais. Apenas o ressoar de sua própria respiração e o leve sussurro do vento, como se a própria caverna estivesse sussurrando segredos esquecidos. À sua frente, o caminho se bifurcava em duas direções:</h3>
@@ -146,7 +161,7 @@ function getStory() {
 			choices: [
 				{
 					choice: "Continuar",
-					destination: "FinalRuim_Mimico"
+					destination: "FinalRuim_mimico"
 				}
 			]
 		},
@@ -165,8 +180,8 @@ function getStory() {
 					`,
 			choices: [
 				{
-					choice: "",
-					destination: ""
+					choice: "Continuar",
+					destination: "AvançarEscadaria"
 				}
 			]
 		},
@@ -188,7 +203,7 @@ function getStory() {
 				},
 				{
 					choice: "Avançar pela nova escadaria",
-					destination: ""
+					destination: "AvançarEscadaria"
 				}
 			]
 		},
@@ -226,7 +241,7 @@ function getStory() {
 			choices: [
 				{
 					choice: "Continuar",
-					destination: ''
+					destination: 'AvançarEscadaria'
 				}
 			]
 		},
@@ -245,7 +260,7 @@ function getStory() {
 			choices: [
 				{
 					choice: "Continuar",
-					destination: ''
+					destination: 'AvançarEscadaria'
 				}
 			]
 		},
@@ -268,7 +283,7 @@ function getStory() {
 				},
 				{
 					choice: "Continuar furtivamente",
-					destination: 'opcao01'
+					destination: 'ContinuarFurtiva'
 				}
 			]
 		},
@@ -311,7 +326,7 @@ function getStory() {
 				},
 				{
 					choice: "Aproveitar a guarda aberta para esfaqueá-lo",
-					destination: ""
+					destination: "EsfaquearKobold"
 				}
 			]
 		},
@@ -333,7 +348,9 @@ function getStory() {
 
 		sucesso_Destreza: {
 			title: "Sucesso na Destreza",
-			story: `<h3>A adrenalina impulsionava seus músculos. Seu corpo reagia por instinto, desviando de estalactites e pedras soltas sem hesitação. Cada curva do túnel era um risco, mas ela não diminuía o ritmo. O calor da perseguição se fazia presente atrás dela, os grunhidos dos kobolds cada vez mais próximos.</h3>
+			story: `
+			<h1>Sucesso!</h1>
+			<h3>A adrenalina impulsionava seus músculos. Seu corpo reagia por instinto, desviando de estalactites e pedras soltas sem hesitação. Cada curva do túnel era um risco, mas ela não diminuía o ritmo. O calor da perseguição se fazia presente atrás dela, os grunhidos dos kobolds cada vez mais próximos.</h3>
 			<h3>Seu coração ameaçou saltar pela boca quando sentiu uma garra roçar de leve sua capa. Mas ela não parou</h3>
 			<h3>Com um último impulso, girou para dentro de uma passagem estreita e seguiu por um caminho lateral. Os kobolds viraram atrás dela, mas hesitaram por um instante, confusos com as múltiplas bifurcações à frente.</h3>
 			<h4>Era o suficiente.</h4>
@@ -343,14 +360,15 @@ function getStory() {
 			choices: [
 				{
 					choice: "Continuar",
-					destination: ""
+					destination: "SalaodePedra"
 				}
 			]
 		},
 
 		falha_Destreza: {
 			title: "Falha na Destreza",
-			story: `<h4>O túnel parecia mais longo do que deveria ser.</h4>
+			story: `<h1>Falha!</h1>
+			<h4>O túnel parecia mais longo do que deveria ser.</h4>
 			<h3>A cada passo, Thaynara sentia os kobolds se aproximando. O chiado agudo de suas vozes vibrava no ar, empurrando-a para frente com puro instinto de sobrevivência. Sua mente gritava para não parar, para correr, para viver.</h3>
 			<h3>Foi então que aconteceu. Seu pé encontrou algo pequeno, quase insignificante – uma pedra menor que deveria ser menor que seu polegar. Uma pequena pedra que selaria seu destino.</h3>
 			<h4>O mundo girou.</h4>
@@ -364,7 +382,7 @@ function getStory() {
 			choices: [
 				{
 					choice: "Continuar",
-					destination: ""
+					destination: "TentarProteger"
 				}
 			]
 		},
@@ -389,6 +407,486 @@ function getStory() {
 			]
 		},
 
+		EsfaquearKobold: {
+			title: "Aproveitar a guarda aberta para esfaquea-lo",
+			story: `
+			<h3>Thaynara não pensou. Seu corpo reagiu antes mesmo que sua mente acompanhasse. Em um movimento fluido e desesperado, sua mão deslizou para a lateral do cinto, puxando a pequena adaga que sempre carregava consigo.</h3>
+			<h3>Ela não gostava de lutar com armas. Mas não havia espaço para conjurações agora. Só havia espaço para o instinto. Para a sobrevivência</h3>
+			<h3>O líder kobold estava exposto. Seu golpe vinha com força e brutalidade, mas, ao erguer os braços para desferi-lo, seu torso ficou desprotegido. Um erro fatal. Thaynara se lançou para frente, deslizando sob o ataque com precisão. Seu corpo se curvou, e a lâmina da adaga encontrou seu alvo.</h3>
+			<h3>O fio frio da arma perfurou a carne escamosa bem abaixo do esterno, penetrando sob as costelas e afundando nos órgãos internos. O impacto foi imediato. O líder kobold soltou um engasgo rouco, os olhos esbugalhando de choque. Suas garras tremeram ao redor do cabo do machado, mas a força em seus braços esvaiu-se. A arma pesada deslizou de seus dedos, caindo no chão com um baque seco e metálico.</h3>
+			<h3>O kobold tropeçou para trás, os joelhos falhando, o sangue escuro borbulhando pela boca em um gorgolejo sufocado. Seus olhos encontraram os de Thaynara por um breve momento, um lampejo de incredulidade e ódio ainda pulsando neles antes de se apagarem para sempre. Seu corpo tombou para frente, espirrando sangue sobre a pedra fria.</h3>
+			<h3>Os kobolds menores ficaram imóveis por um instante. O silêncio foi tão profundo que Thaynara conseguia ouvir sua própria respiração ofegante, o sangue latejando em seus ouvidos. Então, o pânico se instaurou.</h3>
+			<h3>Os três pequenos draconídeos soltaram guinchos agudos e dispararam para longe, suas patas escamosas raspando pelo chão enquanto corriam de volta para a escuridão. Sem seu líder, não havia mais razão para lutar.</h3>
+			<h3>Thaynara permaneceu imóvel por alguns segundos, o coração martelando no peito, os músculos ainda tensos pela adrenalina. Seu punho se fechava ao redor do cabo da adaga, os nós dos dedos esbranquiçados.</h3>
+			<h3>Ela limpou a lâmina ensanguentada contra suas vestes, guardando a adaga de volta no cinto antes de olhar ao redor. O caminho à frente estava livre.</h3>
+			<h3>Ainda sentindo o gosto metálico da adrenalina na boca, seguiu em frente, atravessando a passagem e adentrando o salão de pedra.</h3>
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "SalaodePedra"
+				}
+			]
+		},
+
+		ContinuarFurtiva: {
+			title: "Continuar furtivamente",
+			story: `<h3>Thaynara se move silenciosamente pela escuridão, mantendo-se próxima às paredes da caverna. O frio da pedra áspera roçava sua pele conforme ela deslizava pelas sombras, evitando qualquer ruído desnecessário. Seus olhos permanecem no chão rochoso, procurando por quaisquer outros rastros.</h3>
+			<h3>As pegadas no chão ainda eram levemente visíveis, mesmo sem luz direta. Eram marcas irregulares, raspões sutis contra a poeira fina da passagem. Mais de uma criatura passara por ali recentemente, e sua experiência dizia que não eram rastros humanos.</h3>
+			<h4>Ela continuou, os sentidos atentos a qualquer movimento.</h4>
+			<h3>Após alguns metros, avistou silhuetas baixas reunidas em um canto da passagem mais amplo à frente. Pequenas sombras escamosas se agrupavam ao redor do que parecia ser um amontoado de ossos e restos de comida. Três pequenas criaturas e uma maior e mais robusta. Kobolds.</h3>
+			<h3>Thaynara apertou os lábios. Eles estavam desavisados, suas caudas se movendo distraidamente enquanto grasnavam baixinho entre si. Seria fácil emboscá-los. Um ataque rápido poderia eliminar boa parte do grupo antes que tivessem tempo de reagir, poupando-lhe um combate prolongado. Mas isso significava gastar energia, arriscar-se em uma luta desnecessária e possivelmente alertar outros inimigos na caverna.</h3>
+			<h3>Outra opção, mais segura, passa por sua mente. Ela conhecia bem o feitiço de Invisibilidade. Poderia conjurá-lo e atravessar a área sem ser notada, continuando sua jornada sem chamar atenção. No entanto, os kobolds poderiam lhe dar mais pistas do que exatamente estava errado com essa caverna.</h3>
+			<h4>A escolha estava em suas mãos.</h4>
+			`,
+			choices: [
+				{
+					choice: "Emboscar os kobolds",
+					destination: "EmboscarKobolds"
+				},
+				{
+					choice: "Usar Invisibilidade para passar despercebida",
+					destination: "UsarInvisibilidade"
+				}
+			]
+		},
+
+		EmboscarKobolds: {
+			title: "Emboscar os kobolds",
+			story: `<h4>Thaynara não hesitou.</h4>
+			<h3>Os kobolds continuavam distraídos, os chiados de suas vozes misturando-se ao som distante da caverna viva. Não notaram a presença dela, não tiveram tempo para reagir quando a magia se formou em suas mãos.</h3>
+			<h3>O ar ao redor resfriou num instante. O feitiço surgiu antes mesmo que os primeiros estalos de gelo se propagassem, e então, num lampejo azulado, a magia explodiu. Um raio de gelo cortou o espaço entre ela e suas presas, o impacto atingindo-os em cheio. Os kobolds grasnaram em surpresa, seus corpos se enrijecendo sob a geada que os envolveu. Eles tentaram se mover, mas já era tarde.</h3>
+			<h3>Thaynara recuou um passo e ergueu a outra mão, sentindo o calor familiar pulsar através de seus dedos. A resposta veio em uma labareda incandescente que se propagou pelo gelo, um choque de temperaturas extremas que resultou em uma explosão de fogo frio. A caverna se iluminou por um breve instante antes de tudo voltar à penumbra, restando apenas o cheiro de carne queimada e o som crepitante de corpos consumidos pelas chamas.</h3>
+			<h4>Silêncio.</h4>
+			<h3>A respiração dela estava pesada, o coração ainda acelerado pelo breve combate. Só então Thaynara se permitiu se aproximar dos corpos caídos.</h3>
+			<h3>O cheiro de queimado ainda impregnava o ar, mas havia algo mais ali. Algo errado. Ela esperava ver os restos retorcidos de criaturas vivas queimada até os ossos, mas ao se aproximar, seu olhar captou detalhes estranhos.</h3>
+			<h3>As escamas carbonizadas não se desfaziam como deveriam. O tecido chamuscado da pele não revelava carne fresca, mas sim algo seco, enegrecido de uma maneira que não era natural. Um dos kobolds caídos havia perdido parte do braço no impacto, e o corte revelava não músculo, mas carne endurecida, ressequida como couro velho. E eles cheiravam a… decomposição…?</h3>
+			<h4>Thaynara franziu o cenho.</h4>
+			<h3>Seus olhos percorreram rapidamente os corpos, agora com mais atenção. As articulações de alguns estavam rígidas demais, como se seus movimentos não fossem completamente naturais. Os olhos... os olhos pareciam errados. Mesmo queimados, vazios, não tinham o brilho de criaturas vivas, mas sim um vazio perturbador.</h3>
+			<h3>Ela sentiu a bile subir na garganta quando finalmente percebeu.</h3>
+			<h4>Não eram apenas kobolds.</h4>
+			<h4>Eram mortos-vivos.</h4>
+			<h3>Thaynara deu um passo para trás, o coração martelando contra o peito. Aquilo era obra de magia negra. Magia necromante. Alguém, ou algo, os havia re-animado para este estado antinatural. O poder profano era o que os mantinha de pé, antes de Thaynara os enviar para o outro lado novamente.</h3>
+			<h3>O desconforto que sentira na caverna, o frio estranho que percorria o ar, tudo começava a fazer sentido. Essa não era apenas uma caverna comum. Algo maior, algo muito mais sombrio estava acontecendo ali. Ela apertou os punhos, tentando reprimir o asco que subia por seu corpo. Não havia nada mais que pudesse ser feito por aquelas criaturas. Apenas seguir em frente.</h3>
+			<h3>Com um último olhar para os corpos retorcidos, Thaynara respirou fundo e caminhou para dentro do salão de pedra.</h3>
+
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "SalaodePedra"
+				}
+
+			]
+		},
+
+		UsarInvisibilidade: {
+			title: "Usar Invisibilidade para passar despercebida",
+			story: `<h3>Thaynara observa os kobolds com atenção. Eles estavam agitados, mas desavisados. Pequenos, ágeis, armados com lanças improvisadas e lâminas tortas, mas em número suficiente para torná-los uma ameaça. Ela decide não lutar.</h3>
+			<h3>Ela murmura as palavras do encantamento em voz baixa, e seu corpo começou a desaparecer. O efeito era instantâneo, a magia envolvendo-a como um manto invisível, apagando sua presença do olhar curioso das criaturas. Mas ainda assim, não podia relaxar. Invisível não significava intangível.</h3>
+			<h3>Prendeu a respiração e começou a se mover. Cada passo era medido, calculado. Seu corpo parecia mais leve, mas cada pequeno som ecoava em sua mente como um trovão distante. O farfalhar da capa ao roçar na parede, a leve batida de uma bota contra uma pedra solta... qualquer ruído poderia ser sua ruína.</h3>
+			<h3>Os kobolds continuavam conversando entre si, mas a tensão em seus músculos não diminuía. Um deles parou abruptamente e ergueu o focinho no ar, farejando.</h3>
+			<h4>Thaynara congelou. O coração martelava contra o peito.</h4>
+			<h3>Ela sentia a própria pulsação nos dedos, no pescoço, no fundo dos ouvidos. Permaneceu imóvel, contando os segundos, esperando que a criatura perdesse o interesse. Os olhos do kobold percorreram o túnel vazio por um momento antes de ele bufar e voltar à sua vigília.</h3>
+			<h4>Thaynara forçou-se a respirar devagar.</h4>
+			<h3>Continuou seu caminho, cada passo cuidadoso, cada movimento feito com uma precisão absoluta. Foi apenas quando alcançou o final da passagem que se permitiu relaxar, seu corpo tremendo ligeiramente com o resquício da tensão que a havia mantido rígida por tanto tempo.</h3>
+			<h4>Então, sentiu novamente. O frio.</h4>
+			<h3>Não o frio do vento, nem o da umidade presa nas paredes da caverna. Era outro tipo de frio. Um que parecia se infiltrar sob a pele, deslizar pelos ossos e se prender ao fundo da mente como uma presença indesejada.</h3>
+			<h3>Ela olhou ao redor, mas não havia nada. Ainda assim, não conseguia se livrar da sensação de que a escuridão a observava.</h3>
+			<h3>Engolindo em seco, seguiu em frente para o salão de pedra.</h3>
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "SalaodePedra"
+				},
+
+			]
+		},
+
+		SalaodePedra: {
+			title: "O salão de pedra",
+			story: `
+			<h3>O salão se abria diante de Thaynara como a boca de uma criatura antiga, imensa e vazia, esperando para devorar aqueles que ousassem entrar. As paredes eram repletas de rachaduras que se estendiam como cicatrizes profundas. O teto se perdia na escuridão, como se a própria caverna não tivesse fim.</h3>
+			<h3>O frio era pior ali. Não o frio comum de uma caverna úmida, mas algo mais fundo, mais insidioso. Uma sensação que se enroscava ao redor da pele e se infiltrava pelos ossos, sugando o calor do corpo de forma quase sutil. O ar parecia denso, difícil de respirar, como se cada inspiração fosse um esforço para não ser esmagada por uma presença invisível.</h3>
+			<h3>Os sussurros começam. Fracos, longínquos, deslizando pelas pedras como um vento que não deveria existir. No início, pareciam apenas ruídos da caverna, mas conforme ela avançava, os sussurros ganhavam forma. Vozes. Baixas, distorcidas, murmurando palavras que se dissolviam antes que pudessem ser compreendidas.</h3>
+			<h3>Thaynara parou. Sentiu um arrepio percorrer sua espinha quando um dos sussurros pareceu mais próximo. Quase um lamento. Uma súplica. Virou-se rapidamente. Nada. O salão estava vazio.</h3>
+			<h4>Mas ainda assim, sentia-se observada.</h4>
+			<h3>Seus olhos percorreram o chão. As manchas escuras que se espalhavam pelo salão não eram simples sombras. Eram marcas de sangue seco, resquícios de lutas antigas. Algumas pegadas estavam manchadas, como se alguém tivesse tentado correr, fugindo de algo. Outras marcas, mais profundas, sugeriam que corpos haviam sido arrastados para longe, para um destino desconhecido. O peso da opressão ao seu redor aumentava a cada segundo.</h3>
+			<h3>O salão terminava em um buraco abismal, um vazio negro e insondável que sugava toda a luz. Sua visão élfica não conseguia atravessar a escuridão abaixo. Apenas um nada sem fim, uma promessa de que qualquer um que descesse talvez jamais retornasse. Os sussurros se intensificaram. Mais vozes, mais lamentos.</h3>
+			<h3>Por um instante, Thaynara sentiu que, se ficasse ali por muito tempo, também se tornaria um sussurro naquela caverna sem nome. Ela precisava seguir em frente.</h3>
+			
+			`,
+			choices: [
+				{
+					choice: "Usar Queda Lenta para descender",
+					destination: "UsarQuedaLenta"
+				},
+				{
+					choice: "Tentar escalar para baixo",
+					destination: "EscalarBaixo"
+				}
+			]
+		},
+
+		UsarQuedaLenta: {
+			title: "Usar Queda lenta para descender",
+			story: `
+			<h3>Thaynara inspirou profundamente, sentindo o frio do abismo rastejar por sua pele. O vazio à sua frente parecia chamá-la, silencioso e interminável. A pedra sob seus pés era firme, mas o peso da decisão tornava-a estranhamente instável.</h3>
+			<h3>Murmurando as palavras do encantamento, sentiu a magia envolver seu corpo como uma brisa sutil. Seus músculos relaxaram ligeiramente, e a gravidade perdeu parte de seu domínio sobre ela. Então, deu um passo à frente.</h3>
+			<h3>O ar cortava ao redor de seu corpo conforme Thaynara descia, mas sua queda era suave, lenta, como se estivesse sendo carregada por mãos invisíveis. A escuridão do abismo a engoliu, o silêncio tornando-se quase absoluto, exceto pelos ecos distantes de gotas caindo em água desconhecida.</h3>
+			<h3>Seus pés tocaram a superfície da água fria. A magia a manteve flutuando por um instante antes de permitir que pousasse suavemente no pequeno lago subterrâneo. A água escura subiu até seus tornozelos, gelada como a morte.</h3>
+			<h4>O ambiente ao seu redor se revelou aos poucos.</h4>
+			<h3>A poucos metros de onde estava, erguiam-se paredes de pedra moldada, diferentes das formações naturais da caverna. Blocos grandes e pesados, cobertos de musgo e umidade, formavam um corredor estreito que se estendia para a frente. Não havia portas visíveis, apenas uma abertura que levava para dentro do que parecia ser um calabouço antigo.</h3>
+			<h3>O silêncio ali era diferente. Não era apenas ausência de som, mas uma ausência de vida.</h3>
+			<h3>O ar carregava um cheiro de mofo e tempo esquecido, misturado com algo metálico e distante – um cheiro que Thaynara reconheceu antes mesmo de precisar refletir sobre ele.</h3>
+			<h4>Sangue.</h4>
+			<h3>Engolindo em seco, ela seguiu em frente, cuidadosa, a mão pairando perto de seu querido foco mágico, pronta para o que quer que estivesse à sua espera.</h3>
+
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "AtoII"
+				}
+			]
+		},
+
+		EscalarBaixo: {
+			title: "Tentar escalar para baixo",
+			story: `
+			<h3>Thaynara se aproximou da borda do abismo e olhou para baixo. A escuridão se estendia como uma garganta faminta, o fundo invisível mesmo para seus olhos élficos. Um frio profundo emanava das profundezas, carregado pelo cheiro de pedra úmida e algo mais... algo que ela não queria nomear.</h3>
+			<h4>Ela inspirou fundo.</h4>
+			<h3>Poderia simplesmente conjurar Queda Lenta, mas escolhera preservar sua magia para o que quer que estivesse à espreita no subsolo. Melhor poupar seus recursos. Melhor descer da forma tradicional.</h3>
+			<h3>Colocou uma mão na pedra áspera e sentiu a umidade fria se agarrar à sua pele. O musgo tornava a superfície escorregadia, e o formato irregular das rochas tornava a descida ainda mais difícil.</h3>
+			<h4>Força física nunca fora seu ponto forte. Mas agora, não tinha escolha.</h4>
+
+			`,
+			choices: [
+				{
+					choice: "Rolar dado",
+					destination: "rolardado_Atletismo"
+				}
+			]
+		},
+
+		sucesso_Atletismo: {
+			title: "Sucesso no teste de atletismo",
+			story: `
+			<h1>Sucesso!</h1>
+			<h3>Cada movimento exigia esforço, cada pegada precisava ser calculada com precisão. Seus músculos tremiam, acostumados a conjurações e não a escaladas perigosas, mas Thaynara se obrigou a continuar.</h3>
+			<h3>A rocha cortava seus dedos conforme se apoiava, a umidade escorria pelo cabo de sua capa, e a brisa fria que emanava do abismo fazia sua pele arrepiar. Seus pés encontravam saliências traiçoeiras, mas, por algum milagre, não escorregavam.</h3>
+			<h3>Com um último esforço, seus pés tocaram a água fria do fundo do abismo. O impacto não foi brusco, mas a sensação gélida a fez estremecer. Ela respirou pesadamente, seus braços e pernas ardendo de exaustão, cada músculo reclamando o esforço inesperado.</h3>
+			<h4>Mas ela estava inteira.</h4>
+			<h3>As rochas brutas e irregulares da caverna davam lugar a algo... construído. Blocos de pedra moldada emergiam da escuridão à sua frente, formando um arco de entrada para um corredor estreito. O tempo e a umidade haviam coberto as paredes com musgo e infiltrações.</h3>
+			<h4>Aquele lugar não era natural.</h4>
+			<h3>O silêncio era diferente. Não o silêncio comum da caverna, mas uma ausência de som forçada, sufocante. Como se o próprio ambiente segurasse a respiração, esperando.</h3>
+			<h4>Engolindo em seco, Thaynara avançou.</h4>
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "AtoII"
+				}
+			]
+		},
+
+		falha_Atletismo: {
+			title: "falha no teste de atletismo",
+			story: `
+			<h1>Falha!</h1>
+			<h3>O vento soprou de dentro do abismo, úmido e opressor, e o frio fez seus dedos endurecerem por um instante. O suficiente para que seu pé escorregasse.</h3>
+			<h3>Seu corpo perdeu o equilíbrio, e, antes que pudesse corrigir o movimento, seu pé deslizou de uma rocha molhada. O mundo girou por um instante antes que seu corpo despencasse.</h3>
+			<h3>O impacto veio rápido. Seu corpo bateu contra a água com força, o líquido frio rasgando seu fôlego. A dor veio logo em seguida. Cada arranhão e corte em sua pele queimava com a água gelada, mas foi apenas quando tentou se levantar que percebeu o pior.</h3>
+			<h3>Uma pontada aguda no tornozelo. Thaynara cerrou os dentes, xingando entre respirações ofegantes. Não estava quebrado, mas definitivamente torcido. Colocou o peso sobre a perna e sentiu a dor latejar pela articulação, obrigando-a a mancar.</h3>
+			<h4>Penalidade de -2 em qualquer teste futuro</h4>
+			<h3>Foi então que percebeu onde estava.</h3>
+			<h3>A sua frente, as rochas da caverna davam lugar a algo muito mais sinistro. Paredes construídas por mãos humanas ou... algo parecido. Blocos grandes, desgastados pelo tempo, formando um corredor estreito que mergulhava na escuridão.</h3>
+			<h4>O silêncio era sufocante.</h4>
+			<h3>Thaynara sentia o peso invisível do ambiente, um frio diferente do que havia sentido antes. Não era apenas umidade ou vento. Era algo mais profundo. Algo que parecia observar.</h3>
+			<h3>Com um arrepio percorrendo sua espinha, ela seguiu adiante, mancando ligeiramente, mas determinada a continuar.</h3>
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "AtoII"
+				}
+			]
+		},
+
+		AvançarEscadaria: {
+			title: "Avançar pela nova escadaria",
+			story: `
+			<h3>Os passos de Thaynara ecoavam pela escadaria estreita, cada degrau de pedra afundando-a ainda mais na escuridão da caverna. O ar ficava mais frio a cada metro descido, um frio que não vinha apenas da profundidade ou da umidade das paredes, mas de algo mais... denso.</h3>
+			<h3>A opressão invisível que a acompanhava desde sua chegada à caverna agora era esmagadora. Não era apenas a sensação de estar sendo observada – era como se estivesse atravessando um véu invisível, um limiar entre o mundo dos vivos e algo além.</h3>
+			<h3>Os sussurros começaram antes mesmo que ela chegasse ao final da descida. Baixos, distantes, dissolvendo-se no silêncio assim que tentava focar neles. Não eram ecos de sua própria presença, não eram o vento. Eram... vozes.</h3>
+			<h4>Ela finalmente chegou ao fim da escadaria.</h4>
+			<h3>À sua frente, o caminho se abria em um espaço maior. O chão de pedra lisa era irregular, coberto de marcas antigas. As paredes eram feitas de blocos de pedra, repletas de rachaduras e musgo - claramente maltratadas pelo tempo. A sua esquerda, um corredor levava para algo maior – um calabouço.</h3>
+			<h3>Antes de seguir, seu olhar foi atraído para o outro lado.</h3>
+			<h3>Ali, um pequeno corpo de água refletia a pouca luz do ambiente, sua superfície imóvel como um espelho sombrio. Acima dele, um abismo profundo, tão escuro que nem sua visão élfica conseguia enxergar o topo. Era impossível dizer onde terminava. Ela sentiu um arrepio. Aquele buraco... algo lhe dizia que havia mais de um caminho para chegar ali, além das escadarias.</h3>
+			<h4>Mas não havia tempo para pensar nos “e se”.</h4>
+			<h3>Virando-se novamente, avançou pelo corredor, onde as sombras pareciam mais densas e os sussurros nunca cessavam.</h3>
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "AtoII"
+				}
+			]
+		},
+
+		AtoII: {
+			title: "Inicio da jornada",
+			story: `
+			<h1>Ato II</h1>
+			<h2>A Princesa</h2>
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "IntroAtoII"
+				}
+			]
+		},
+
+		IntroAtoII: {
+			title: "A princesa",
+			story: `
+			<h3>O ar dentro do calabouço era denso, quase sufocante. O cheiro de pedra úmida e ferrugem misturava-se ao fedor de algo muito mais antigo, um resquício de morte impregnado nas paredes, impossível de dissipar. A cada passo, Thaynara sentia a umidade do chão frio se infiltrando em suas botas, tornando sua presença ainda mais silenciosa naquele corredor onde o tempo parecia ter parado.</h3>
+			<h3>Correntes pendiam das paredes e do teto, algumas balançando levemente, rangendo em um lamento mecânico. Outras estavam enrijecidas pela ferrugem, mas ainda assim, exibiam manchas escuras que o tempo não conseguiu apagar. Sangue seco, espalhado como vestígios de uma dor esquecida. As celas parecem ter sido amplamente utilizadas em um passado distante - tortura, sua mente evocou.</h3>
+			<h3>Thaynara se distancia do pensamento, sua saliva subitamente amarga demais. O peso invisível que a acompanhava desde sua entrada na caverna parecia ainda mais forte ali. Era como se algo rastejasse pelo próprio ar, se entranhasse em seus pulmões e pesasse sobre seus ombros. A cada passo que dava, a sensação de que não deveria estar ali se intensificava.</h3>
+			<h3>Um pequeno som reverbera pelas paredes de pedra.  Um choro, baixo e trêmulo, cortando o silêncio como um fio de lâmina fria.</h3>
+			<h3>A princípio, era apenas um som indistinto ao fundo, mas conforme ela avançava, os soluços tornavam-se mais nítidos. Era uma voz feminina, delicada, mas carregada de um desespero esmagador. Cada lamento parecia carregado de medo e dor, um pedido mudo de socorro vindo das profundezas daquele lugar amaldiçoado.</h3>
+			<h3>haynara sentiu um arrepio subir por sua espinha. O choro ecoava nas paredes de pedra, repetindo-se em tons sutilmente distorcidos, como se o próprio calabouço absorvesse aquele lamento e o devolvesse de maneira errada, quebrada.</h3>
+			<h4>Algo dentro dela hesitou.</h4>
+			<h3>Ali, naquele lugar onde a própria magia parecia errada, onde tudo parecia devorado por uma presença invisível, onde ninguém nunca retornou para contar a história... algo a fazia se perguntar se aquela voz era realmente o que aparentava ser. Tudo nesta caverna parece querê-la morta, afinal.</h3>
+			<h3>Ao mesmo tempo, a voz continha um desespero que parecia muito real. Poderia ser de fato um sobrevivente clamando por ajuda.</h3>
+			`,
+			choices: [
+				{
+					choice: "Seguir o choro furtivamente",
+					destination: "SeguirFurtiva"
+				},
+				{
+					choice: "Perguntar pela voz",
+					destination: "PerguntarVoz"
+				}
+			]
+		},
+
+		SeguirFurtiva: {
+			title: "Seguir o choro furtivamente",
+			story: `
+			<h3>O senso de autopreservação falou mais alto. Thaynara permaneceu em silêncio, controlando sua respiração enquanto avançava pelas sombras do calabouço. Seus passos eram leves, cuidadosos, mal tocando o chão úmido de pedra. Tudo naquela caverna tentou matá-la até agora. Não cometeria o erro de se expor tão facilmente.</h3>
+			<h3>O choro continuava. Cada soluço parecia cuidadosamente medido, oscilando entre desespero e resignação. Mas conforme se aproximava, algo incomodava Thaynara. O eco do som era estranho, como se não pertencesse inteiramente àquele lugar. Como se não fosse... natural.</h3>
+			<h3>A cela ficava no final do corredor, separada das demais. A pedra ao redor estava ainda mais desgastada que o restante do calabouço, como se o tempo ali tivesse sido mais cruel, como se algo dentro daquela cela houvesse permanecido por muito mais tempo do que qualquer outra coisa naquele lugar.</h3>
+			<h4>E o frio era pior ali.</h4>
+			<h3>O ar parecia mais denso, mais sufocante. A mesma sensação que parecia afundá-la desde que colocou os pés na caverna.. Era um frio que vinha de dentro, que arranhava a pele como dedos invisíveis e se entranhava nos ossos.</h3>
+			<h3>Thaynara se aproximou devagar, encontrando uma pequena fresta entre as rochas quebradas da parede da cela. Espiou pelo espaço estreito, tentando manter-se fora do alcance do que quer que estivesse ali dentro.</h3>
+			<h3>No interior escuro, uma figura pequena e feminina estava sentada sobre o chão de pedra, ambos os braços acorrentados às paredes. A iluminação fraca e a posição da mulher dificultavam ver seu rosto por completo, mas seus ombros tremiam suavemente, acompanhando os soluços abafados. Seu vestido rasgado e sujo indicava dias, talvez semanas, de cativeiro.</h3>
+			<h4>Ela parecia frágil. Perdida. Mas algo não estava certo.</h4>
+			<h3>Os tremores de seu corpo eram meticulosos demais. O ritmo dos soluços, constante demais. Seguiam quase um ritmo, um… padrão. O desespero em sua voz, no entanto, parecia real.</h3>
+			<h3>Thaynara franziu o cenho. Seu instinto gritou em advertência.</h3>
+			<h6>— Q-Quem está aí?</h6>
+			<h4>A voz suave e aterrorizada perguntou. Sua presença foi percebida.</h4>
+			
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "AdentrarCela"
+				}
+			]
+		},
+
+		PerguntarVoz: {
+			title: "Perguntar pela voz",
+			story: `
+			<h3>Thaynara parou por um instante, os olhos percorrendo as paredes escuras do calabouço. O choro ainda ecoava pelo ambiente, os soluços reverberando pelas pedras frias como se fossem parte do próprio local.</h3>
+			<h3>Ela sentiu um arrepio percorrer sua espinha. Algo dentro dela dizia para manter-se em silêncio, para não atrair atenção. Mas e se fosse realmente uma sobrevivente? Se houvesse alguém ali, alguém que precisasse de ajuda?</h3>
+			<h4>Respirou fundo e ergueu a voz.</h4>
+			<h6>— Olá! Você não está mais sozinha. Onde você está?</h6>
+			<h3>Por um instante, apenas o eco de sua própria voz retornou. Depois, um soluço cortou o silêncio.</h3>
+			<h6>— Pelos deuses, alguém veio me salvar! — <em> a voz trêmula respondeu, carregada de desespero. </em> — Por favor, ajude-me!</h6>
+			<h4>A súplica parecia verdadeira. Parecia... humana.</h4>
+			<h3>Thaynara não hesitou mais. Seus passos aceleraram enquanto seguia o som da voz pelo corredor estreito. O frio ficou ainda pior conforme se aproximava, e a sensação opressora que a acompanhava desde que entrara naquele calabouço crescia como um peso invisível sobre seus ombros.</h3>
+			<h3>Ao final do corredor, encontrou a origem do chamado. Uma cela isolada.</h3>
+			<h3>O tempo fora cruel com aquela parte do calabouço. As pedras ao redor estavam mais desgastadas, como se algo ali dentro tivesse existido por muito mais tempo do que deveria. O cheiro de mofo e ferrugem se misturava ao ar pesado e imóvel.</h3>
+			<h4>O frio era pior ali.</h4>
+			<h3>O ar parecia mais denso, mais sufocante. A mesma sensação que parecia afundá-la desde que colocou os pés na caverna.. Era um frio que vinha de dentro, que arranhava a pele como dedos invisíveis e se entranhava nos ossos.</h3>
+			<h4>Thaynara não perdeu mais tempo e rapidamente adentrou a cela.</h4>
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "AdentrarCela"
+				}
+			]
+		},
+
+		AdentrarCela: {
+			title: "Adentrar a cela",
+			story: `
+			<h3>A cela era ainda pior por dentro. O cheiro de mofo e ferrugem se intensificava, misturado a um odor quase imperceptível, algo doce demais para pertencer a um lugar como aquele. As paredes estavam cobertas de arranhões antigos, alguns profundos, como se unhas desesperadas tivessem tentado se cravar na pedra. O chão era irregular e frio, com um líquido carmesim acumulado em poças escuras que se espalhavam pelo espaço claustrofóbico.</h3>
+			<h4>No centro da sala, ajoelhada sobre a pedra gelada, estava a origem da voz.</h4>
+			<h3>A jovem mulher era deslumbrante, mesmo coberta por trapos rasgados e sujos. Sua pele tinha um tom de porcelana impecável, intocada pelo ambiente hostil ao seu redor. Seus cabelos desciam em ondas suaves, emoldurando um rosto digno da realeza, e seus olhos brilhavam com um misto de alívio e esperança.</h3>
+			<h4>O mais estranho, no entanto, eram as correntes.</h4>
+			<h3>Cada um de seus pulsos estava preso a uma parede oposta, os braços estendidos, mas sem demonstrar qualquer sinal de esforço ou dor. As correntes pareciam cravar em seus pulsos, mas sua pele continuava intocada, sem hematomas ou marcas. Nem seus joelhos, rudemente em atrito com as rochas ásperas, detinham qualquer ferimento.</h3>
+			<h3>Assim que seus olhos encontraram os de Thaynara, seu rosto se iluminou.</h3>
+			<h3>Um sorriso suave e aliviado tomou conta de sua expressão, realçando ainda mais sua beleza. Sua voz, agora sem os soluços de antes, era ainda mais encantadora de perto, melódica e envolvente, como uma canção sussurrada entre as paredes de pedra.</h3>
+			<h6>— Oh, minha heroína! — <em> exclamou, os olhos brilhando de emoção.</em> — Não acredito que alguém veio me salvar!</h6>
+			<h3>Ela inclina-se levemente para frente, como se cada fibra de seu corpo quisesse se aproximar de sua salvadora. As correntes tilintam, cravando ainda mais em seus pulsos, e seus joelhos se arrastam contra o chão. A mulher sequer hesita.</h3>
+			<h6>— Por favor, ajude-me a livrar-me destas correntes!</h6>
+			<h4>O pedido soou sincero, quase irresistível. Sua voz soava quase… animada.</h4>
+			
+			`,
+			choices: [
+				{
+					choice: "Aproximar-se e investigar as algemas",
+					destination: "InvestigarAlgema"
+				},
+				{
+					choice: "Questioná-la",
+					destination: "Questionar"
+				}
+			]
+		},
+
+		InvestigarAlgema: {
+			title: "Aproximar-se e investigar as algemas",
+			story: `
+			<h3>Thaynara se aproximou lentamente, seus passos ecoando pelo chão de pedra fria. A jovem continuava ajoelhada, ainda sem demonstrar qualquer tipo de desconforto. De perto, as algemas pareciam ainda mais estranhas. Elas eram de metal escuro, lisas e sem adornos, mas não havia sinal de fechaduras, travas ou qualquer mecanismo que permitisse sua remoção. Como alguém poderia ser aprisionado ali sem um meio físico de soltura?</h3>
+			<h4>Realize um Teste de Investigação</h4>
+			`,
+			choices: [
+				{
+					choice: "Rolar o Dado",
+					destination: "rolardado_Investigacao"
+				}
+			]
+		},
+
+		sucesso_Investigacao: {
+			title: "sucesso investigação",
+			story: `
+			<h1>Sucesso!</h1>
+			<h3>Thaynara fechou os olhos por um instante e estendeu a mão, deixando a ponta dos dedos roçar suavemente sobre a superfície metálica. Uma leve pulsação percorreu sua pele – uma sensação sutil, quase imperceptível, mas que ela reconheceu imediatamente. Magia.</h3>
+			<h3>Algo ou alguém havia tentado mascará-la, ocultando sua presença de olhos desatentos. Mas agora que estava focada, Thaynara conseguia sentir sua textura invisível, como uma fina camada de energia arcana aderida ao metal.</h3>
+			<h3>Um arrepio percorreu sua espinha. A pressão na caverna se intensificou ao redor dela. O ar tornou-se mais denso, mais pesado, como se algo estivesse... atento.</h3>
+			<h3>A energia que emanava das algemas era incômoda, aquele mesmo frio estranho que parecia rastejar sob a pele, um sussurro silencioso ecoando no fundo da mente. Então, a percepção a atingiu como um soco no estômago. As algemas continham traços de magia negra.</h3>
+			<h3>Magia necromante não era apenas destrutiva, era corruptora. Qualquer contato direto com sua essência era prejudicial para um ser vivo, mesmo em pequenas quantidades. Não deveria ser possível tocá-la sem sentir sua influência, sem que a pele absorvesse parte de seu fardo vil.</h3>
+			<h3>E, ainda assim, os pulsos da jovem princesa continuavam perfeitos.</h3>
+			<h3>Sem ferimentos. Sem marcas. Como se nunca tivessem sido tocados pela energia sombria que envolvia suas correntes. A respiração de Thaynara se acelerou.</h3>
+			`,
+			choices: [
+				{
+					choice: "Questioná-la",
+					destination: "Questionar"
+				},
+				{
+					choice: "Libertá-la",
+					destination: ""
+				}
+			]
+		},
+
+		falha_Investigacao: {
+			title: "Falha na investigação",
+			story: `
+			<h1>Falha!</h1>
+			<h3>Thaynara passou os dedos pelas algemas, tentando sentir qualquer irregularidade, qualquer traço de um mecanismo oculto que pudesse libertar a jovem. Mas quanto mais tentava focar, mais a opressão ao seu redor se intensificava.</h3>
+			<h3>O frio era sufocante, pressionando seus ombros como mãos invisíveis. O peso da caverna parecia dobrar sobre si mesma, como se não quisesse que ela descobrisse algo que não devia.</h3>
+			<h3>Seu olhar deslizou novamente para a pedra úmida do chão, depois para os grilhões que prendiam a garota. O metal era liso, sem fechaduras visíveis. Por mais que tentasse encontrar um padrão, uma explicação, tudo parecia... errado.</h3>
+			<h3>A respiração de Thaynara vacilou. Talvez estivesse cansada demais. Talvez a tensão acumulada estivesse começando a nublar seu julgamento.</h3>
+			<h3>Ela fechou os olhos por um instante, massageando as têmporas. Agora não era hora de hesitar. Ela precisava focar nas prioridades. Seu olhar voltou para a jovem ajoelhada diante dela.</h3>
+			<h3>Ela parecia tão frágil, tão delicada, e sua voz carregava tanto alívio. Thaynara sentiu um aperto no peito ao vê-la naquela situação. Era a única sobrevivente que encontrara. Não importava o que aquela caverna escondia – era desumano deixá-la acorrentada por mais um segundo sequer.</h3>
+			<h6>— Eu vou tirar você daqui.</h6>
+			<h3>A jovem apenas abriu seu sorriso ainda mais. Sua voz parecia pingar mel.</h3>
+			<h6>— Muito obrigada, minha heroína! Acho que um feitiço deve ser suficiente para quebrar essas correntes.</h6>
+			<h3>Thaynara assentiu e se preparou para finalmente libertá-la.</h3>
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: ""
+				}
+			]
+		},
+
+		Questionar: {
+			title: "Questioná-la",
+			story: `
+			<h3>Thaynara manteve uma expressão cautelosa enquanto analisava a jovem à sua frente. Algo nela não fazia sentido. O ambiente ao redor era opressor, frio e carregado de morte. As correntes presas às paredes indicavam anos de sofrimento, marcas de dor antigas ainda manchavam as pedras do chão.</h3>
+			<h3>E, no entanto, ali estava ela. <h4>Linda, intocada, serena<h/4></h3>
+			<h3>A maga ajoelhou-se em frente à jovem, seu olhar focado na figura delicada. Ela inclina levemente a cabeça antes de perguntar:</h3>
+			<h6>— Qual seu nome?</h6>
+			<h3>A jovem ergueu os olhos para ela, seu rosto suavizando com um alívio quase genuíno</h3>
+			<h6>— Eu sou uma princesa — <em>disse, sua voz delicada, carregada de gratidão.</em></h6>
+			<h3>Thaynara estreitou os olhos. Que resposta… intrigante. Sua confusão parece alertar a princesa, que piscou, os lábios entreabrindo-se por um instante, como se procurasse as palavras certas. Seu olhar vacilou levemente antes de voltar à suavidade usual.</h3>
+			<h6>— Sinto muito. Eu... não me lembro do meu nome. — <em> respondeu, sua voz oscilando entre hesitação e doçura.</em> — Minhas lembranças estão confusas... tudo o que sei é que sou uma princesa.</h6>
+			<h3>Thaynara permaneceu em silêncio por alguns segundos, avaliando sua resposta. O sorriso da jovem permaneceu tranquilo.</h3>
+			<h6>— Há quanto tempo você está aqui?</h6>
+			<h3>A princesa inclinou levemente a cabeça para o lado, pensativa.</h3>
+			<h6>— Eu... não tenho certeza. Sem a luz do sol, sem a lua ou as estrelas... o tempo simplesmente passa.</h6>
+			<h3>Havia uma naturalidade perturbadora em sua resposta. Nenhuma angústia. Nenhuma hesitação verdadeira. Ao mesmo tempo, ela não demonstrava</h3>
+			<h4>O silêncio pesou entre elas.</h4>
+			<h3>Aquele sorriso era encantador. Natural. Tranquilo. Mas algo nele soava... errado.</h3>
+			<h3>E, ainda assim, não havia nada de explicitamente ameaçador nela. Se era uma farsa, era a mais bem-feita que Thaynara já havia visto</h3>
+			<h3>A jovem inclinou-se levemente para frente, suas correntes chacoalhando com o movimento, o metal cravando ainda mais em sua pele. Nenhum dano visível, novamente.</h3>
+			<h6>— Eu entendo sua hesitação. Mas, por favor, me ajude. Se me libertar, prometo recompensá-la generosamente. Qualquer coisa que desejar.</h6>
+			<h3>A promessa foi dita com uma confiança inabalável. O sorriso não saiu do rosto da princesa por sequer um momento. Thaynara sente um arrepio atravessar seu corpo, o frio sobrenatural infiltrando em seus ossos. Algo definitivamente parece errado.</h3>
+			
+			`,
+			choices: [
+				{
+					choice: "Continuar questionando-a",
+					destination: "ContinuarQuestionando"
+				},
+				{
+					choice: "Confiar na princesa",
+					destination: ""
+				}
+			]
+		},
+
+		ContinuarQuestionando: {
+			title: "Continuar Questionando-a",
+			story: `
+			<h3>O silêncio entre as duas se prolongou, pesado e desconfortável. Thaynara sentia o frio da caverna se entranhar cada vez mais em sua pele, mas não era apenas isso que fazia sua espinha se arrepiar. Algo na presença daquela mulher – algo invisível, mas presente – fazia cada fibra de seu ser gritar em alerta.</h3>
+			<h3>Seus olhos percorreram a figura ajoelhada diante dela. A postura da princesa era impecável, como se mesmo em cativeiro sua dignidade permanecesse intocada. Seu rosto mantinha a doçura e a fragilidade de alguém que havia sofrido, mas seus olhos… seus olhos não carregavam o peso da angústia que sua voz transmitia.</h3>
+			<h3>Era como se sua boca e seu corpo falassem línguas diferentes. Thaynara respirou fundo antes de continuar</h3>
+			<h6>— Você não lembra do seu nome, nem de onde veio <em>começou, mantendo a voz neutra.</em> — Mas se lembra de ser uma princesa. Como?</h6>
+			<h3>A princesa piscou, hesitando por um instante.</h3>
+			<h6>— Como eu já disse... minhas memórias estão confusas. Mas tenho certeza disso. Eu sei que sou alguém importante.</h6>
+			<h3>Thaynara apertou os lábios. A princesa piscou algumas vezes, estudando seu rosto.  Sua expressão mudou sutilmente. Menos paciente. Quase… irritada. Thaynara não recuou.</h3>
+			<h6>— Você também não tem nenhum ferimento — <em>disse, apontando a cabeça em direção aos pulsos algemados da princesa.</em> — Essas correntes estão cravadas em seus pulsos. Qualquer um esperaria cortes ou arranhões. Sua pele, no entanto, parece intocada.</h6>
+			<h3>O sorriso da princesa tremeu, por um instante.</h3>
+			<h3><span> — Você questiona demais, Thaynara.</span></h3>
+			<h4>O ar pareceu congelar.</h4>
+			<h3>O coração de Thaynara acelerou imediatamente. Suor frio escorre por seu pescoço. Sua respiração falha por um instante. Ela nunca havia dito seu nome.</h3>
+			<h3>A princesa alargou seu sorriso, agora mostrando os dentes. Sua expressão não era mais suave. Não, agora beirava a algo sinistro. Predatório.</h3>
+			<h6>— Como sabe meu nome? <em> a voz de Thaynara saiu baixa, tensa.</em></h6>
+			<h3>A princesa fez uma pausa, como se reconhecesse seu deslize. No entanto, nem meio segundo depois, sorriu novamente como se nada houvesse ocorrido. Sua voz pingava uma doçura incabível no ar tenso entre as duas.</h3>
+			<h6>— Eu... Ah. — <em>Ela inclinou levemente a cabeça, e seu sorriso cresceu um pouco mais.</em> — Eu devo tê-lo ouvido de alguma forma. Sua presença é forte, Thaynara.</h6>
+			<h3>A princesa inclinou-se um pouco para frente, suas correntes tilintando. Seus olhos se arregalam em uma demonstração de mágoa, apesar do sorriso permanecer inalterado em seu rosto.</h3>
+			<h6>— Você desconfia de mim, minha heroína?</h6>
+			<h3>A princesa franziu os lábios em uma tentativa de fazer beicinho.</h3>
+			<h3>— Eu entendo sua hesitação <em> disse ela, e sua voz era um sussurro melódico.</em> — Mas você veio até aqui, não veio? Se me libertar, prometo recompensá-la generosamente, como já disse. Tudo o que você precisa fazer é soltar essas correntes.</h3>
+			<h3>Agora, não havia mais dúvida: ela estava impaciente. Irritada, até. Thaynara precisava fazer sua escolha.</h3>
+			
+			`,
+			choices: [
+				{
+					choice: "Confiar na Princesa",
+					destination: ""
+				},
+				{
+					choice: "Não confiar na Princesa",
+					destination: ""
+				}
+			]
+		},
+
 		teste: {
 			title: "",
 			story: ``,
@@ -403,9 +901,7 @@ function getStory() {
 				}
 			]
 		},
-
-		
-		//trecho em branco para criar testes onde rola dados
+		//trecho de rolagem de dados
 		rolardado_DetectarMagia: {
 			title: "",
 			story: "",
@@ -439,7 +935,29 @@ function getStory() {
 			]
 		},
 
-		//trechos de finais aqui
+		rolardado_Atletismo: {
+			title: "",
+			story: "",
+			choices: [
+				{
+					choice: "",
+					destination: ""
+				}
+			]
+		},
+
+		rolardado_Investigacao: {
+			title: "",
+			story: "",
+			choices: [
+				{
+					choice: "",
+					destination: ""
+				}
+			]
+		},
+
+		//trechos de finais 
 		FinalRuim_mimico: {
 			title: "Final Ruim: O Baú Mímico",
 			story: `<h2>Final Ruim: O Baú Mímico</h2>
@@ -549,12 +1067,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function rolarDado(bonus) {
 	let dado = Math.floor(Math.random() * 20) + 1;
-	console.log(dado)
-	console.log(bonus)
-	console.log(penalidade)
-	// Rolando o dado (1-20)
+
 	let resultado = dado + bonus + penalidade;
-	console.log(resultado)     // Somando o bônus e a penalidade
+	console.log(`dado = ${dado} / bonus = ${bonus} / penalidade ${penalidade} / Resultado = ${resultado}`);
 	return resultado;
 }
 //função de renderização de conteúdo
@@ -613,16 +1128,43 @@ function renderScene() {
 			}
 			break;
 
-			case ('rolardado_Destreza'):
-				var resultado = rolarDado(0);
-				if (resultado >= 15) {
-					story.currentScene = 'sucesso_Destreza';
-					swal(`Valor obtido: ${resultado} - Sucesso!`);
-				} else {
-					story.currentScene = 'falha_Destreza';
-					swal(`Valor obtido: ${resultado} - Falha!`);
-				}
-				break;
+		case ('rolardado_Destreza'):
+			var resultado = rolarDado(0);
+			if (resultado >= 15) {
+				story.currentScene = 'sucesso_Destreza';
+				swal(`Valor obtido: ${resultado} - Sucesso!`);
+			} else {
+				story.currentScene = 'falha_Destreza';
+				swal(`Valor obtido: ${resultado} - Falha!`);
+			}
+			break;
+
+		case ('rolardado_Atletismo'):
+			var resultado = rolarDado(-1);
+			if (resultado >= 17) {
+				story.currentScene = 'sucesso_Atletismo';
+				swal(`Valor obtido: ${resultado} - Sucesso!`);
+			} else {
+				story.currentScene = 'falha_Atletismo';
+				penalidade = penalidade + (-2);
+				console.log("penalidade = " + penalidade);
+				swal(`Valor obtido: ${resultado} - Falha!`);
+			}
+			break;
+
+
+		case ('rolardado_Investigacao'):
+			var resultado = rolarDado(5);
+			if (resultado >= 15) {
+				story.currentScene = 'sucesso_Investigacao';
+				swal(`Valor obtido: ${resultado} - Sucesso!`);
+			} else {
+				story.currentScene = 'falha_Investigacao';
+				console.log("penalidade = " + penalidade);
+				swal(`Valor obtido: ${resultado} - Falha!`);
+			}
+			break;
+
 
 		case ('pegaritem'):
 			item = true;

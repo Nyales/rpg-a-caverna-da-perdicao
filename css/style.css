@@ -7,6 +7,21 @@
 	font-style: normal;
   }
 
+@font-face {
+	font-family: 'cormorant garamont';
+	src: url('../Assets/fonts/CormorantGaramond-BoldItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: 'Almendra SC';
+	src: url('../Assets/fonts/AlmendraSC-Regular.ttf');
+	font-style: italic;
+	font-weight: bold;
+}
+
+
 body
 {
   /* espaçamentos da página */
@@ -41,7 +56,7 @@ h2
 h3
 {
 	font-size: 1.5rem;
-	font-family: Constantia;
+	font-family: 'Constantia';
 	text-align: justify;
 	font-weight: normal;
 }
@@ -55,10 +70,30 @@ h4
 
 h5{
 	font-size: 1.2rem;
-	font-family: Constantia;
+	font-family: 'Constantia';
 	text-align: center;
 	font-weight: normal;
 }
+
+h6{
+	font-size: 1.6rem;
+	font-family: 'cormorant garamont';
+	text-align: justify;
+}
+
+span{
+	font-size: 1.6rem;
+	font-family: 'Almendra SC';
+	text-align: justify;
+}
+
+em{
+	font-style: normal;
+	font-family: 'Constantia';
+	font-size: 1.4rem;
+	font-weight: lighter;
+}
+
 
 /* configurações da caixa de texto principal */
 #content
