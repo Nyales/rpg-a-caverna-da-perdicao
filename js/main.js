@@ -785,7 +785,7 @@ function getStory() {
 				},
 				{
 					choice: "Libertá-la",
-					destination: ""
+					destination: "ConfiarPrincesa"
 				}
 			]
 		},
@@ -808,7 +808,7 @@ function getStory() {
 			choices: [
 				{
 					choice: "Continuar",
-					destination: ""
+					destination: "ConfiarPrincesa"
 				}
 			]
 		},
@@ -844,7 +844,7 @@ function getStory() {
 				},
 				{
 					choice: "Confiar na princesa",
-					destination: ""
+					destination: "ConfiarPrincesa"
 				}
 			]
 		},
@@ -878,14 +878,261 @@ function getStory() {
 			choices: [
 				{
 					choice: "Confiar na Princesa",
-					destination: ""
+					destination: "ConfiarPrincesa"
 				},
 				{
 					choice: "Não confiar na Princesa",
+					destination: "NaoConfiarPrincesa"
+				}
+			]
+		},
+
+		ConfiarPrincesa: {
+			title: "Confiar na Princesa",
+			story: `
+			<h3>Thaynara respirou fundo. Mesmo com todas as suspeitas que pesavam sobre sua mente, mesmo com a inquietação que se alojava fundo em seu peito, algo na jovem a fazia hesitar. Se fosse realmente apenas uma prisioneira sem memória, seria cruel abandoná-la ali A maga afastou seus temores e assentiu lentamente.</h3>
+			<h6>— Tudo bem. Vou tirá-la daqui.</h6>
+			<h3>A princesa apenas sorriu, um brilho reluzente em seus olhos. A maga se ajoelhou ao lado das correntes, analisando novamente as algemas estranhas que prendiam a jovem. Como ela a libertaria?</h3>
+			<h6>— Algum feitiço deve ser capaz de quebrá-las — <em>sugeriu a princesa, seu tom doce.</em></h6>
+			<h3>Thaynara hesitou. Feitiços de libertação podiam ser imprevisíveis quando usados em encantamentos desconhecidos. Mas a princesa parecia tão confiante. Ela estendeu as mãos sobre as algemas, deixando a energia arcana fluir de seus dedos. A luz azulada e suave brilhou sobre o metal escuro, as linhas da magia se espalhando por sua superfície como rachaduras de pura energia.</h3>
+			<h3>Foi então que tudo deu errado. No momento em que a magia tocou as algemas, uma força violenta irrompeu delas, como uma explosão invisível. A fagulha de necromancia oculta nelas reagiu instantaneamente, repelindo o feitiço e lançando a energia de volta contra Thaynara.</h3>
+			<h4>Um frio avassalador tomou conta de seu corpo.</h4>
+			<h3>Ela sentiu sua vitalidade ser arrancada como se mãos invisíveis estivessem sugando sua própria essência. Sua visão escureceu por um instante, e uma dor profunda, cortante, atravessou sua alma como se tivesse sido esfaqueada de dentro para fora. Com um grito sufocado, foi arremessada para trás.</h3>
+			<h3>Seu corpo bateu contra a parede úmida, e ela caiu no chão com um baque seco, ofegante, os membros tremendo de exaustão. Seus sentidos giravam, sua respiração estava instável. Seu corpo, sua própria magia, parecia não obedecê-la mais.</h3>
+			<h3>Então, ela ouviu a risada. Baixa, contida a princípio, mas que logo cresceu em um som enlouquecido e distorcido. A princesa ria. Era um riso quebrado, afiado, completamente fora de lugar. Onde antes havia fragilidade e doçura, agora havia algo monstruoso. Thaynara levantou o olhar e sentiu um arrepio horrível percorrer sua espinha.</h3>
+			<h3>A jovem estava mudando. Seus membros começaram a se retorcer de formas impossíveis, a pele outrora impecável adquirindo uma textura escamosa, de um vermelho profundo e reluzente. Chifres começaram a crescer de sua cabeça, seus olhos tomaram um brilho cruel e infernal. Suas mãos delicadas se alargaram em garras negras, enquanto um segundo par de braços surgia de seu torso, grotesco e desumano.</h3>
+			<h3>A bela e frágil prisioneira já não existia mais. Em seu lugar, uma criatura demoníaca, alta e imponente, sorria de maneira distorcida. Suas presas reluziam à luz fraca da caverna, e sua risada reverberava por toda a cela.</h3>
+			<h3><span>— Tão ingênua…</span>— murmurou, sua voz agora profunda e gotejando escárnio. Ela se aproximou lentamente, cada passo ecoando pelo chão de pedra. <span>— Como todos os outros que vieram antes de você.</span></h3>
+			<h3>Thaynara tentou se mover em vão. Sua magia havia sido drenada, sua vitalidade arrancada à força. A criatura inclinou a cabeça, estudando-a com diversão cruel.</h3>
+			<h3><span>— Meu mestre ficará satisfeito com mais uma alma —</span> murmurou. <span>— Vocês mortais sempre caem tão facilmente… acham que são invencíveis…</span></h3>
+			<h3>Ela se abaixou, seus olhos predatórios encontrando os de Thaynara. A maga sentiu o estômago revirar.</h3>
+			<h6>— Seu mestre…? — <em>murmurou, a voz falha. Seu sangue parecia congelar.</em></h6>
+			<h3>A criatura sorriu ainda mais. Seus olhos brilham com algo parecido com admiração.</h3>
+			<h3><span>— Meu mestre. Aquele que será eterno! — </span>Thaynara sentiu o ar ao redor se tornar ainda mais denso, sufocante, frio.<span> — Seu corpo foi perdido, sim — </span>continuou a criatura, arrastando as garras contra a pedra, deixando sulcos na superfície.<span> — Mas sua alma está segura. Preservada. Guardada, à espera do momento certo para renascer. Meu mestre retornará!</span></h3>
+			<h4>O olhar cruel da criatura se estreitou. Thaynara sente sua morte iminente.</h4>
+			<h3><span>— E você, Thaynara, acaba de se tornar parte disso.</span></h3>
+			<h3>Thaynara sabia que sua próxima escolha definiria sua sobrevivência. Ela não estava em condições de lutar, sua vitalidade e magia completamente drenadas. Uma ideia cruzou sua mente… No fim, tudo se resumia a morrer ou viver.</h3>
+			`,
+			choices: [
+				{
+					choice: "Resistir",
+					destination: "Resistir"
+				},
+				{
+					choice: "Barganhar",
+					destination: "Barganhar"
+				}
+			]
+		},
+
+		Resistir: {
+			title: "Resistir",
+			story: `
+			<h3>O corpo de Thaynara tremia, esgotado, enfraquecido, mas sua mente ardia com a única coisa que ainda não havia arrancado dela: determinação.</h3>
+			<h3>Ela não imploraria.</h3>
+			<h3>Não pediria misericórdia.</h3>
+			<h3>E, acima de tudo, não se curvaria diante daquela abominação.</h3>
+			<h3>Seu peito subia e descia com dificuldade enquanto o demônio se aproximava, cada passo ressoando pela câmara como um anúncio inevitável de seu destino. O sorriso da criatura se alargava, seus dentes afiados brilhando na penumbra. O horror parecia se divertir, saboreando o momento, prolongando sua vitória.</h3>
+			<h3>Thaynara cerrou os dentes, sentindo o gosto metálico do próprio sangue na boca. Mesmo com o corpo falhando, com cada músculo gritando em protesto, ela forçou a mão a se mover, deslizando os dedos até o cabo da pequena adaga presa ao seu cinto.</h3>
+			<h3>O demônio parou, inclinando a cabeça levemente antes de soltar um riso grave e vibrante</h3>
+			<h3><span>— Você realmente ainda tenta lutar? —</span>zombou, seus olhos ardendo em pura diversão.<span>— Que adorável.</span></h3>
+			<h3>E então, num movimento rápido demais para que ela reagisse, o peso monstruoso da criatura caiu sobre sua perna.</h3>
+			<h4>O som de ossos estalando ressoou pela cela.</h4>
+			<h3>A dor foi excruciante, rasgando cada nervo como fogo líquido. Thaynara engoliu um grito, seu corpo convulsionando com a onda brutal de agonia que subia por sua espinha. Suas entranhas reviraram, e ela precisou forçar sua mente a não apagar ali mesmo.</h3>
+			<h4>Mas mesmo assim, não parou.</h4>
+			<h3>Com os dedos trêmulos, sua mão agarrou a adaga e, com o pouco de força que restava, ergueu a lâmina. Um último ato de resistência, mesmo que fosse inútil.</h3>
+			<h3>O demônio riu. Um som grotesco, ecoando pelas paredes como um trovão macabro.</h3>
+			<h3>Antes que Thaynara pudesse reagir, a criatura agarrou seu braço com força bruta. Seu aperto era esmagador, brutal, um punho feito para despedaçar carne e ossos sem esforço.</h3>
+			<h3>O grito finalmente escapou da garganta de Thaynara quando o estalo ecoou pela cela.</h3>
+			<h4>Dor.</h4>
+			<h4>Dor avassaladora, dilacerante</h4>
+			<h3>Seu braço agora era inútil, pendendo inerte enquanto a lâmina de sua adaga escorregava de seus dedos e caía no chão frio com um tilintar suave e cruelmente final. Seus olhos se arregalaram, sua respiração se tornou errática.</h3>
+			<h3>A última coisa que viu foi o sorriso largo e distorcido do demônio, sua gargalhada sádica preenchendo o ar enquanto sua vitalidade era arrancada de seu corpo pela magia necromântica.</h3>
+			<h3>Seu mundo escureceu.</h3>
+			<h3>Seus sentidos desapareceram</h3>
+			<h3>E Thaynara foi reduzida a nada mais do que uma fagulha de energia, consumida para alimentar a ressurreição de um mal muito maior do que ela jamais imaginaria.</h3>
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "FinalRuim_lobo"
+				}
+			]
+		},
+
+		Barganhar: {
+			title: "Barganhar",
+			story: `
+			<h3>A respiração de Thaynara estava irregular, o frio da caverna arranhando sua pele como garras invisíveis. Seu corpo não respondia, sua magia havia sido drenada até a última centelha. Não havia para onde correr, não havia meios de lutar.</h3>
+			<h3>O demônio se aproximava, seus olhos ardendo em malícia, seu sorriso cada vez mais largo. As garras negras se ergueram, prontas para atravessar sua carne e arrancar o que restava de sua alma. Foi então que os instintos de Thaynara gritaram mais alto.</h3>
+			<h6>— Espere!</h6>
+			<h3>A palavra escapou de sua boca antes que pudesse hesitar. Sua voz ecoou pela cela, fraca, mas firme o suficiente para fazer a criatura parar. O demônio inclinou a cabeça, estudando-a com um brilho curioso nos olhos. Thaynara engoliu em seco, sentindo a bile amarga subir por sua garganta. A ideia lhe causava nojo, mas a única coisa que importava agora era sobreviver. Se morresse ali, jamais teria a chance de reverter o que estava prestes a fazer.</h3>
+			<h6>— Eu posso ser mais valiosa viva.</h6>
+			<h3>O demônio riu. Suas garras se arrastam pela pele delicada de seu rosto, ameaçando romper a carne.</h3>
+			<h3><span>— Valiosa? Você está à beira da morte, maga. O que poderia me oferecer além de sua alma?</span></h3>
+			<h3>Thaynara fechou os olhos por um instante, lutando contra a dor e a exaustão, forçando-se a manter a mente afiada.</h3>
+			<h6>— Eu sou uma aprendiz rápida — <em>disse, abrindo os olhos e forçando-se a encarar o olhar predatório da criatura.</em> — Posso aprender necromancia. Se me treinar, poderei auxiliá-lo a reviver seu mestre.</h6>
+			<h3>O demônio a observou por um longo momento, avaliando cada palavra dita. Thaynara sentiu um calafrio profundo percorrer sua espinha, mas continuou:</h3>
+			<h6>— Eu também poderia atrair outros aventureiros. Convencê-los a descer até aqui. Ninguém suspeitaria de mim. Eu poderia ajudá-lo a coletar as almas que precisa.</h6>
+			<h3>O silêncio que se seguiu foi sufocante. Então, o demônio riu.</h3>
+			<h3>Não foi uma risada abrupta, mas sim um som baixo e gutural, crescendo aos poucos, como um trovão distante se aproximando.</h3>
+			<h3><span>— Você é esperta —</span> murmurou ele, os olhos ardendo com um brilho de interesse.<span> — Esperta o bastante para perceber que não há outra saída para você.</span></h3>
+			<h3>Ele se abaixou até que seus olhos estivessem no mesmo nível dos de Thaynara.</h3>
+			<h3><span>— Mas também esperta o bastante para tentar enganar um demônio?</span></h3>
+			<h3>Ela manteve a expressão firme, mesmo quando cada fibra de seu ser gritava para fugir dali. A criatura observou-a por mais um instante antes de sorrir, satisfeito.</h3>
+			<h3><span>— Muito bem. Eu aceitarei sua oferta.</span></h3>
+			<h3>Antes que Thaynara pudesse reagir, a mão fria do demônio se fechou ao redor de seu pescoço. Não apertou, não sufocou—apenas segurou com firmeza, como um predador que já venceu a luta e agora apenas brinca com sua presa. Então, a dor veio.</h3>
+			<h3>Algo queimava dentro dela, uma chama sombria se espalhando por seu peito como veneno. Sua alma parecia se rasgar, sendo puxada, moldada, marcada. O ritual foi rápido, mas Thaynara sentiu cada instante. Quando a criatura a soltou, ela caiu de joelhos, arfando, sua pele suada e fria. Algo dentro dela estava diferente. Algo estava… errado.</h3>
+			<h4>Ela estava viva. Mas não era mais livre.</h4>
+			<h3>Sentia o peso de uma corrente invisível se prender a sua alma, um vínculo indelével que a conectava ao demônio. Não precisava de palavras para saber o que isso significava. Ela era sua serva agora.</h3>
+			<h3><span>— Bem-vinda ao seu novo destino, Thaynara —</span> murmurou o demônio, seu sorriso cruel nunca desaparecendo.<span> — Espero que seja uma boa aprendiz.</span></h3>
+			<h3>Ela fechou os olhos, sua mente fervendo em pavor e repulsa.</h3>
+			<h3>Ela sobreviveu.</h3>
+			<h4>Mas a que custo?</h4>
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "FinalNeutro_correntesInvisiveis"
+				}
+			]
+		},
+
+		NaoConfiarPrincesa: {
+			title: "Não confiar na princesa",
+			story: `
+			<h3>O silêncio dentro da cela tornou-se sufocante. Thaynara sentiu o peso de sua escolha afundando em seu âmago. O frio rastejava por sua pele como dedos espectrais, mas o que realmente a fez recuar foi o sorriso da princesa. Doce. Perfeito. Ensaiado.</h3>
+			<h3>Falso.</h3>
+			<h3>Cada palavra que saíra de sua boca parecia cuidadosamente escolhida, perfeitamente equilibrada entre inocência e desespero. Mas não havia medo genuíno em seus olhos. Nenhuma hesitação real. Tudo era um teatro. A maga apertou os punhos e deu um passo para trás, estreitando os olhos.</h3>
+			<h6>— Você não é quem diz ser.</h6>
+			<h3>O sorriso da princesa se desfez. Por um instante, o tempo pareceu congelar dentro da cela. Então, ela riu.</h3>
+			<h3>Baixo no início, quase contido, mas logo crescendo em algo muito pior. A risada ecoou pelo calabouço, distorcida, enlouquecida, reverberando nas paredes como um trovão macabro. A voz melódica e encantadora da princesa desapareceu, substituída por algo gutural, algo... errado.</h3>
+			<h4>Então, ela começou a se debater.</h4>
+			<h3>Seu corpo tremia violentamente, as correntes antes firmemente presas à pedra se esticavam, rangendo com uma força impossível. A cada puxão, rachaduras se espalhavam pela parede. Thaynara deu mais um passo para trás, os instintos gritando para que fugisse, para que preparasse um feitiço, qualquer coisa. Mas seus olhos estavam fixos na cena à sua frente.</h3>
+			<h3>A pele da princesa começou a mudar. Rasgando, retorcendo-se como carne moldada por mãos invisíveis. Escamas vermelhas emergiram, cobrindo seus braços e rosto enquanto chifres cresciam de sua cabeça. Seus olhos se tornaram fendas brilhantes, suas mãos delicadas se esticaram em garras afiadas. Um segundo par de braços se formava grotescamente em seu torso.</h3>
+			<h3>Com um estalo final, as correntes cederam. O que se ergueu à frente de Thaynara não era mais uma jovem frágil. Era algo monstruoso, algo que nunca deveria existir no mundo dos mortais.</h3>
+			<h3>Ela precisava agir. Agora.</h3>
+			`,
+			choices: [
+				{
+					choice: "Conjurar Mãos Mágicas e imobilizá-la",
+					destination: "ConjurarMaos"
+				},
+				{
+					choice: "Lançar feitiço ofensivo",
 					destination: ""
 				}
 			]
 		},
+
+		ConjutarMaos: {
+			title: "Conjurar Mãos Mágicas e imobilizá-la",
+			story: `
+			<h3>Thaynara não perdeu tempo.</h3>
+			<h3>Enquanto a carne da criatura ainda se contorcia em meio à transformação grotesca, ela ergueu as mãos e conjurou o feitiço. Energias invisíveis tomaram forma ao redor do demônio, materializando-se como mãos espectrais que se fecharam sobre seus membros deformados.</h3>
+			<h3>A criatura rugiu, seu corpo ainda em processo de mudança, as garras tentando se libertar da magia que a prendia. A tensão no ar se intensificou, e a cela parecia menor, como se o próprio espaço estivesse se dobrando em torno daquela presença demoníaca. Mesmo sob contenção, o monstro riu.</h3>
+			<h3><span>— Você realmente acha que pode me deter? — </span>sua voz ecoou, distorcida, reverberando como um trovão abafado.<span> — Minha existência não pode ser contida por truques patéticos!</span></h3>
+			<h3>As mãos mágicas tremularam sob a força bruta da criatura, os músculos deformados se expandindo enquanto ela testava suas amarras. Mas, por enquanto, ainda estava presa. Thaynara cerrou os dentes.</h3>
+			<h6>— O que diabos você é?!</h6>
+			<h3>O demônio riu novamente, os olhos incandescentes se fixando nela como se saboreasse o medo da maga</h3>
+			<h3><span>— Eu? — </span>sua voz carregava um prazer perverso.<span> — Eu sou a promessa de um futuro inevitável. O arauto do renascimento.</span></h3>
+			<h3>Thaynara sentiu um arrepio percorrer sua espinha. O demônio inclinou levemente a cabeça, os chifres roçando contra o teto baixo da cela. Seu sorriso se alargou, revelando presas afiadas demais para algo que já fora humano.</h3>
+			<h3><span>— Ah… Você ainda não entende, não é? —</span> ele gargalhou, as correntes arcanas vibrando enquanto lutava contra o feitiço.<span> — Vocês aventureiros são todos iguais. Sempre chegam aqui achando que podem tomar o que quiserem… achando que esta caverna guarda apenas ouro e relíquias.</span></h3>
+			<h3>Thaynara franziu o cenho, sua mente trabalhando rapidamente.</h3>
+			<h6>— Então o que esta caverna realmente guarda?</h6>
+			<h3>O demônio lambeu os dentes afiados, sua expressão satisfeita.</h3>
+			<h3><span>— O legado do maior de todos. Meu mestre. Um necromante como o mundo jamais viu —</span> murmurou o demônio, seus olhos brilhando em reverência.<span> — Ele transcendeu os limites da carne, negou a morte, mas os fracos tentaram detê-lo. Roubá-lo de sua imortalidade.</span></h3>
+			<h3>O estômago de Thaynara se revirou, seus olhos se arregalaram. O demônio riu.</h3>
+			<h3><span>— Seu corpo pode ter sido destruído —</span> a criatura admitiu, puxando os braços contra as mãos mágicas que a seguravam. <span>— Mas a alma... Ah, a alma do meu mestre ainda está segura. Selada, intocada, aguardando o momento certo para renascer.</span></h3>
+			<h3>A caverna pareceu tremer ao redor delas. Thaynara sentiu um arrepio percorrer sua espinha. Um necromante poderoso o bastante para desafiar a morte? Um filactério? Isso significava apenas uma coisa.</h3>
+			<h4>Um lich.</h4>
+			<h3><span>— E você, Thaynara… —</span> a voz do demônio se tornou um sussurro perverso, um sorriso maníaco florescendo em seu rosto. <span>— Será apenas mais um fragmento de energia para alimentá-lo quando ele retornar.</span></h3>
+			<h3>O feitiço não seguraria o demônio por muito mais tempo.</h3>
+			<h3>Ela precisava encontrar um meio de derrotá-lo. E rápido.</h3>
+			`,
+			choices: [
+				{
+					choice: "Analisar o ambiente",
+					destination: ""
+				},
+				{
+					choice: "Procurar pontos fracos",
+					destination: ""
+				}
+			]
+		},
+
+		AnalisarAmbiente: {
+			title: "Analisar o ambiente",
+			story: `
+			<h3>O demônio rugia, seu corpo retorcendo-se enquanto puxava contra as Mãos Mágicas que o prendiam. A magia tremulava sob o esforço titânico da criatura, e Thaynara sabia que não teria muito tempo antes que ele se libertasse completamente.</h3>
+			<h3>Ela precisava agir.</h3>
+			<h3>Ignorando o pânico crescendo em seu peito, forçou sua mente a trabalhar. Seus olhos percorreram a cela, buscando desesperadamente algo que pudesse usar a seu favor. Alguma vantagem, alguma fraqueza no ambiente, qualquer coisa.</h3>
+			<h4>Realize um Teste de Sobrevivência </h4>
+			`,
+			choices: [
+				{
+					choice: "Rolar dado",
+					destination: "rolardado_Sobrevivencia"
+				}
+			]
+		},
+
+		sucesso_Sobrevivencia: {
+			title: "Sucesso",
+			story: `
+			<h1>Sucesso!</h1>
+			<h3>Thaynara inspirou fundo, empurrando o medo para o fundo de sua mente. Precisava pensar rápido. Foi então que percebeu.</h3>
+			<h3>O teto da cela.</h3>
+			<h3>Grandes estalactites pendiam das rochas acima, afiadas como lâminas naturais. Se ela conseguisse acertá-las, poderia transformá-las em armas mortais.</h3>
+			<h3>As Mãos Mágicas finalmente cederam sob a força bruta do demônio, dissipando-se em um clarão arcano. A criatura avançou lentamente, um sorriso cruel se alargando em seu rosto distorcido.</h3>
+			<h3><span>— Sua magia patética não vai te salvar, maga! —</span> O demônio debocha e lentamente se aproxima, suas garras tremulam em antecipação para rasgar carne e cortar tendões. Thaynara recuou estrategicamente, guiando-o até o ponto exato. A criatura continuava andando, confiante, saboreando a aparente vitória iminente.</h3>
+			<h3>Era o momento perfeito.</h3>
+			<h3>Thaynara ergueu a mão e conjurou um Raio de Gelo na base das estalactites. A magia atingiu as formações rochosas, congelando sua estrutura já frágil e fazendo-as rachar com um estalo estrondoso.</h3>
+			<h3>O demônio ergueu os olhos, arregalando-os no último instante. Tarde demais.</h3>
+			<h3>As estalactites despencaram em alta velocidade, perfurando seu corpo monstruoso com um impacto devastador. O demônio soltou um urro agonizante enquanto as pontas afiadas atravessavam sua carne demoníaca, fincando-o no chão como uma marionete quebrada.</h3>
+			<h3>Seu corpo convulsionou, garras se retorcendo no ar. Então, finalmente, ficou imóvel. O silêncio tomou a cela. Thaynara permaneceu parada, ofegante, sentindo seu corpo tremer. Estava viva.</h3>
+			<h4>Mas a batalha não havia acabado.</h4>
+			<h3>Se aquele demônio estava ali, significava que havia algo muito pior esperando por ela. Agora, ela precisava lidar com a raiz do problema: o necromante.</h3>
+			
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: ""
+				}
+			]
+		},
+
+		falha_Sobrevivencia: {
+			title: "Falha!",
+			story: `
+			<h1>Falha!</h1>
+			<h3>A mente de Thaynara disparava, tentando processar suas opções, buscando qualquer vantagem no ambiente. Mas o pânico era como um peso amarrado a seus pensamentos, afundando-os antes que pudessem se formar.</h3>
+			<h3>Ela olhou ao redor, os olhos percorrendo as rochas, as paredes, o teto… mas nada parecia útil. Nada parecia suficiente.</h3>
+			<h4>O riso do demônio a tirou de seus devaneios.</h4>
+			<h3>Com um estalo brutal, as Mãos Mágicas foram destruídas, a criatura livrando-se do aperto com facilidade.</h3>
+			<h3><span>— Foi isso? — </span>zombou a criatura, batendo os ombros, como se sacudisse poeira de sua pele escamosa.<span> — Você deveria ter fugido enquanto ainda tinha chance.</span></h3>
+			<h3>Thaynara engoliu em seco. O demônio ergueu uma das mãos e começou a conjurar um feitiço.</h3>
+			<h3>A energia sombria começou a se concentrar ao seu redor, se contorcendo como sombras vivas, crescendo, engolindo a luz da cela.</h3>
+			<h4>Era poderoso.</h4>
+			<h3>E Thaynara não tinha certeza se conseguiria suportar o impacto.</h3>
+
+			`,
+			choices: [
+				{
+					choice: "Usar Armadura Arcana para tentar se proteger",
+					destination: ""
+				},
+				{
+					choice: "Tentar desviar do ataque",
+					destination: ""
+				}
+			]
+		},
+
+		
+		//tr
 
 		teste: {
 			title: "",
@@ -957,6 +1204,17 @@ function getStory() {
 			]
 		},
 
+		rolardado_Sobrevivencia: {
+			title: "",
+			story: "",
+			choices: [
+				{
+					choice: "",
+					destination: ""
+				}
+			]
+		},
+
 		//trechos de finais 
 		FinalRuim_mimico: {
 			title: "Final Ruim: O Baú Mímico",
@@ -984,10 +1242,34 @@ function getStory() {
 			]
 		},
 
+		FinalRuim_lobo: {
+			title: "Final Ruim: Lobo em Pele de Cordeiro",
+			story: `<h2>Final Ruim: Lobo em Pele de Cordeiro</h2>
+			<h3>Nem toda beleza esconde bondade. Nem toda promessa leva à salvação. Afinal, toda rosa tem espinhos. Que esta lição fique marcada em sua próxima vida.</h3>`,
+			choices: [
+				{
+					choice: "Voltar ao inicio",
+					destination: "introducao"
+				}
+			]
+		},
+
+		FinalNeutro_correntesInvisiveis: {
+			title: "Final Neutro: Correntes invisíveis",
+			story: `<h2>Final Neutro: Correntes invisíveis</h2>
+			<h3>Ela respirava. Seu coração ainda batia. Mas a liberdade? Essa foi a verdadeira barganha.</h3>`,
+			choices: [
+				{
+					choice: "Voltar ao inicio",
+					destination: "introducao"
+				}
+			]
+		},
+
 
 		instrucoes: {
 			title: "Instruções",
-			story: "<h3><center>Recomendação Etária: Livre</center></h3><h3>Para jogar uma aventura-solo, basta ler o texto apresentado, e no final, clicar sobre a decisão escolhida. Como exemplo, temos 2 opções:</h3><h3>- A primeira delas é a opção de 'Começar a Aventura', onde você irá ler o trecho introdutório do texto, identificando o personagem que você irá interpretar;</h3><h3>- A segunda opção é a de retornar a 'Tela Inicial' do jogo.</h3><h3>No caso dessa aventura-solo, é utilizado o sistema de regras <a href='https://operarpg.com.br' class='classe1' target='blank'>OPERA RPG</a>; caso queira ler um resumos das regras, consulte o <a href='https://operarpg.com.br/opereta/' class='classe1' target='blank'>OPEReta</a>.</h3><h3>Existe um botão flutuante no canto inferior da tela. Ele permite ver a ficha de personagem na mesma ou em outra janela.</h3><h3>Existe mais de um final possível deste jogo, por isso você poder jogar novamente escolhendo opções diferentes das anteriormente escolhidas.</h3><h3>Após as opções de escolha da narrativa, existe o controle (de 4 botões) de uma trilha sonora; recomendamaos escutá-la, caso seja possível.</h3>",
+			story: "<h3><center>Recomendação Etária: Livre</center></h3><h3>Para jogar uma aventura-solo, basta ler o texto apresentado, e no final, clicar sobre a decisão escolhida. Como exemplo, temos 2 opções:</h3><h3>- A primeira delas é a opção de 'Começar a Aventura', onde você irá ler o trecho introdutório do texto, identificando o personagem que você irá interpretar;</h3><h3>- A segunda opção é a de retornar a 'Tela Inicial' do jogo.</h3><h3>No caso dessa aventura-solo, é utilizado o sistema de regras D&D5e; caso queira saber mais sobre ele, consulte o <a href='https://www.dndbeyond.com/' class='classe1' target='blank'>D&D Beyond</a>; .</h3><h3>Existe um botão flutuante no canto inferior da tela. Ele permite ver a ficha de personagem na mesma ou em outra janela.</h3><h3>Existe mais de um final possível deste jogo, por isso você poder jogar novamente escolhendo opções diferentes das anteriormente escolhidas.</h3><h3>Após as opções de escolha da narrativa, existe o controle (de 4 botões) de uma trilha sonora; recomendamaos escutá-la, caso seja possível.</h3>",
 			choices: [
 				{
 					choice: "Começar a Aventura!",
@@ -1002,7 +1284,7 @@ function getStory() {
 
 		creditos: {
 			title: "Créditos",
-			story: "'<p><b>Autor:</b> (colocar seu nome aqui) <p><b>Programação:</b> (colocar seu nome aqui) e Leonardo Antônio de Andrade</p><p><b>Trilha Sonora: </b></p>&nbsp;&nbsp;<a href='https://www.jamendo.com/track/1273567/espionage' target='blank' class='classe1'>Trecho da Faixa Espionage, de FOX & MEW</a></h3>",
+			story: "'<p><b>Autor:</b> Luísa Fonseca Esquiller <p><b>Programação:</b> João Vitor de Paula Oliveira ('Jonny') e Leonardo Antônio de Andrade</p><p><b>Trilha Sonora: </b></p>&nbsp;&nbsp;<a href='https://www.jamendo.com/track/1273567/espionage' target='blank' class='classe1'>Trecho da Faixa Espionage, de FOX & MEW</a></h3>",
 			choices: [
 				{
 					choice: "Começar a Aventura!",
@@ -1160,6 +1442,18 @@ function renderScene() {
 				swal(`Valor obtido: ${resultado} - Sucesso!`);
 			} else {
 				story.currentScene = 'falha_Investigacao';
+				console.log("penalidade = " + penalidade);
+				swal(`Valor obtido: ${resultado} - Falha!`);
+			}
+			break;
+
+		case ('rolardado_Sobrevivencia'):
+			var resultado = rolarDado(4);
+			if (resultado >= 13) {
+				story.currentScene = 'sucesso_Sobrevivencia';
+				swal(`Valor obtido: ${resultado} - Sucesso!`);
+			} else {
+				story.currentScene = 'falha_Sobrevivencia';
 				console.log("penalidade = " + penalidade);
 				swal(`Valor obtido: ${resultado} - Falha!`);
 			}
