@@ -1020,7 +1020,7 @@ function getStory() {
 				},
 				{
 					choice: "Lançar feitiço ofensivo",
-					destination: ""
+					destination: "LançarFeitiço"
 				}
 			]
 		},
@@ -1053,11 +1053,11 @@ function getStory() {
 			choices: [
 				{
 					choice: "Analisar o ambiente",
-					destination: ""
+					destination: "AnalisarAmbiente"
 				},
 				{
 					choice: "Procurar pontos fracos",
-					destination: ""
+					destination: "ProcurarPontos"
 				}
 			]
 		},
@@ -1099,7 +1099,7 @@ function getStory() {
 			choices: [
 				{
 					choice: "Continuar",
-					destination: ""
+					destination: "atoIII"
 				}
 			]
 		},
@@ -1122,17 +1122,413 @@ function getStory() {
 			choices: [
 				{
 					choice: "Usar Armadura Arcana para tentar se proteger",
-					destination: ""
+					destination: "ArmaduraArcana"
 				},
 				{
 					choice: "Tentar desviar do ataque",
-					destination: ""
+					destination: "tentarDesviar"
 				}
 			]
 		},
 
-		
-		//tr
+		ProcurarPontos: {
+			title: "Procurar pontos fracos",
+			story: `
+			<h3>O demônio rugia, seus membros puxando contra as Mãos Mágicas que o seguravam, mas Thaynara sabia que a magia não duraria muito tempo. Sua mente trabalhava freneticamente. Se não conseguisse derrotá-lo agora, não teria outra chance.</h3>
+			<h3>Ela precisava de um ponto fraco.</h3>
+			<h4>Realize um Teste de Investigação</h4>
+			`,
+			choices: [
+				{
+					choice: "Rolar Dados",
+					destination: "rolardado_Investigacao2"
+				}
+			]
+		},
+
+		sucesso_Investigacao2: {
+			title: "Sucesso",
+			story: `
+			<h1>Sucesso!</h1>
+			<h3>Thaynara respirou fundo, empurrando o pavor para o fundo da mente. Seu olhar percorreu a criatura, analisando cada detalhe com precisão. A carapaça escamosa do demônio parecia resistente demais para ataques convencionais, sua pele densa e endurecida, um escudo natural contra magia e lâminas.</h3>
+			<h3>Mas então, ela viu.</h3>
+			<h3>Logo abaixo da clavícula da criatura, entre as placas de escamas, havia uma pequena abertura—um ponto frágil, quase imperceptível, mas vulnerável o suficiente para um ataque preciso.</h3>
+			<h3>A oportunidade era única.</h3>
+			<h3>As Mãos Mágicas tremulavam, a magia se desfazendo sob a força do demônio. Ela tinha apenas um instante.</h3>
+			<h3>Engolindo a ansiedade, Thaynara sacou sua adaga e disparou em direção à criatura. O demônio arregalou os olhos incandescentes ao vê-la avançar, suas garras ainda presas, sua boca se abrindo em um rugido de fúria.</h3>
+			<h3>Mas foi rápido demais. Com um movimento certeiro, Thaynara enfiou a lâmina no ponto vulnerável.</h3>
+			<h3>O grito do demônio preencheu a cela, um rugido gutural e ensurdecedor. O sangue vil jorrou da ferida, espesso e escuro, cobrindo sua pele e o chão ao redor. Ela torceu a lâmina, girando-a antes de puxá-la para fora com toda a força, dilacerando a carne demoníaca.</h3>
+			<h3>O corpo do monstro se contorceu violentamente. Seus membros tremeram, sua respiração tornou-se errática. Ele caiu de joelhos, garras raspando contra o chão de pedra, enquanto sua vitalidade se esvaía.</h3>
+			<h3>Com um último espasmo, sua cabeça tombou para frente</h3>
+			<h3>O demônio estava morto.</h3>
+			<h3>O silêncio se instalou na cela, apenas a respiração ofegante de Thaynara preenchendo o espaço.</h3>
+			<h3>Ela havia vencido. Mas seu trabalho não estava terminado.</h3>
+			<h3>Se aquele monstro estava ali, então algo muito pior o colocara naquele lugar. Agora, Thaynara precisava lidar com a raiz do problema: o necromante.</h3>
+			
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "atoIII"
+				}
+			]
+		},
+
+		falha_Investigacao2: {
+			title: "Falha",
+			story: `
+			<h1>Falha!</h1>
+			<h3>A mente de Thaynara disparava, tentando encontrar qualquer fraqueza, qualquer ponto vulnerável. Mas o pânico apertava seu peito como um nó sufocante.</h3>
+			<h3>A criatura era monstruosa, aterrorizante, poderosa. Nenhuma parte dela parecia menos resistente, menos letal. Ela tentou focar, tentou bloquear o medo crescente, mas o peso da situação esmagava sua concentração.</h3>
+			<h3>Então, as Mãos Mágicas cederam. Com um estalo brutal, o demônio rompeu suas amarras e libertou-se.</h3>
+			<h3>Ele riu.</h3>
+			<h3><span>— Procurando um ponto fraco? —</span> zombou, sacudindo os ombros como se estivesse apenas se aquecendo. <span>— Que patético.</span></h3>
+			<h3>Thaynara engoliu em seco, seus dedos tremendo ao redor do cabo de sua adaga.</h3>
+			<h3>O demônio ergueu uma das mãos, sombras começando a se contorcer ao seu redor. A energia necromântica tomou forma, negra e pulsante, crescendo como uma esfera de destruição pura.</h3>
+			<h3>Um feitiço poderoso</h3>
+			<h3>Se fosse atingida por aquilo, não sobreviveria.</h3>
+			
+			`,
+			choices: [
+				{
+					choice: "Usar Armadura Arcana para tentar se proteger",
+					destination: "ArmaduraArcana"
+				},
+				{
+					choice: "Tentar desviar do ataque",
+					destination: "tentarDesviar"
+				}
+			]
+		},
+
+		LançarFeitiço: {
+			title: "Lançar feitiço ofensivo",
+			story: `
+			<h3>Thaynara não esperou.</h3>
+			<h3>Enquanto a carne da criatura se retorcia, suas feições belas se deformando na monstruosidade que realmente era, ela ergueu as mãos e conjurou feitiço após feitiço, desesperada para impedir a transformação.</h3>
+			<h3>Um Raio de Fogo cortou o ar, atingindo diretamente o torso do demônio—mas as chamas se dissiparam como se não fossem nada.</h3>
+			<h3>Thaynara mordeu a língua, ignorando o pânico crescente e lançando um Raio de Gelo, visando retardar os movimentos da criatura. O feixe azul brilhou contra sua carapaça escamosa… apenas para derreter e se perder no nada.</h3>
+			<h3>Seu coração disparou.</h3>
+			<h6>— O quê…?</h6>
+			<h3>Ela evocou mais um feitiço, suas mãos brilhando com a energia arcana enquanto recitava as palavras precisas de um Míssil Mágico, confiando na precisão infalível do ataque. Mas os projéteis atingiram o demônio e simplesmente desapareceram.</h3>
+			<h3>Nada. Nem uma única escama fora arranhada. A criatura gargalhou, sua transformação finalmente completa.</h3>
+			<h3><span>— Patético.</span></h3>
+			<h3>A voz do demônio reverberou pela cela, grave e gotejando escárnio. Ele se esticou, ajustando seu novo corpo monstruoso, como se estivesse apenas despertando de um sono longo e confortável.</h3>
+			<h3><span>— Você realmente achou que magia funcionaria contra mim?</span></h3>
+			<h3>Ele estalou o pescoço, o som ecoando pesadamente, e passou uma das garras pela carapaça escamosa.</h3>
+			<h3><span>— Esta armadura não pode ser perfurada por feitiços tolos como os seus. —</span> Seu sorriso se alargou, os dentes pontiagudos brilhando na penumbra.<span> — Mas eu gosto da sua insistência. O desespero dá um gosto melhor às almas.</span></h3>
+			<h3>Thaynara recuou, sua mente fervendo em busca de uma alternativa. Mas antes que pudesse reagir, sentiu o ar ao seu redor mudar.</h3>
+			<h3>A criatura ergueu uma das mãos, sombras começando a se contorcer ao seu redor. A energia necromântica tomou forma, negra e pulsante, crescendo como uma esfera de destruição pura.</h3>
+			<h3>Thaynara não precisava saber os detalhes para entender: se aquilo a acertasse, não sobraria nada dela.</h3>
+			<h3>Ela tinha que tomar uma decisão — e rápido.</h3>
+			`,
+			choices: [
+				{
+					choice: "Usar Armadura Arcana para tentar se proteger",
+					destination: "ArmaduraArcana"
+				},
+				{
+					choice: "Tentar desviar do ataque",
+					destination: "tentarDesviar"
+				}
+			]
+		},
+
+		ArmaduraArcana: {
+			title: "Usar Armadura Arcana para tentar se proteger",
+			story: `
+
+			<h3>O tempo pareceu desacelerar.</h3>
+			<h3>A esfera de energia necromântica crescia nas mãos do demônio, devorando a luz ao redor. As sombras torciam-se dentro dela como criaturas vivas, sussurrando segredos que Thaynara não queria entender. O próprio ar ficou mais denso, pesado, impregnado com o cheiro metálico da morte iminente.</h3>
+			<h3>Ela não tinha para onde correr.</h3>
+			<h3>Seus músculos estavam tensos, a mente disparando em desespero. Se aquele feitiço a atingisse, ela não teria a menor chance.</h3>
+			<h3>Não podia hesitar.</h3>
+			<h3>Ergueu as mãos, puxando as últimas fagulhas de sua energia arcana, e conjurou uma Armadura Arcana ao seu redor no exato momento em que o demônio lançou seu ataque.</h3>
+			<h3>O mundo explodiu em luz e trevas.</h3>
+			<h3>A magia necromântica colidiu contra sua barreira mágica com uma força devastadora. O impacto ressoou pelo calabouço, sacudindo as pedras e fazendo poeira cair do teto. A energia sombria se retorceu, tentando perfurar sua proteção, como se dedos invisíveis arranhassem a barreira na tentativa de alcançá-la.</h3>
+			<h3>Thaynara rangeu os dentes, sentindo a pressão esmagadora sobre sua magia. A necromancia tentava consumir tudo—sua defesa, sua energia, sua alma.</h3>
+			<h3>Mas então, algo mudou.</h3>
+			<h3>O feitiço se voltou contra o próprio conjurador.</h3>
+			<h3>A barreira arcana refletiu parte da energia de volta para o demônio, rompendo sua proteção e rasgando o ar com um som seco e distorcido. O monstro rugiu quando a onda de choque o atingiu com força brutal, arremessando-o contra a parede da cela.</h3>
+			<h3>O impacto foi ensurdecedor.</h3>
+			<h3>A rocha estalou, rachaduras se espalharam pela pedra. O corpo da criatura caiu pesadamente no chão, seus membros tremendo, a carapaça demoníaca trincada. O sorriso sádico que ostentara até agora se esvaiu, substituído por um olhar furioso e surpreso.</h3>
+			<h3>Era agora ou nunca. O coração de Thaynara martelava em seu peito enquanto ela avançava.</h3>
+			<h3>Sua mão agarrou o cabo de sua adaga, os dedos escorregadios de suor e sangue. A criatura tentou se mover, mas ainda estava atordoada.</h3>
+			<h3>Ela não hesitou.</h3>
+			<h3>Com um grito abafado, cravou a lâmina entre as escamas, enfiando-a com toda a força que seu corpo exausto ainda possuía.</h3>
+			<h3>O demônio estremeceu, soltando um rugido gutural de dor.</h3>
+			<h3>Mas não era suficiente.</h3>
+			<h3>Thaynara puxou a adaga e golpeou novamente, buscando cada fenda, cada abertura em sua carapaça. O sangue negro e viscoso jorrou, escorrendo sobre seus dedos, pingando no chão em padrões caóticos.</h3>
+			<h3>O monstro tentou resistir, tentou erguer uma das garras para revidar.</h3>
+			<h3>Thaynara não deu chance.</h3>
+			<h3>Ela montou sobre o peito da criatura e cravou a lâmina repetidamente, cada golpe um ataque desesperado pela própria sobrevivência.</h3>
+			<h3>O demônio convulsionou, seu corpo tremendo sob os golpes frenéticos, até que, finalmente, parou.</h3>
+			<h3>O silêncio caiu sobre a cela como um manto sufocante.</h3>
+			<h3>Thaynara respirava com dificuldade, seu peito subindo e descendo em ofegos descontrolados. Seu corpo tremia. O cheiro acre do sangue demoníaco queimava em suas narinas.</h3>
+			<h3>Ela conseguiu.</h3>
+			<h3>Mas não havia tempo para celebrar.</h3>
+			<h3>Se aquela criatura servia a algo maior… então o verdadeiro perigo ainda estava à sua espera. Agora, ela precisava lidar com a raiz do problema: o necromante.</h3>
+			
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "atoIII"
+				}
+			]
+		},
+
+		tentarDesviar: {
+			title: "Tentar desviar do ataque",
+			story: `
+			<h3>O pânico nublou a mente de Thaynara.</h3>
+			<h3>Seus instintos gritavam, o medo corroendo qualquer racionalidade. A energia necromântica que crescia nas mãos do demônio era pura destruição, e ela sabia — sabia que não havia defesa capaz de suportá-la.</h3>
+			<h3>Se fosse atingida, morreria.</h3>
+			<h3>Suas pernas reagiram antes mesmo que sua mente terminasse de processar o pensamento. Fugir era a única opção. Ela girou sobre os calcanhares, preparando-se para disparar em qualquer direção, mas algo a impediu.</h3>
+			<h3>Mãos.</h3>
+			<h3>Mãos espectrais emergiram do chão, translúcidas e impregnadas de uma energia vil, agarrando seus tornozelos e pulsos com força brutal.</h3>
+			<h3>Almas aprisionadas.</h3>
+			<h3>O choque a paralisou por um instante, seus olhos arregalados enquanto via os espectros retorcidos segurando-a com garras etéreas, puxando-a para baixo, como se quisessem arrastá-la para um abismo invisível.</h3>
+			<h3>Então, a dor veio. A magia necromântica atingiu-a em cheio. Foi como se algo rasgasse sua alma de dentro para fora.</h3>
+			<h3>Thaynara gritou, mas sua voz morreu no ar. Toda a sua magia, toda sua energia vital, parecia ser drenada por correntes invisíveis. Seu corpo fraquejou, os joelhos cederam, e ela caiu pesadamente no chão.</h3>
+			<h3>O frio se instalou em seus ossos, profundo e implacável. Seus dedos tremiam, suas forças esvaindo-se como areia entre os dedos. O som de risadas preencheu o calabouço. O demônio gargalhou, saboreando a vitória. Seus olhos brilharam em pura satisfação, e sua boca se curvou em um sorriso cruel.</h3>
+			<h3>A criatura encarou Thaynara como se estudasse um animal ferido prestes a ser abatido.</h3>
+			<h3><span>— Tão frágil… tão previsível… —</span> murmurou, sua voz gotejando prazer.</h3>
+			<h3>Ela não conseguia se mover. Não conseguia respirar direito. A morte estava próxima.</h3>
+			`,
+			choices: [
+				{
+					choice: "Resistir",
+					destination: "Resistir"
+				},
+				{
+					choice: "Barganhar",
+					destination: "Barganhar"
+				}
+			]
+		},
+
+		AtoIII: {
+			title: "O Necromante",
+			story: `
+			<h1>Ato III</h1>
+			<h2>O Necromante</h2>
+			`,
+			choices: [
+				{
+					choice: "Iniciar",
+					destination: "IntroAtoIII"
+				}
+			]
+		},
+
+		IntroAtoIII: {
+			title: "O necromante",
+			story: `
+			<h3>O ar estava denso, pesado como um manto invisível que pressionava os ombros de Thaynara. Cada respiração parecia mais fria que a anterior, como se o próprio espaço ao seu redor estivesse se curvando diante a opressão da magia necromante. Seu corpo ainda tremia, os músculos exaustos após o confronto brutal com a criatura. Mas não havia tempo para descanso. Ela sabia que aquilo ainda não havia acabado.</h3>
+			<h3>Seus olhos varreram a cela, analisando cada detalhe, cada sombra, cada resquício de magia que ainda pairava no ar. A energia necromântica estava impregnada por todo o lugar com um cheiro de morte que nunca se dissipava, mas algo se destacava.</h3>
+			<h3>A parede no fundo. Thaynara sentiu a pele arrepiar. Havia algo ali.</h3>
+			<h3>Fechando os olhos, ergueu as mãos e deixou sua magia fluir. Ela murmurou as palavras do feitiço para dissipar qualquer magia presente ali. O ar vibrou ao seu redor, e lentamente, como um véu sendo retirado, a parede se dissolveu, revelando uma passagem oculta.</h3>
+			<h3>Ela engoliu em seco. Respirou fundo. E avançou.</h3>
+			<h3>A passagem sinuosa a levou até uma pequena câmara. O frio antes sufocante da caverna se tornou absoluto. Era um frio que vinha do próprio chão, das próprias paredes. Como se tudo ali estivesse morto há tanto tempo que o conceito de calor já não fizesse sentido.  Aquela sala… ela era a fonte dessa sensação opressora.</h3>
+			<h3>No centro da sala, repousando sobre um pedestal de pedra antiga, estava um artefato. Simples. Pequeno.  Mas mais ameaçador do que qualquer lâmina, qualquer feitiço, qualquer criatura que ela já enfrentara. </h3>
+			<h4>O filactério.</h4>
+			<h3>Ao redor do pedestal, espalhados como oferendas macabras, estavam incontáveis tesouros. Ouro reluzente, joias incrustadas de pedras preciosas, taças de prata, elmos ornamentados e armas antigas. No meio da pilha, ela viu pergaminhos e artefatos mágicos, brilhando levemente sob sua percepção arcana. Mas nada ressoava como o filactério. Nada possuía aquela presença sufocante e absoluta.</h3>
+			<h3>Thaynara avançou, com a atenção dividida entre o artefato e o restante da câmara. Ela ergueu uma mão, preparada para lançar um feitiço se necessário. Sua outra mão deslizou para o cabo de sua adaga, um reflexo instintivo de proteção. Foi quando a voz ressoou.</h3>
+			<h3><bdi>— Ora, ora... O que temos aqui?</bdi></h3>
+			<h3>O som não veio de uma direção específica. A sala inteira parecia falar com ela.  Thaynara congelou, seus dedos apertando com força o cabo da adaga. Seus olhos percorreram a escuridão da câmara, mas não havia ninguém.</h3>
+			<h3>Nada.  Até que ela percebeu.  A voz vinha do próprio filactério. Era uma voz masculina, grave e melodiosa, carregada de um tom exageradamente polido, quase teatral. Era… estranhamente convidativa.</h3>
+			<h3><bdi>— Oh, que momento encantador! Uma visita inesperada, mas, devo admitir, muitíssimo bem-vinda —</bd1> A entonação era quase amigável, mas havia algo nela que fez o estômago de Thaynara revirar <bdi>— Parece que minha... querida aprendiz falhou em sua tarefa. Que pena! Eu realmente depositava grandes expectativas nela.<bdi></h3>
+			<h3>Thaynara não respondeu. Ela apenas se aproximou, devagar, analisando a sala.</h3>
+			<h3><bdi>— E quem poderia culpá-la? Veja bem, poucas almas mortais conseguem se erguer contra os desafios que esta caverna oferece. E você.</bdi></h3>
+			<h3>A voz pausou por um instante.  Thaynara sentiu a presença invisível se arrastar sobre sua pele como dedos frios.</h3>
+			<h3><bdi>— Oh, minha cara, você é fascinante. Inteligente. Persistente. Ah, e mortal, claro... Mas quem não tem seus defeitos?—</bdi> Thaynara apertou a mandíbula <bdi>— Diga-me, maga. O que pretende fazer agora?</bdi></h3>
+			<h3>A pergunta foi dita com puro divertimento. Thaynara avançou mais um passo, seu olhar fixo no filactério.</h3>
+			<h3><bdi>— Ah-ah. Eu não faria isso.</bdi></h3>
+			<h3>A voz continuava gentil. Despreocupada. Mas havia algo nela que fazia cada músculo de Thaynara gritar para que recuasse.</h3>
+			<h3><bdi>— Não se você quiser condenar permanentemente todas as almas que estão vinculadas a mim —</bdi> O ar pareceu gelar ainda mais. Thaynara hesitou. <bdi>— Ou... se desejar destruir todos os segredos dessa caverna junto comigo, é claro.</bdi></h3>
+			<h3>O necromante riu.  Não foi uma risada cruel. Não foi um riso ameaçador. Foi um riso sincero. Divertido. Como se estivesse conversando com uma velha amiga sobre um assunto trivial. Thaynara sentiu o sangue correr mais rápido em suas veias.</h3>
+			<h3>Ela estava em vantagem</h3>
+			<h3>Ele estava preso.</h3>
+			<h3>Sem corpo. Sem servos. Sem poder direto.</h3>
+			<h3>Mas… porquê ele parecia tão… a vontade?</h3>
+			<h3>Ele estava blefando?</h3>
+			<h3>O filactério pulsava com uma presença esmagadora, e a voz do necromante parecia preencher todos os cantos da sala.</h3>
+			<h3><bdi>— Tenho uma sugestão, se estiver disposta a ouvi-la, minha querida… Thaynara, não é?</bdi></h3>
+			<h3>O necromante cantarolou, despreocupado. Tudo parecia… bizarro. Thaynara mordeu os lábios, sem saber como proceder.</h3>
+			
+			`,
+			choices: [
+				{
+					choice: "Ouvir o que o necromante tem a dizer",
+					destination: "ouvirNecro"
+				},
+				{
+					choice: "Destruir o filactério",
+					destination: "Destruir"
+				}
+			]
+		},
+
+		ouvirNecro: {
+			title: "Ouvir o que o necromante tem a dizer",
+			story: `
+			<h3>O silêncio que se seguiu foi denso, carregado com a promessa de algo que Thaynara não sabia se queria ouvir. Se o necromante estivesse blefando, sua hesitação custaria a destruição definitiva de um mal antigo. Mas se ele estivesse dizendo a verdade… então todas as almas presas ali estariam condenadas ao completo esquecimento.</h3>
+			<h3>E havia outro fator. A necromancia era um tabu, um campo de estudo oculto e proibido, cujos segredos estavam trancafiados em poucas mãos no mundo. Se aquele ser realmente tinha poder suficiente para desafiar a morte, o que poderia aprender com ele? Quais conhecimentos extraordinários ele possuía?</h3>
+			<h3>Thaynara apertou os punhos. Baixou lentamente as mãos, mas seus sentidos permaneceram em alerta.</h3>
+			<h6>— Irei ouvir o que tem a dizer. — <em>Sua voz soou firme, mas seu corpo permanecia rígido.</em> — Tente qualquer coisa e vou queimar esse lugar até as cinzas.</h6>
+			<h3>A resposta foi uma risada baixa e indulgente.</h3>
+			<h3><bdi>— Oh, Thaynara... Você realmente me diverte!</bdi></h3>
+			<h3>O tom do necromante era carismático, caloroso. Como se estivesse genuinamente satisfeito com sua decisão.</h3>
+			<h3><bdi>— Que prazer conversar com alguém que entende a importância de ponderar antes de agir. Tão poucos fazem isso hoje em dia...</bdi></h3>
+			<h3>Thaynara estreitou os olhos, mas não interrompeu.</h3>
+			<h3><bdi>— Muito bem, permitam-me esclarecer algumas coisas para você, minha cara. —</bdi> A voz reverberou pelo ambiente, cheia de um charme estudado.<bdi> — Como deve ter percebido, todas as almas que passaram por esta caverna agora fazem parte de mim.</bdi></h3>
+			<h3>Ele fez uma pausa teatral.</h3>
+			<h3><bdi>— Mas você sabe o que acontece se o filactério for destruído?</bdi></h3>
+			<h3>Thaynara permaneceu em silêncio, esperando pela resposta.</h3>
+			<h3><bdi>— Perdição.</bdi></h3>
+			<h3>A palavra soou quase doce na boca do necromante.</h3>
+			<h3><bdi>— Essas almas não encontrarão descanso, nem retornarão ao ciclo natural da vida e da morte. Serão obliteradas. Um fim absoluto, sem chance de redenção.</bdi></h3>
+			<h4>Thaynara sentiu um arrepio percorrer sua espinha.</h4>
+			<h3><bdi>— E há algo mais. — </bdi>O necromante continuou, sua voz assumindo um tom de confidência.<bdi> — Apenas um feiticeiro de imenso poder pode verdadeiramente destruir um filactério. E, minha cara, por mais talentosa que seja... você não tem esse poder.</bdi></h3>
+			<h3>Ela trincou os dentes, seu corpo enrijecendo.</h3>
+			<h3><bdi>— Oh, não me entenda mal! —</bdi> O necromante exclamou rapidamente, seu tom ainda encantador. <bdi>— Você é brilhante! Mas mesmo que tente esmagar este artefato com toda a sua força, não há garantias de que conseguirá me erradicar por completo.</bdi></h3>
+			<h3>Thaynara permaneceu imóvel.</h3>
+			<h3><bdi>— Então, Thaynara… por que desperdiçar talento?</bdi></h3>
+			<h3>A voz dele suavizou, tornando-se quase sedutora</h3>
+			<h3><bdi>— Pense no que eu posso lhe ensinar.</bdi></h3>
+			<h4>A sala pareceu se encolher ao redor dela.</h4>
+			<h3><bdi>— Magia tão antiga e poderosa que os próprios magos da sua ordem temem mencioná-la. Verdades que foram apagadas dos livros, mantidas fora do alcance dos fracos e dos tolos.</bdi></h3>
+			<h3>Thaynara sentiu o coração bater mais rápido.</h3>
+			<h3><bdi>— Você é forte. Perspicaz. Um diamante em meio ao cascalho dos mortais. Com o treinamento adequado, poderia se tornar algo muito maior do que é agora.</bdi></h3>
+			<h3>O filactério pulsou levemente.</h3>
+			<h3><bdi>— Por que se contentar em ser uma peça no tabuleiro quando pode ser a jogadora? —</bdi> O necromante fez uma pausa, permitindo que suas palavras se enraizassem <bdi>— Junte-se a mim. Eu farei de você poderosa, intocável… invencível.</bdi></h3>
+			<h3>O convite era feito com doçura, mas o peso por trás dele era esmagador. Thaynara sentiu que essa seria sua escolha final.</h3>
+			`,
+			choices: [
+				{
+					choice: "Aceitar a oferta",
+					destination: "Aceitar"
+				},
+				{
+					choice: "Destruir o filactério",
+					destination: "Destuir"
+				},
+				{
+					choice: "… Levar o filactério…?",
+					destination: "Levar"
+				}
+			]
+		},
+
+		Aceitar: {
+			title: "Aceitar a oferta",
+			story: `
+			<h3>O silêncio que se seguiu foi esmagador. Thaynara ficou imóvel, os olhos fixos no filactério à sua frente. O necromante aguardava, sua presença invisível preenchendo a câmara com uma paciência inquietante.</h3>
+			<h3>Ela sabia que essa escolha mudaria tudo. Sabia que estava à beira de algo irreversível. E, ainda assim, seu coração batia forte não por medo, mas por antecipação.</h3>
+			<h3>A vida inteira, Thaynara foi movida por sua sede de conhecimento. Porém, o mundo parecia querer limitá-la. Aceitar os limites impostos pela Ordem dos Magos. Seguir regras criadas por aqueles que nunca ousaram desafiar o que estava além.</h3>
+			<h3>Mas agora, diante dela, estava a chance de romper essas correntes. A chance de aprender aquilo que ninguém mais sabia. Ela respirou fundo, o frio da caverna queimando seus pulmões, e finalmente ergueu o olhar.</h3>
+			<h6>— Me ensine</h6>
+			<h4>Os dias tornaram-se anos.</h4>
+			<h3>A caverna tornou-se seu lar. As sombras, sua companhia. O necromante, seu mestre. Ele ensinou-a segredos que a Ordem dos Magos jamais ousaria sequer registrar. Os sussurros dos mortos, as correntes da vida e da morte, a arte de dobrar o tempo e a própria essência da existência à sua vontade.</h3>
+			<h3>E Thaynara aprendeu. Ela aprendeu rápido.</h3>
+			<h3>A princípio, o conhecimento a fascinava. O poder de animar um cadáver com um simples gesto, de extrair memórias de ossos antigos, de entrelaçar almas e destinos como fios em um tear invisível. Mas, com o tempo, o fascínio deu lugar a algo mais profundo. Uma fome. Ela ansiava por mais. E o necromante continuava a dar.</h3>
+			<h3>Juntos, moldaram um novo corpo para ele. Um receptáculo perfeito para que sua alma renascesse. Quando o ritual foi concluído, ele abriu os olhos pela primeira vez em décadas, e o riso satisfeito que ecoou pela caverna trouxe uma onda de poder tão intensa que fez as paredes tremerem.</h3>
+			<h3>A partir daquele momento, eles não eram apenas mestre e aprendiz. Eram aliados. Inseparáveis. Invencíveis. Como pai e filha, forjados na mesma ambição. O mundo lá fora não sabia. Mas algo estava mudando.</h3>
+			<h3>Algo estava despertando.</h3>
+			<h3>Anos mais tarde, Thaynara se ergueu diante de seu mestre com um sorriso enigmático. Ela havia aprendido tudo. Cada feitiço, cada sigilo, cada segredo que ele possuía. E, naquele momento, ela sabia o que precisava fazer.</h3>
+			<h3>O necromante percebeu tarde demais.</h3>
+			<h3>Os olhos de Thaynara brilharam com um poder sombrio enquanto ela pronunciava as palavras finais do ritual que havia preparado em segredo. Correntes invisíveis se prenderam ao corpo recém-construído de seu mestre, puxando sua alma de volta ao filactério, selando-o.</h3>
+			<h3>Por um instante, ele gritou seu nome. Depois, tudo o que restou foi silêncio.</h3>
+			<h3>Thaynara segurou o filactério agora tremendo em suas mãos, sentindo a essência de seu antigo mestre presa ali, impotente.</h3>
+			<h3>Seu sorriso se alargou. Com um gesto simples, absorveu o que restava dele.</h3>
+			<h3>E, naquele instante, transcendeu. A carne já não era uma prisão. A morte já não era um limite. Thaynara tornou-se aquilo que estava destinada a ser.</h3>
+			<h4>Uma lich.</h4>
+			<h3>O mundo, ela sabia, não estava pronto para o que viria a seguir.</h3>
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "FinalNeutro_Cinzas"
+				}
+			]
+		},
+
+		Destruir: {
+			title: "Destruir o filactério",
+			story: `
+			<h3>Thaynara ficou ali, parada, encarando o filactério.</h3>
+			<h3>O artefato parecia insignificante diante do peso da decisão que carregava. Pequeno, inofensivo à primeira vista… mas pulsava com uma presença sufocante, opressora. Dentro dele, residia uma entidade que já desafiara a morte uma vez e tentaria fazê-lo de novo.</h3>
+			<h3><bdi>— Então? —</bdi> A voz do necromante ressoou pela câmara, suave, paciente.<bdi> — O que será, minha cara? Conhecimento… ou destruição?</bdi></h3>
+			<h3>Por um longo instante, Thaynara considerou sua resposta.</h3>
+			<h3>Ela sabia que não tinha o poder para destruir um filactério agora. Talvez não tivesse por anos. Mas isso não significava que precisava deixá-lo ao alcance de quem pudesse usá-lo. Ela ergueu a mão.</h3>
+			<h3><bdi>— Que pena. —</bdi> O necromante suspirou teatralmente, mas havia um fio de algo diferente em sua voz. Resignação? Talvez até… respeito.<bdi> — Mas devo admitir… estou impressionado.</bdi></h3>
+			<h3>Thaynara não respondeu.</h3>
+			<h3>Em um único movimento, ela conjurou fogo.</h3>
+			<h3>As chamas explodiram ao redor da câmara, consumindo os tesouros acumulados pelo necromante ao longo dos séculos. Ouro derreteu em rios brilhantes, pergaminhos antigos se tornaram cinzas no ar. As chamas dançavam em tons de azul e violeta, alimentadas pelo poder arcano que Thaynara despejava sem hesitação.</h3>
+			<h3>O necromante riu.</h3>
+			<h3><bdi>— Ah, agora sim! Ousadia! Decisão! Um toque de dramatismo! Oh, eu realmente gosto de você, Thaynara.</bdi></h3>
+			<h3>Ela ignorou o deboche. O fogo não seria suficiente.</h3>
+			<h3>Fechando os olhos, evocou raios de gelo para adicionar à mistura.</h3>
+			<h3>Fogofrio.</h3>
+			<h3>O calor das chamas foi substituído pelo frio cortante e cruel da conjuração, expandindo-se em uma onda de destruição implacável. O teto da câmara tremeu. Gotas de gelo começaram a se formar nas pedras, o calor do incêndio dissipado em um instante.</h3>
+			<h3>Então, com um gesto final, Thaynara lançou sua energia contra as colunas que sustentavam a câmara.</h3>
+			<h3>A estrutura cedeu.</h3>
+			<h3>O teto desabou com um rugido ensurdecedor, soterrando o filactério sob toneladas de pedra.</h3>
+			<h3>A terra engoliu o necromante.</h3>
+			<h3>Sua risada ecoou até ser abafada pela poeira e pelos destroços.</h3>
+			<h3>Mas Thaynara não parou.</h3>
+			<h3>Ela percorreu cada corredor da caverna, desmoronando cada sala, cada passagem, enterrando qualquer vestígio do que um dia existira ali. Quando alcançou a saída, suas forças estavam no limite. O corpo dolorido, os músculos exaustos. Mas, com um último gesto, conjurou as palavras finais.</h3>
+			<h3>A entrada da caverna desmoronou, selando-a completamente.</h3>
+			<h3>Por fim, a Caverna da Perdição estava enterrada.</h3>
+			<h3>Thaynara retornou à Guilda dos Aventureiros como a única sobrevivente a retornar daquele lugar. Ela trouxe respostas para o mistério da caverna, a verdade sobre as almas perdidas e o perigo que jaz abaixo da terra.</h3>
+			<h3>Mas sua história não terminaria ali.</h3>
+			<h3>Com cada nova missão, cada batalha vencida, cada conhecimento adquirido, Thaynara se fortalecia.</h3>
+			<h3>Porque um dia, ela retornaria àquela caverna. E, quando o fizesse, não seria para enterrar o filactério.</h3>
+			<h4>Seria para destruí-lo de uma vez por todas.</h4>
+			
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "FinalBom_tempestade"
+				}
+			]
+		},
+
+		Levar: {
+			title: "… Levar o filactério…?",
+			story: `
+			<h3>Thaynara ficou imóvel diante do filactério. Ela sentia o peso de sua decisão antes mesmo de tomá-la.</h3>
+			<h3>Destruí-lo agora? Impossível. Mesmo se tentasse, não havia garantia de que conseguiria erradicar completamente o necromante. Selá-lo? Sim, poderia enterrar a ameaça por séculos… mas e se alguém o encontrasse novamente? E se outra alma ambiciosa viesse em busca dos mesmos segredos?</h3>
+			<h3>Não. A única maneira de garantir que o necromante não ressurgiria era se ela mesma se tornasse sua guardiã. Seus dedos pairaram sobre o filactério, hesitantes por um momento. Ela esperava resistência, esperava sentir sua energia ser drenada no instante em que o tocasse. Mas, surpreendentemente, nada aconteceu.</h3>
+			<h3>A voz familiar ressoou, arrastando-se pelo ar como um sussurro encantado.</h3>
+			<h3><bdi>— Ora, ora… Que decisão inusitada.</bdi></h3>
+			<h3>Havia um toque de divertimento ali, mas sem escárnio. Apenas curiosidade. Thaynara estreitou os olhos. O necromante riu, um som baixo e indulgente.</h3>
+			<h3><bdi>— Diga-me, minha cara, o que pretende fazer comigo?</bdi></h3>
+			<h3>Ela não respondeu de imediato. Apenas envolveu o filactério em um pano e o guardou com cuidado.</h3>
+			<h6>— Ainda vou descobrir.</h6>
+			<h3>O retorno à Guilda dos Aventureiros foi glorioso.</h3>
+			<h3>Thaynara não apenas sobreviveu à Caverna da Perdição, mas trouxe consigo respostas. Os registros daqueles que desapareceram ali foram finalmente encerrados. O mistério, resolvido.</h3>
+			<h3>E os tesouros… oh, os tesouros.</h3>
+			<h3>Ela se tornou uma lenda entre os aventureiros. Sua reputação cresceu, e com cada missão bem-sucedida, com cada novo conhecimento adquirido, seu nome ecoava por corredores e tavernas. Mas a maior relíquia que trouxe da caverna não foi ouro nem artefatos mágicos.</h3>
+			<h3>Foi um sussurro constante em sua mente.</h3>
+			<h3>O necromante não lutou contra seu novo destino. Em vez disso, tornou-se uma presença inesperadamente útil. Nos momentos de silêncio, quando estudava os tomos que trouxera da caverna, a voz dele se manifestava, oferecendo comentários, corrigindo sua interpretação de certos rituais, até mesmo compartilhando histórias de tempos antigos.</h3>
+			<h3><bdi></bdi>— Ah, este aqui? Um clássico, de fato. Mas impreciso. O autor exagerou na parte sobre a captura de almas. Confie em mim, eu estava lá.</h3>
+			<h6>— …Você está dizendo que conheceu esse arquimago?</h6>
+			<h3><bdi>— Conheci? Minha cara, éramos parceiros</bdi></h3>
+			<h3>Ela deveria temê-lo. Deveria encontrar uma maneira de destruí-lo. Mas, com o tempo, percebeu que havia algo diferente nele. Havia algo que ia além do mero desejo de poder e imortalidade. Ela percebeu quando ele voluntariamente desvinculou as almas que havia capturado de si, alegando que “não necessitava mais de um novo receptáculo.”</h3>
+			<h3>Ele estava em uma busca. Uma necessidade de entender algo que nem mesmo ele compreendia. E, talvez, essa busca agora tivesse encontrado um novo rumo. Talvez, com o tempo, ele encontrasse uma nova razão para ansiar pela vida.</h3>
+			<h3>Talvez, afinal, ele tivesse negado sua própria mortalidade para que encontrasse essa resposta. E talvez ele a encontrasse ao lado de Thaynara.</h3>
+			`,
+			choices: [
+				{
+					choice: "Continuar",
+					destination: "FinalVerdadeiro"
+				}
+				
+			]
+		},
 
 		teste: {
 			title: "",
@@ -1215,6 +1611,17 @@ function getStory() {
 			]
 		},
 
+		rolardado_Investigacao2: {
+			title: "",
+			story: "",
+			choices: [
+				{
+					choice: "",
+					destination: ""
+				}
+			]
+		},
+
 		//trechos de finais 
 		FinalRuim_mimico: {
 			title: "Final Ruim: O Baú Mímico",
@@ -1265,6 +1672,43 @@ function getStory() {
 				}
 			]
 		},
+
+		FinalNeutro_Cinzas: {
+			title: "Final Neutro: À Cinzas e Sangue",
+			story: `<h2>Final Neutro: À Cinzas e Sangue</h2>
+			<h3>Poder e conhecimento não devem ser temidos. Os fracos e os justos nunca alcançarão o topo.</h3>`,
+			choices: [
+				{
+					choice: "Voltar ao inicio",
+					destination: "introducao"
+				}
+			]
+		},
+
+		FinalBom_tempestade: {
+			title: "Final Bom: A Tempestade",
+			story: `<h2>Final Bom: A Tempestade</h2>
+			<h3>"Enterrai meu cajado a várias braças na terra, e a pedra selará meu nome."</h3>`,
+			choices: [
+				{
+					choice: "Voltar ao inicio",
+					destination: "introducao"
+				}
+			]
+		},
+
+		FinalVerdadeiro: {
+			title: "Final Verdadeiro: Ventos Áureos",
+			story: `<h2>Final Verdadeiro: Ventos Áureos</h2>
+			<h3>"E, no fim, os ventos da mudança sopravam para ambos."</h3>`,
+			choices: [
+				{
+					choice: "Voltar ao inicio",
+					destination: "introducao"
+				}
+			]
+		},
+
 
 
 		instrucoes: {
@@ -1459,6 +1903,17 @@ function renderScene() {
 			}
 			break;
 
+		case ('rolardado_Investigacao2'):
+			var resultado = rolarDado(5);
+			if (resultado >= 13) {
+				story.currentScene = 'sucesso_Investigacao2';
+				swal(`Valor obtido: ${resultado} - Sucesso!`);
+			} else {
+				story.currentScene = 'falha_Investigacao2';
+				console.log("penalidade = " + penalidade);
+				swal(`Valor obtido: ${resultado} - Falha!`);
+			}
+			break;
 
 		case ('pegaritem'):
 			item = true;

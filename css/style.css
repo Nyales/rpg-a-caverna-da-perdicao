@@ -94,6 +94,14 @@ em{
 	font-weight: lighter;
 }
 
+bdi{
+	font-style: normal;
+	/* font-family: ; */
+	font-size: 1.4rem;
+
+}
+
+
 
 /* configurações da caixa de texto principal */
 #content
