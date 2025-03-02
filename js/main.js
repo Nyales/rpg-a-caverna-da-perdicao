@@ -1025,7 +1025,7 @@ function getStory() {
 			]
 		},
 
-		ConjutarMaos: {
+		ConjurarMaos: {
 			title: "Conjurar Mãos Mágicas e imobilizá-la",
 			story: `
 			<h3>Thaynara não perdeu tempo.</h3>
@@ -1099,7 +1099,7 @@ function getStory() {
 			choices: [
 				{
 					choice: "Continuar",
-					destination: "atoIII"
+					destination: "AtoIII"
 				}
 			]
 		},
@@ -1169,7 +1169,7 @@ function getStory() {
 			choices: [
 				{
 					choice: "Continuar",
-					destination: "atoIII"
+					destination: "AtoIII"
 				}
 			]
 		},
@@ -1273,7 +1273,7 @@ function getStory() {
 			choices: [
 				{
 					choice: "Continuar",
-					destination: "atoIII"
+					destination: "AtoIII"
 				}
 			]
 		},
@@ -1415,7 +1415,7 @@ function getStory() {
 					destination: "Destuir"
 				},
 				{
-					choice: "… Levar o filactério…?",
+					choice: "…Levar o filactério…?",
 					destination: "Levar"
 				}
 			]
