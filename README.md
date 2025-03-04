@@ -33,7 +33,7 @@ O jogo roda diretamente no navegador. Para jogar:
 O jogo conta com 6 finais disponíveis.
 
 | **"Às Cinzas e Sangue"** |
-| **"A Pedra Selará Meu Nome"** | 
+| **"A Tempestade"** | 
 | **"Ventos Áureos"** | 
 | **"Lobo em Pele de Cordeiro"** | 
 | **"Entre uma Rocha e um Machado"** | 
