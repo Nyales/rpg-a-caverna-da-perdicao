@@ -30,7 +30,7 @@ O jogo roda diretamente no navegador. Para jogar:
 
 ## 🏆 Finais Disponíveis  
 
-O jogo conta com 6 finais disponíveis.
+O jogo conta com 7 finais disponíveis.
 
 | **"Às Cinzas e Sangue"** |
 | **"A Tempestade"** | 
@@ -38,6 +38,7 @@ O jogo conta com 6 finais disponíveis.
 | **"Lobo em Pele de Cordeiro"** | 
 | **"Entre uma Rocha e um Machado"** | 
 | **"O Demônio Veste Correntes"** |   
+| **"Ouro dos Tolos"** | 
 
 ## 📜 Licença  
 
