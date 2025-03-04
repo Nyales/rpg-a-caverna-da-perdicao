@@ -38,7 +38,7 @@ O jogo conta com 7 finais disponíveis.
 | **"Lobo em Pele de Cordeiro"** | 
 | **"Entre uma Rocha e um Machado"** | 
 | **"O Demônio Veste Correntes"** |   
-| **"Ouro dos Tolos"** | 
+| **"Ouro dos Tolos"** |
 
 ## 📜 Licença  
 
