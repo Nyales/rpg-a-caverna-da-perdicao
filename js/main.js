@@ -1382,7 +1382,7 @@ function getStory() {
 			<h3><bdi>— Ora, ora... O que temos aqui?</bdi></h3>
 			<h3>O som não veio de uma direção específica. A sala inteira parecia falar com ela.  Thaynara congelou, seus dedos apertando com força o cabo da adaga. Seus olhos percorreram a escuridão da câmara, mas não havia ninguém.</h3>
 			<h3>Nada.  Até que ela percebeu.  A voz vinha do próprio filactério. Era uma voz masculina, grave e melodiosa, carregada de um tom exageradamente polido, quase teatral. Era… estranhamente convidativa.</h3>
-			<h3><bdi>— Oh, que momento encantador! Uma visita inesperada, mas, devo admitir, muitíssimo bem-vinda —</bd1> A entonação era quase amigável, mas havia algo nela que fez o estômago de Thaynara revirar <bdi>— Parece que minha... querida aprendiz falhou em sua tarefa. Que pena! Eu realmente depositava grandes expectativas nela.<bdi></h3>
+			<h3><bdi>— Oh, que momento encantador! Uma visita inesperada, mas, devo admitir, muitíssimo bem-vinda —</bdi> A entonação era quase amigável, mas havia algo nela que fez o estômago de Thaynara revirar <bdi>— Parece que minha... querida aprendiz falhou em sua tarefa. Que pena! Eu realmente depositava grandes expectativas nela.<bdi></h3>
 			<h3>Thaynara não respondeu. Ela apenas se aproximou, devagar, analisando a sala.</h3>
 			<h3><bdi>— E quem poderia culpá-la? Veja bem, poucas almas mortais conseguem se erguer contra os desafios que esta caverna oferece. E você.</bdi></h3>
 			<h3>A voz pausou por um instante.  Thaynara sentiu a presença invisível se arrastar sobre sua pele como dedos frios.</h3>
@@ -1754,7 +1754,7 @@ function getStory() {
 
 		instrucoes: {
 			title: "Instruções",
-			story: "<h3><center>Recomendação Etária: Livre</center></h3><h3>Para jogar uma aventura-solo, basta ler o texto apresentado, e no final, clicar sobre a decisão escolhida. Como exemplo, temos 2 opções:</h3><h3>- A primeira delas é a opção de 'Começar a Aventura', onde você irá ler o trecho introdutório do texto, identificando o personagem que você irá interpretar;</h3><h3>- A segunda opção é a de retornar a 'Tela Inicial' do jogo.</h3><h3>No caso dessa aventura-solo, é utilizado o sistema de regras D&D5e; caso queira saber mais sobre ele, consulte o <a href='https://www.dndbeyond.com/' class='classe1' target='blank'>D&D Beyond</a>; .</h3><h3>Existe um botão flutuante no canto inferior da tela. Ele permite ver a ficha de personagem na mesma ou em outra janela.</h3><h3>Existe mais de um final possível deste jogo, por isso você poder jogar novamente escolhendo opções diferentes das anteriormente escolhidas.</h3><h3>Após as opções de escolha da narrativa, existe o controle (de 4 botões) de uma trilha sonora; recomendamaos escutá-la, caso seja possível.</h3>",
+			story: "<h3><center>Recomendação Etária: 16+</center></h3><h3>Para jogar uma aventura-solo, basta ler o texto apresentado, e no final, clicar sobre a decisão escolhida. Como exemplo, temos 2 opções:</h3><h3>- A primeira delas é a opção de 'Começar a Aventura', onde você irá ler o trecho introdutório do texto, identificando o personagem que você irá interpretar;</h3><h3>- A segunda opção é a de retornar a 'Tela Inicial' do jogo.</h3><h3>No caso dessa aventura-solo, é utilizado o sistema de regras D&D5e; caso queira saber mais sobre ele, consulte o <a href='https://www.dndbeyond.com/' class='classe1' target='blank'>D&D Beyond</a>; .</h3><h3>Existe um botão flutuante no canto inferior da tela. Ele permite ver a ficha de personagem na mesma ou em outra janela.</h3><h3>Existe mais de um final possível deste jogo, por isso você poder jogar novamente escolhendo opções diferentes das anteriormente escolhidas.</h3><h3>Após as opções de escolha da narrativa, existe o controle (de 4 botões) de uma trilha sonora; recomendamaos escutá-la, caso seja possível.</h3>",
 			choices: [
 				{
 					choice: "Começar a Aventura!",
@@ -1772,7 +1772,8 @@ function getStory() {
 			story: `
 			<h3><b>Roteiro e Arte:</b> Luísa Fonseca Esquiller <h3>
 			<h3><b>Programação:</b> João Vitor de Paula Oliveira ('Jonny') e Leonardo Antônio de Andrade</h3>
-			<h3><b>Trilha Sonora: </b></p>&nbsp;&nbsp;<a href='https://www.jamendo.com/track/1273567/espionage' target='blank' class='classe1'>Trecho da Faixa Espionage, de FOX & MEW</a></h3>`,
+			<h3><b>Trilha Sonora: </b></p>&nbsp;&nbsp;<a href='https://freesound.org/s/636108/' target='blank' class='classe1'>ambience cave.ogg by fonografico -- License: Creative Commons 0
+</a></h3>`,
 			choices: [
 				{
 					choice: "Começar a Aventura!",

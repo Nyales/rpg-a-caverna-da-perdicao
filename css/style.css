@@ -21,6 +21,13 @@
 	font-weight: bold;
 }
 
+@font-face{
+	font-family: 'quinte';
+	src: url('../Assets/fonts/Quintessential-Regular.ttf');
+	font-style: italic;
+	font-weight: normal;
+}
+
 
 body
 {
@@ -34,7 +41,7 @@ body
   background-image: url('../Assets/img/background.jpg'); 
   background-size: cover; 
   background-position: center; 
-  background-repeat: no-repeat; 
+  background-repeat: repeat-y; 
 
   /* cor, tamanho de fonte, tipo de fonte */
   color: white;
@@ -81,7 +88,7 @@ h5{
 }
 
 h6{
-	font-size: 1.6rem;
+	font-size: 1.7rem;
 	font-family: 'cormorant garamont';
 	text-align: justify;
 }
@@ -95,23 +102,26 @@ span{
 em{
 	font-style: normal;
 	font-family: 'Constantia';
-	font-size: 1.4rem;
-	font-weight: lighter;
+	font-size: 1.5rem;
+	font-weight: normal;
 }
 
 bdi{
 	font-style: normal;
-	/* font-family: ; */
-	font-size: 2.0rem;
+	font-family: 'quinte';
+	font-size: 1.6rem;
 
 }
 
+img{
+	border-radius: 5px;
+}
 
 
 /* configurações da caixa de texto principal */
 #content
 {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.747);
   color: black;
   width: 770px;
   margin: 15px;
@@ -121,6 +131,8 @@ bdi{
   margin-left: auto;
   margin-right: auto;
   font-family: 'Comfortaa', sans-serif;
+  border-radius: 30px;
+  box-shadow: 5px 5px 8px rgb(0, 0, 0);
 }
 
 
@@ -129,7 +141,7 @@ bdi{
 a.classe1:link, a.classe1:visited, a.classe1:active 
 {
 	text-decoration: underline;
-	color: #be171d;
+	color: #000000;
 }
 
 a.classe1:hover 
@@ -249,7 +261,7 @@ a.classe1:hover
 	border: none;
 	font-family: 'Comfortaa', sans-serif;
 	font-size: 1.3rem;
-	color: white;
+	color: rgb(255, 255, 255);
 }
 
 .fab button.main
@@ -258,7 +270,7 @@ a.classe1:hover
 	width: 65px;
 	height: 65px;
 	border-radius: 30px;
-	background-color: #000;
+	background-color: #818181;
 	right: 0;
 	bottom: 0;
 	z-index: 20;
