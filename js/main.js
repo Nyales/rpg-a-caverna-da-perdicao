@@ -1856,7 +1856,6 @@ function rolarDado(bonus) {
 	let dado = Math.floor(Math.random() * 20) + 1;
 
 	let resultado = dado + bonus + penalidade;
-	console.log(`dado = ${dado} / bonus = ${bonus} / penalidade ${penalidade} / Resultado = ${resultado}`);
 	return resultado;
 }
 //função de renderização de conteúdo
@@ -2046,3 +2045,4 @@ function getInputs() {
 	}
 	return input;
 }
+
