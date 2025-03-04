@@ -6,13 +6,9 @@ var instrucoes = false;
 var creditos = false;
 var master = false;
 
-//Variaveis de rolagem de dado
+//Variaveis de penalidade em rolagem de dados
 var penalidade = 0;
 
-
-
-//variável de controle do item
-var item = false;
 
 //função que retorna dados das escolhas
 function getStory() {
@@ -1662,16 +1658,16 @@ function getStory() {
 
 		//trechos de finais 
 		FinalRuim_mimico: {
-			title: "Final Ruim: O Baú Mímico",
+			title: "Final Ruim: Ouro dos Tolos",
 			image: '../Assets/img/final ruim mimico.jpg',
-			story: `<h2>Final Ruim: O Baú Mímico</h2>
+			story: `<h2>Final Ruim: Ouro dos Tolos</h2>
 			<h3>Thaynara é devorada por um mímico, sua jornada encerrada de forma brutal. Seu corpo nunca é encontrado—apenas mais uma vítima da caverna insaciável.</h3>
 			
 			`,
 			choices: [
 				{
 					choice: "Voltar ao inicio",
-					destination: "Menu"
+					destination: "Reload"
 				}
 			]
 		},
@@ -1684,7 +1680,7 @@ function getStory() {
 			choices: [
 				{
 					choice: "Voltar ao inicio",
-					destination: "Menu"
+					destination: "Reload"
 				}
 			]
 		},
@@ -1697,20 +1693,20 @@ function getStory() {
 			choices: [
 				{
 					choice: "Voltar ao inicio",
-					destination: "Menu"
+					destination: "Reload"
 				}
 			]
 		},
 
 		FinalNeutro_correntesInvisiveis: {
-			title: "Final Neutro: Correntes invisíveis",
+			title: "Final Neutro: O Diabo Veste Algemas",
 			image: '../Assets/img/final neutro demonio.jpg',
-			story: `<h2>Final Neutro: Correntes invisíveis</h2>
+			story: `<h2>Final Neutro: O Diabo Veste Algemas</h2>
 			<h3>Ela respirava. Seu coração ainda batia. Mas a liberdade? Essa foi a verdadeira barganha.</h3>`,
 			choices: [
 				{
 					choice: "Voltar ao inicio",
-					destination: "Menu"
+					destination: "Reload"
 				}
 			]
 		},
@@ -1723,7 +1719,7 @@ function getStory() {
 			choices: [
 				{
 					choice: "Voltar ao inicio",
-					destination: "Menu"
+					destination: "Reload"
 				}
 			]
 		},
@@ -1736,7 +1732,7 @@ function getStory() {
 			choices: [
 				{
 					choice: "Voltar ao inicio",
-					destination: "Menu"
+					destination: "Reload"
 				}
 			]
 		},
@@ -1749,12 +1745,12 @@ function getStory() {
 			choices: [
 				{
 					choice: "Voltar ao inicio",
-					destination: "Menu"
+					destination: "Reload"
 				}
 			]
 		},
 
-
+		//botões do menu
 
 		instrucoes: {
 			title: "Instruções",
@@ -1789,6 +1785,7 @@ function getStory() {
 			]
 		},
 
+		//telas em branco para switch case
 		inicio: {
 			title: "Inicio",
 			image:'',
@@ -1801,7 +1798,7 @@ function getStory() {
 			]
 		},
 
-		Menu: {
+		Reload: {
 			title: "Menu",
 			image:'',
 			story: "<h3></h3>",
@@ -1852,6 +1849,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 })
 
+//função de rolagem de dados 
 function rolarDado(bonus) {
 	let dado = Math.floor(Math.random() * 20) + 1;
 
@@ -1860,7 +1858,6 @@ function rolarDado(bonus) {
 }
 //função de renderização de conteúdo
 function renderScene() {
-	//console.log(cont);
 	var image = "";
 	var titulo = "";
 
@@ -1886,8 +1883,7 @@ function renderScene() {
 
 	switch (story.currentScene) {
 	
-		case ('Menu'):
-			console.log('menu')
+		case ('Reload'):
 			location.reload();
 			break;
 
@@ -1934,7 +1930,7 @@ function renderScene() {
 			} else {
 				story.currentScene = 'falha_Atletismo';
 				penalidade = penalidade + (-2);
-				console.log("penalidade = " + penalidade);
+				
 				swal(`Valor obtido: ${resultado} - Falha!`);
 			}
 			break;
@@ -1947,7 +1943,7 @@ function renderScene() {
 				swal(`Valor obtido: ${resultado} - Sucesso!`);
 			} else {
 				story.currentScene = 'falha_Investigacao';
-				console.log("penalidade = " + penalidade);
+				
 				swal(`Valor obtido: ${resultado} - Falha!`);
 			}
 			break;
@@ -1959,7 +1955,7 @@ function renderScene() {
 				swal(`Valor obtido: ${resultado} - Sucesso!`);
 			} else {
 				story.currentScene = 'falha_Sobrevivencia';
-				console.log("penalidade = " + penalidade);
+				
 				swal(`Valor obtido: ${resultado} - Falha!`);
 			}
 			break;
@@ -1971,7 +1967,7 @@ function renderScene() {
 				swal(`Valor obtido: ${resultado} - Sucesso!`);
 			} else {
 				story.currentScene = 'falha_Investigacao2';
-				console.log("penalidade = " + penalidade);
+				c
 				swal(`Valor obtido: ${resultado} - Falha!`);
 			}
 			break;
@@ -1993,7 +1989,6 @@ function renderScene() {
 	var button2 = document.querySelector("#button2");
 	var button3 = document.querySelector("#button3");
 
-	//console.log(story.currentScene);
 
 	button0.addEventListener('click', function () {
 		cont++;
