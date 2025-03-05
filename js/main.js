@@ -112,7 +112,7 @@ function getStory() {
 					`,
 			choices: [
 				{
-					choice: "Ir até o báu",
+					choice: "Ir até o baú",
 					destination: 'VerBau'
 				},
 				{
@@ -677,7 +677,7 @@ function getStory() {
 			<h3>Thaynara se distancia do pensamento, sua saliva subitamente amarga demais. O peso invisível que a acompanhava desde sua entrada na caverna parecia ainda mais forte ali. Era como se algo rastejasse pelo próprio ar, se entranhasse em seus pulmões e pesasse sobre seus ombros. A cada passo que dava, a sensação de que não deveria estar ali se intensificava.</h3>
 			<h3>Um pequeno som reverbera pelas paredes de pedra.  Um choro, baixo e trêmulo, cortando o silêncio como um fio de lâmina fria.</h3>
 			<h3>A princípio, era apenas um som indistinto ao fundo, mas conforme ela avançava, os soluços tornavam-se mais nítidos. Era uma voz feminina, delicada, mas carregada de um desespero esmagador. Cada lamento parecia carregado de medo e dor, um pedido mudo de socorro vindo das profundezas daquele lugar amaldiçoado.</h3>
-			<h3>haynara sentiu um arrepio subir por sua espinha. O choro ecoava nas paredes de pedra, repetindo-se em tons sutilmente distorcidos, como se o próprio calabouço absorvesse aquele lamento e o devolvesse de maneira errada, quebrada.</h3>
+			<h3>Thaynara sentiu um arrepio subir por sua espinha. O choro ecoava nas paredes de pedra, repetindo-se em tons sutilmente distorcidos, como se o próprio calabouço absorvesse aquele lamento e o devolvesse de maneira errada, quebrada.</h3>
 			<h4>Algo dentro dela hesitou.</h4>
 			<h3>Ali, naquele lugar onde a própria magia parecia errada, onde tudo parecia devorado por uma presença invisível, onde ninguém nunca retornou para contar a história... algo a fazia se perguntar se aquela voz era realmente o que aparentava ser. Tudo nesta caverna parece querê-la morta, afinal.</h3>
 			<h3>Ao mesmo tempo, a voz continha um desespero que parecia muito real. Poderia ser de fato um sobrevivente clamando por ajuda.</h3>
@@ -844,7 +844,7 @@ function getStory() {
 			image: "img/ato2.jpg",
 			story: `
 			<h3>Thaynara manteve uma expressão cautelosa enquanto analisava a jovem à sua frente. Algo nela não fazia sentido. O ambiente ao redor era opressor, frio e carregado de morte. As correntes presas às paredes indicavam anos de sofrimento, marcas de dor antigas ainda manchavam as pedras do chão.</h3>
-			<h3>E, no entanto, ali estava ela. <h4>Linda, intocada, serena<h/4></h3>
+			<h3>E, no entanto, ali estava ela. <h4>Linda, intocada, serena.<h/4></h3>
 			<h3>A maga ajoelhou-se em frente à jovem, seu olhar focado na figura delicada. Ela inclina levemente a cabeça antes de perguntar:</h3>
 			<h6>— Qual seu nome?</h6>
 			<h3>A jovem ergueu os olhos para ela, seu rosto suavizando com um alívio quase genuíno</h3>
@@ -855,10 +855,10 @@ function getStory() {
 			<h6>— Há quanto tempo você está aqui?</h6>
 			<h3>A princesa inclinou levemente a cabeça para o lado, pensativa.</h3>
 			<h6>— Eu... não tenho certeza. Sem a luz do sol, sem a lua ou as estrelas... o tempo simplesmente passa.</h6>
-			<h3>Havia uma naturalidade perturbadora em sua resposta. Nenhuma angústia. Nenhuma hesitação verdadeira. Ao mesmo tempo, ela não demonstrava</h3>
+			<h3>Havia uma naturalidade perturbadora em sua resposta. Nenhuma angústia. Nenhuma hesitação verdadeira. Ao mesmo tempo, ela não demonstrava.</h3>
 			<h4>O silêncio pesou entre elas.</h4>
 			<h3>Aquele sorriso era encantador. Natural. Tranquilo. Mas algo nele soava... errado.</h3>
-			<h3>E, ainda assim, não havia nada de explicitamente ameaçador nela. Se era uma farsa, era a mais bem-feita que Thaynara já havia visto</h3>
+			<h3>E, ainda assim, não havia nada de explicitamente ameaçador nela. Se era uma farsa, era a mais bem-feita que Thaynara já havia visto.</h3>
 			<h3>A jovem inclinou-se levemente para frente, suas correntes chacoalhando com o movimento, o metal cravando ainda mais em sua pele. Nenhum dano visível, novamente.</h3>
 			<h6>— Eu entendo sua hesitação. Mas, por favor, me ajude. Se me libertar, prometo recompensá-la generosamente. Qualquer coisa que desejar.</h6>
 			<h3>A promessa foi dita com uma confiança inabalável. O sorriso não saiu do rosto da princesa por sequer um momento. Thaynara sente um arrepio atravessar seu corpo, o frio sobrenatural infiltrando em seus ossos. Algo definitivamente parece errado.</h3>
@@ -882,8 +882,8 @@ function getStory() {
 			story: `
 			<h3>O silêncio entre as duas se prolongou, pesado e desconfortável. Thaynara sentia o frio da caverna se entranhar cada vez mais em sua pele, mas não era apenas isso que fazia sua espinha se arrepiar. Algo na presença daquela mulher – algo invisível, mas presente – fazia cada fibra de seu ser gritar em alerta.</h3>
 			<h3>Seus olhos percorreram a figura ajoelhada diante dela. A postura da princesa era impecável, como se mesmo em cativeiro sua dignidade permanecesse intocada. Seu rosto mantinha a doçura e a fragilidade de alguém que havia sofrido, mas seus olhos… seus olhos não carregavam o peso da angústia que sua voz transmitia.</h3>
-			<h3>Era como se sua boca e seu corpo falassem línguas diferentes. Thaynara respirou fundo antes de continuar</h3>
-			<h6>— Você não lembra do seu nome, nem de onde veio <em>começou, mantendo a voz neutra.</em> — Mas se lembra de ser uma princesa. Como?</h6>
+			<h3>Era como se sua boca e seu corpo falassem línguas diferentes. Thaynara respirou fundo antes de continuar.</h3>
+			<h6>— Você não lembra do seu nome, nem de onde veio —<em>começou, mantendo a voz neutra.</em> — Mas se lembra de ser uma princesa. Como?</h6>
 			<h3>A princesa piscou, hesitando por um instante.</h3>
 			<h6>— Como eu já disse... minhas memórias estão confusas. Mas tenho certeza disso. Eu sei que sou alguém importante.</h6>
 			<h3>Thaynara apertou os lábios. A princesa piscou algumas vezes, estudando seu rosto.  Sua expressão mudou sutilmente. Menos paciente. Quase… irritada. Thaynara não recuou.</h3>
@@ -893,13 +893,13 @@ function getStory() {
 			<h4>O ar pareceu congelar.</h4>
 			<h3>O coração de Thaynara acelerou imediatamente. Suor frio escorre por seu pescoço. Sua respiração falha por um instante. Ela nunca havia dito seu nome.</h3>
 			<h3>A princesa alargou seu sorriso, agora mostrando os dentes. Sua expressão não era mais suave. Não, agora beirava a algo sinistro. Predatório.</h3>
-			<h6>— Como sabe meu nome? <em> a voz de Thaynara saiu baixa, tensa.</em></h6>
+			<h6>— Como sabe meu nome? <em> A voz de Thaynara saiu baixa, tensa.</em></h6>
 			<h3>A princesa fez uma pausa, como se reconhecesse seu deslize. No entanto, nem meio segundo depois, sorriu novamente como se nada houvesse ocorrido. Sua voz pingava uma doçura incabível no ar tenso entre as duas.</h3>
 			<h6>— Eu... Ah. — <em>Ela inclinou levemente a cabeça, e seu sorriso cresceu um pouco mais.</em> — Eu devo tê-lo ouvido de alguma forma. Sua presença é forte, Thaynara.</h6>
 			<h3>A princesa inclinou-se um pouco para frente, suas correntes tilintando. Seus olhos se arregalam em uma demonstração de mágoa, apesar do sorriso permanecer inalterado em seu rosto.</h3>
 			<h6>— Você desconfia de mim, minha heroína?</h6>
 			<h3>A princesa franziu os lábios em uma tentativa de fazer beicinho.</h3>
-			<h3>— Eu entendo sua hesitação <em> disse ela, e sua voz era um sussurro melódico.</em> — Mas você veio até aqui, não veio? Se me libertar, prometo recompensá-la generosamente, como já disse. Tudo o que você precisa fazer é soltar essas correntes.</h3>
+			<h6>— Eu entendo sua hesitação —  <em>disse ela, e sua voz era um sussurro melódico.</em> — Mas você veio até aqui, não veio? Se me libertar, prometo recompensá-la generosamente, como já disse. Tudo o que você precisa fazer é soltar essas correntes.</h6>
 			<h3>Agora, não havia mais dúvida: ela estava impaciente. Irritada, até. Thaynara precisava fazer sua escolha.</h3>
 			
 			`,
@@ -1564,7 +1564,7 @@ function getStory() {
 			<h3>O necromante não lutou contra seu novo destino. Em vez disso, tornou-se uma presença inesperadamente útil. Nos momentos de silêncio, quando estudava os tomos que trouxera da caverna, a voz dele se manifestava, oferecendo comentários, corrigindo sua interpretação de certos rituais, até mesmo compartilhando histórias de tempos antigos.</h3>
 			<h3><bdi></bdi>— Ah, este aqui? Um clássico, de fato. Mas impreciso. O autor exagerou na parte sobre a captura de almas. Confie em mim, eu estava lá.</h3>
 			<h6>— …Você está dizendo que conheceu esse arquimago?</h6>
-			<h3><bdi>— Conheci? Minha cara, éramos parceiros</bdi></h3>
+			<h3><bdi>— Conheci? Minha cara, éramos parceiros.</bdi></h3>
 			<h3>Ela deveria temê-lo. Deveria encontrar uma maneira de destruí-lo. Mas, com o tempo, percebeu que havia algo diferente nele. Havia algo que ia além do mero desejo de poder e imortalidade. Ela percebeu quando ele voluntariamente desvinculou as almas que havia capturado de si, alegando que “não necessitava mais de um novo receptáculo.”</h3>
 			<h3>Ele estava em uma busca. Uma necessidade de entender algo que nem mesmo ele compreendia. E, talvez, essa busca agora tivesse encontrado um novo rumo. Talvez, com o tempo, ele encontrasse uma nova razão para ansiar pela vida.</h3>
 			<h3>Talvez, afinal, ele tivesse negado sua própria mortalidade para que encontrasse essa resposta. E talvez ele a encontrasse ao lado de Thaynara.</h3>
