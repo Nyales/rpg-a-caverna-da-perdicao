@@ -1770,10 +1770,11 @@ function getStory() {
 		creditos: {
 			title: "Créditos",
 			story: `
+			<h2>Créditos</h2>
+			<h3>Esta aventura-solo foi o trabalho final da disciplina de Introdução à Hipermídia, no semestre 2024/02. A disciplina pertence ao curso de Imagem e Som da UFSCar.</h3>
 			<h3><b>Roteiro e Arte:</b> Luísa Fonseca Esquiller <h3>
 			<h3><b>Programação:</b> João Vitor de Paula Oliveira ('Jonny') e Leonardo Antônio de Andrade</h3>
-			<h3><b>Trilha Sonora: </b></p>&nbsp;&nbsp;<a href='https://freesound.org/s/636108/' target='blank' class='classe1'>ambience cave.ogg by fonografico -- License: Creative Commons 0
-</a></h3>`,
+			<h3><b>Trilha Sonora: </b><a href='https://freesound.org/s/636108/' target='blank' class='classe1'>ambience cave.ogg by fonografico -- License: Creative Commons 0</a></h3>`,
 			choices: [
 				{
 					choice: "Começar a Aventura!",
