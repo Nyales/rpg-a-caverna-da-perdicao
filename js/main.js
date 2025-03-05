@@ -17,7 +17,7 @@ function getStory() {
 		currentScene: "AtoI",
 		AtoI: {
 			title: "Inicio da jornada",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `
 			<h1>Ato I</h1>
 			<h2>O Chamado da Caverna</h2>
@@ -32,7 +32,7 @@ function getStory() {
 
 		introducao: {
 			title: "O Inicio",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h3>O frio úmido da caverna rastejava pela pele de Thaynara como dedos invisíveis, e cada passo que ela dava era acompanhado pelo eco surdo de suas botas contra a pedra antiga. O ar cheirava a terra molhada, com um leve toque de ferrugem – ou talvez fosse sangue. Seus olhos, abençoados por sua linhagem élfica, mal conseguem enxergar na escuridão opressora ao seu redor, e sombras dançavam nas paredes irregulares como criaturas espectrais espreitando das fendas</h3>
 			<h3>O silêncio era absoluto… demasiado absoluto. Não havia o som de água pingando, nem o farfalhar de pequenos animais. Apenas o ressoar de sua própria respiração e o leve sussurro do vento, como se a própria caverna estivesse sussurrando segredos esquecidos. À sua frente, o caminho se bifurcava em duas direções:</h3>
 			<h3>À esquerda, uma escadaria escavada na pedra, seus degraus gastos e cobertos de poeira milenar. Gravadas ao longo das paredes e corrimãos, inscrições rúnicas brilhavam fracamente em um tom esverdeado, pulsando como um batimento cardíaco. Um conhecimento ancestral e proibido parecia exalar delas, chamando por aqueles curiosos – ou tolos – o suficiente para tocá-las.</h3>
@@ -53,7 +53,7 @@ function getStory() {
 
 		ExaminarEscada: {
 			title: "Examinar a Escadaria com Inscrições Rúnicas",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h3>A cada degrau que descia, Thaynara sentia o ar se tornar mais pesado, como se a própria caverna se fechasse ao seu redor. A umidade das paredes trazia um frio pegajoso, que parecia se prender à sua pele e escorrer por sua espinha em arrepios involuntários. A luz fraca de seu feitiço tremulava, lutando contra as sombras, e por um instante ela teve a impressão de que a escuridão ao redor não era apenas a ausência de luz, mas algo vivo, algo que observava.</h3>
 					<h3>As runas esculpidas na pedra brilhavam de forma irregular, em tons esverdeados que lembravam o brilho fosforescente de musgo venenoso. Elas pareciam pulsar, como se carregassem um ritmo próprio, lento e pesado, semelhante a uma respiração sufocada. Thaynara fixou os olhos nelas, tentando identificar os símbolos e sua origem, mas quanto mais tentava compreendê-los, mais sua visão se tornava turva, como se as formas se retorcessem sutilmente diante dela.</h3>
 					<h3>O silêncio da caverna não era natural. Era um vazio denso, opressor, como se sugasse qualquer som, qualquer vestígio de vida. Não havia vento, nem o eco de gotas d'água, apenas aquela pulsação leve, quase imperceptível, das runas. Um zunido baixo ressoava em sua mente, distante e persistente, como um murmúrio sem origem, uma voz que não podia ser ouvida, apenas sentida.</h3>
@@ -72,7 +72,7 @@ function getStory() {
 
 		sucesso_DetectarMagia: {
 			title: "Sucesso no Teste",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h1>Sucesso!</h1>
 					<h3>Aos poucos, os símbolos começaram a fazer sentido. Eram antigos, muito mais antigos do que qualquer encantamento que Thaynara já havia estudado. A energia que pulsava das runas não era comum, nem natural. Ela percebeu que aquilo não era um simples feitiço de proteção ou selamento. Aquelas inscrições estavam impregnadas com algo sombrio, algo que se alimentava do que passava por ali.</h3>
 					<h3>Seu estômago se revirou ao compreender a verdade. As runas pareciam ecoar vida, mas não estavam vivas... estavam famintas. Famintas por energia vital. Necromancia.</h3>
@@ -87,7 +87,7 @@ function getStory() {
 
 		falha_DetectarMagia: {
 			title: "Falha no Teste",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h1>Falha!</h1>
 					<h3>O brilho pulsante das runas se intensificou de repente, e uma onda de energia invisível percorreu o ar como um trovão abafado. Um arrepio cortante percorreu a espinha de Thaynara, e antes que pudesse reagir, sentiu um impacto repentino em sua mente, como se mãos gélidas tentassem puxá-la para dentro da pedra.</h3>
 					<h3>A visão se distorceu. As paredes pareciam se aproximar, as sombras se tornaram mais densas. O ar ficou pesado como chumbo, e por um instante, ela não sabia dizer se ainda estava de pé ou se a caverna havia engolido sua existência. Com um esforço tremendo, forçou sua mente de volta ao controle e cambaleou para trás, arfando. Um zumbido persistia em sua cabeça, seus pensamentos mais lentos, como se algo tivesse drenado parte de sua clareza.</h3>
@@ -104,7 +104,7 @@ function getStory() {
 
 		ContinuarEscada: {
 			title: "Continuar descendo a Escadaria",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h3>Os últimos degraus da escadaria levavam a uma câmara ampla e silenciosa. O teto era baixo, sustentado por colunas desgastadas, e o ar carregava um cheiro metálico e espesso. No chão de pedra irregular, espalhadas por toda a superfície, estavam dezenas de moedas de ouro. Elas refletiam a luz de forma estranha, um brilho opaco e irregular que contrastava com seu valor aparente. Algumas estavam sujas de poeira e ferrugem, mas outras... outras estavam cobertas por uma fina camada de sangue seco.</h3>
 					<h3>No centro da sala, um corpo jaz imóvel. A pele acinzentada e a posição retorcida do cadáver denunciavam que sua morte não havia sido rápida ou misericordiosa. A armadura rasgada indicava que fora um aventureiro, talvez outro membro da Guilda que viera em busca de glória e riquezas, apenas para encontrar um fim sem testemunhas. O odor pútrido do corpo, misturado com algo a mais - algum tipo de essência, talvez? - impregna totalmente a pequena sala, se infiltrando nas narinas de Thaynara como uma praga.</h3>
 					<h3>À frente do cadáver, um baú de madeira reforçada repousa contra a parede. Diferente do restante da sala, parecia estar intacto, sem sinais de envelhecimento ou danos. Sua presença ali, cercada pelo ouro manchado de sangue e pelo corpo abandonado, destoava do cenário de desolação. Algo parece estranho.</h3>
@@ -124,7 +124,7 @@ function getStory() {
 
 		VerBau: {
 			title: "Ir até o Baú",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h3>Thaynara se aproxima do baú com cautela, seus passos ressoando levemente no piso de pedra irregular. O baú continua exatamente onde estava, encostado contra a parede, imóvel como um predador paciente à espreita. Algo nele a incomoda. Agora, tão perto, sua aparência parece… perfeita demais. A madeira polida contrasta com o ambiente arruinado, como se nunca tivesse sentido o peso do tempo. Um arrepio percorre sua espinha. Um presságio?</h3>
 					<h3>A fechadura está claramente danificada, como se tivesse sido arrombada à força. O ferro retorcido brilha sob a luz trêmula da tocha, e marcas profundas ao redor indicam tentativas desesperadas de acesso. Teria sido obra do aventureiro caído do outro lado da sala? O pobre infeliz jaz em uma posição contorcida, os dedos crispados como se tentassem agarrar algo no último momento. Seu rosto, parcialmente oculto pelas sombras, parece congelado em um misto de surpresa e agonia.</h3>
 					<h3>Thaynara nota algo a mais. Há manchas carmesim nas bordas do baú, como respingos de sangue seco. Sua mente lhe prega uma peça: por um instante, ela quase pode ver uma língua gananciosa lambendo a madeira, como se limpasse os beiços após uma refeição. Ela pisca, afastando o pensamento. Estranho.</h3>
@@ -147,7 +147,7 @@ function getStory() {
 
 		AbrirBau: {
 			title: "Abrir o baú",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h3>Subitamente, um desejo irracional de se aproximar do baú toma conta de Thaynara, como se uma força maior a controlasse. O baú, ainda encostado inocentemente contra a parede rochosa, parece encará-la de volta, imóvel, à espera.</h3>
 					<h3>O ar ao redor está pesado, denso como se impregnado por algo antigo e faminto. O cheiro metálico do sangue seco deveria ser um aviso suficiente, assim como a fechadura arrombada e as manchas carmesim que decoram a madeira. Mas Thaynara ignora tudo isso. Seus dedos tremem ligeiramente quando finalmente tocam a superfície do baú - esperando encontrar madeira fria e envelhecida.</h3>
 					<h3>Mas não está fria. Está quente. Um calor pulsante, quase febril, vibra sob seus dedos, como se houvesse algo vivo ali dentro. Seu corpo se enrijece. Então, antes que possa reagir, sente um estremecer sob suas mãos. Um arrepio sobe por sua espinha. A madeira se deforma.</h3>
@@ -167,7 +167,7 @@ function getStory() {
 
 		InspecionarBau: {
 			title: "Inspecionar o baú",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h3>Thaynara avançou cautelosamente, os olhos fixos no baú que repousava à sua frente. O brilho metálico das ferragens refletia umidade, e algo na madeira escura parecia anormal, como se estivesse... pulsando. Seu instinto gritou antes mesmo que sua mente compreendesse o perigo.</h3>
 					<h3>O baú não estava simplesmente ali, esquecido pelo tempo. Não havia poeira acumulada sobre ele, nem sinais de deterioração, como se fosse mantido em um estado de conservação perfeito. Mas o que fez sua respiração prender foi o leve movimento quase imperceptível da superfície.O baú... respirava.</h3>
 					<h3>Ela conteve o ímpeto de recuar bruscamente. Em vez disso, deu um passo para trás com cautela, sem fazer barulho, enquanto seu olhar analisava melhor a criatura adormecida à sua frente. A madeira ondulava em intervalos irregulares, acompanhando uma respiração lenta e doentia. As ferragens, antes inofensivas, agora pareciam presas afiadas disfarçadas. Uma trilha viscosa escorria de uma fresta na lateral, refletindo um brilho levemente esverdeado na penumbra.</h3>
@@ -188,7 +188,7 @@ function getStory() {
 
 		VerCorpo: {
 			title: "Ir até o corpo",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h3>O cheiro pútrido da morte se tornava mais forte conforme Thaynara se aproximava do corpo. Era espesso, pesado, prendia-se à garganta como um vapor oleoso e metálico. Não era apenas o odor da decomposição. Havia algo mais profundo ali, algo impregnado no ar daquela câmara, algo que fazia sua pele se arrepiar com um desconforto instintivo.</h3>
 			<h3>O aventureiro jazia sobre um tapete de moedas sujas de sangue ressecado, sua armadura rasgada e retorcida como se mãos impiedosas a tivessem forçado para longe da carne. Seu rosto era uma máscara de desespero, os olhos arregalados, a boca entreaberta, como se seu último fôlego tivesse sido um grito que nunca ecoou. A pele estava pálida e arroxeada, afundada contra os ossos, e os membros faltantes indicavam que sua morte não havia sido rápida. Não havia cortes limpos. As lacerações eram irregulares, cruas, como se tivessem sido arrancadas de maneira bruta.</h3>
 			<h3>Thaynara sentiu o estômago revirar. Já havia visto a morte antes, estudado corpos em ruínas antigas, testemunhado o resultado de emboscadas e ferimentos fatais. Mas aquilo... aquilo era diferente.</h3>
@@ -211,7 +211,7 @@ function getStory() {
 
 		InspecionarCorpo: {
 			title: "Inspecionar o cadáver",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `
 			<h3>O cheiro era pior de perto. Thaynara sentiu o estômago se revirar conforme se ajoelhava ao lado do cadáver, forçando-se a não desviar o olhar. A carne pálida e arroxeada parecia ter secado sobre os ossos, os olhos arregalados estavam turvos e afundados nas órbitas, a boca entreaberta como se sua última tentativa de gritar houvesse ficado presa no vazio.</h3>
 			<h3>Ela engoliu em seco, o nojo subindo à garganta junto com um desconforto mais profundo. Aquilo não era uma morte comum. Não era o descanso final de um guerreiro tombado em batalha. Era algo... errado.</h3>
@@ -231,7 +231,7 @@ function getStory() {
 
 		sucesso_Arcanismo: {
 			title: "Sucesso no Teste",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h1>Sucesso!</h1>
 					<h3>Um arrepio percorreu sua espinha assim que tocou o cadáver. Era como mergulhar as mãos em um lago de águas paradas, estagnadas há séculos. Algo persistia ali, algo invisível e faminto.</h3>
 					<h4>Então, ela entendeu. Esse frio vinha de dentro.</h4>
@@ -250,7 +250,7 @@ function getStory() {
 
 		falha_Arcanismo: {
 			title: "Falha no teste",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h1>Falha!</h1>
 					<h3>O ar ao redor pareceu mudar, mas não da forma que esperava. Ao invés de um fluxo de energia clara e decifrável, Thaynara sentiu apenas uma presença opaca e difusa, como uma neblina densa que não permitia que seus sentidos arcanos penetrassem além da superfície.</h3>
 					<h3>Ela tentou se concentrar, forçando-se a tocar no cadáver moribundo. Thaynara retirou a mão do cadáver quase no mesmo instante em que a encostou na pele fria. Uma onda de repulsa subiu por sua garganta, misturada ao gosto metálico do ar pesado. Algo no corpo parecia... impregnado de alguma coisa. Algo que ela não conseguia identificar.</h3>
@@ -269,7 +269,7 @@ function getStory() {
 
 		ExplorarSalao: {
 			title: "Passagem que leva a um salão de pedra",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h3>Thaynara seguiu pela passagem estreita, sentindo o espaço se abrir conforme avançava. O teto da caverna se expandia para um vazio cada vez mais profundo, e o ar se tornava mais denso, mais frio. Seu passo firme ecoava levemente contra a pedra nua, mas o som parecia engolido pela escuridão crescente.</h3>
 					<h3>A princípio, sua visão meio-élfica foi suficiente para guiá-la. Ela podia distinguir as paredes irregulares e os relevos naturais do chão. Mas conforme mergulhava mais fundo no salão, algo mudou. A penumbra se adensou de maneira anormal, uma escuridão espessa e sem reflexo, que não deveria ser possível. Não era apenas a falta de luz. Era como se aquele lugar rejeitasse qualquer forma de claridade.</h3>
 					<h3>Ela franziu o cenho e estreitou os olhos, tentando distinguir o que havia à sua frente, mas tudo ao seu redor se dissolvia em um manto de trevas. Seu corpo ficou tenso. Até onde sabia, nem mesmo a noite mais profunda era capaz de apagar completamente sua visão.</h3>
@@ -292,7 +292,7 @@ function getStory() {
 
 		UsarLuz: {
 			title: "Usar luz (invocação) para iluminar o caminho.",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h3>Thaynara ergueu a mão e murmurou as palavras da invocação. Um brilho dourado surgiu em sua palma e rapidamente se espalhou, afastando a escuridão sufocante ao seu redor. As sombras se retorceram momentaneamente, como se relutassem em ceder espaço à luz, mas foram forçadas a recuar.</h3>
 			<h4>Então, os olhos surgiram.</h4>
 			<h3>Primeiro, foram apenas pontos brilhantes na escuridão, reflexos amarelados e avermelhados que piscavam como brasas famintas. Movimentos sutis arranharam a pedra, garras tilintando contra o chão. Um grasnar agudo ecoou pela câmara, seguido de sons abafados de passos apressados.</h3>
@@ -317,7 +317,7 @@ function getStory() {
 
 		EngajarBatalha: {
 			title: "Engajar em batalha",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h3>Thaynara recuou com passos rápidos, sentindo a parede fria da caverna se aproximar demais de suas costas. O espaço era apertado, e os kobolds menores se espalhavam pelos lados, olhos brilhando na penumbra, suas armas rústicas tremendo entre garras finas. O clarão do primeiro feitiço queimava em seus olhos arregalados, e seus grasnados agudos denunciavam a incerteza. Eles hesitaram, assustados com a demonstração do arcano.</h3>
 			<h3>Mas o líder não hesitou. O kobold maior avançou, cada passo pesado ecoando contra a pedra. Ele não se importava com a magia, com a ameaça cintilante que girava em torno das mãos de Thaynara. Seus músculos, duros como cordas tensionadas, se retesaram quando ele ergueu o machado acima da cabeça. A lâmina gasta brilhou sob a luz fraca, marcada por cortes e ferrugem, mas ainda afiada o bastante para despedaçar os ossos com a força bruta do impacto.</h3>
 			<h3>Thaynara viu o golpe antes mesmo que ele começasse a cair. Um golpe brutal, amplo, desprovido de técnica, mas carregado de força e intenção letal. O peso do machado fazia a arma tremer no ar por um instante antes da descida violenta.</h4>
@@ -337,7 +337,7 @@ function getStory() {
 
 		TentarEscapar: {
 			title: "Tentar escapar",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h3>O coração de Thaynara martelava contra o peito. O líder kobold ergueu o machado para outro golpe, e os menores avançavam, fechando cada vez mais o cerco. Ela não podia lutar ali. O espaço estreito trabalhava contra ela, e uma única falha poderia selar seu destino. Sem pensar duas vezes, girou sobre os calcanhares e correu.</h3>
 			<h3>O machado do kobold desceu, estilhaçando a pedra onde Thaynara estivera um segundo antes. Thaynara disparou sem olhar para trás, os pulmões já ardendo antes mesmo de completar a primeira curva.</h3>
 			<h3>Um grasnado agudo ressoou atrás dela, seguido pelo barulho frenético de garras contra a pedra. Os kobolds estavam em seu encalço, rápidos e implacáveis. O som de sua corrida ecoava como uma onda crescente de caos, os chiados ansiosos dos menores misturados ao rosnado gutural do líder. Sua única esperança era ser mais rápida do que eles.</h3>
@@ -353,7 +353,7 @@ function getStory() {
 
 		sucesso_Destreza: {
 			title: "Sucesso na Destreza",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `
 			<h1>Sucesso!</h1>
 			<h3>A adrenalina impulsionava seus músculos. Seu corpo reagia por instinto, desviando de estalactites e pedras soltas sem hesitação. Cada curva do túnel era um risco, mas ela não diminuía o ritmo. O calor da perseguição se fazia presente atrás dela, os grunhidos dos kobolds cada vez mais próximos.</h3>
@@ -373,7 +373,7 @@ function getStory() {
 
 		falha_Destreza: {
 			title: "Falha na Destreza",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h1>Falha!</h1>
 			<h4>O túnel parecia mais longo do que deveria ser.</h4>
 			<h3>A cada passo, Thaynara sentia os kobolds se aproximando. O chiado agudo de suas vozes vibrava no ar, empurrando-a para frente com puro instinto de sobrevivência. Sua mente gritava para não parar, para correr, para viver.</h3>
@@ -396,7 +396,7 @@ function getStory() {
 
 		TentarProteger: {
 			title: "Tentar se proteger",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h4>O instinto tomou conta.</h4>
 			<h3>Antes mesmo que sua mente pudesse raciocinar o que estava acontecendo, Thaynara ergueu as mãos em um reflexo desesperado e conjurou uma Armadura Arcana. Um brilho azulado envolveu seu corpo em um escudo etéreo, cintilando com traços mágicos que flutuaram ao seu redor por um breve instante.</h3>
 			<h3>Mas ela já sabia que a barreira não a salvaria. O líder kobold soltou um grunhido baixo. O machado reluziu no ar antes de descer. O golpe rasgou o escudo mágico como se fosse feito de vidro, a energia dissipando-se em fagulhas inofensivas. A lâmina cortou fundo no ombro de Thaynara, atravessando carne e músculos até estalar contra o osso com um ruído seco e doentio.</h3>
@@ -417,7 +417,7 @@ function getStory() {
 
 		EsfaquearKobold: {
 			title: "Aproveitar a guarda aberta para esfaquea-lo",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `
 			<h3>Thaynara não pensou. Seu corpo reagiu antes mesmo que sua mente acompanhasse. Em um movimento fluido e desesperado, sua mão deslizou para a lateral do cinto, puxando a pequena adaga que sempre carregava consigo.</h3>
 			<h3>Ela não gostava de lutar com armas. Mas não havia espaço para conjurações agora. Só havia espaço para o instinto. Para a sobrevivência</h3>
@@ -440,7 +440,7 @@ function getStory() {
 
 		ContinuarFurtiva: {
 			title: "Continuar furtivamente",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h3>Thaynara se move silenciosamente pela escuridão, mantendo-se próxima às paredes da caverna. O frio da pedra áspera roçava sua pele conforme ela deslizava pelas sombras, evitando qualquer ruído desnecessário. Seus olhos permanecem no chão rochoso, procurando por quaisquer outros rastros.</h3>
 			<h3>As pegadas no chão ainda eram levemente visíveis, mesmo sem luz direta. Eram marcas irregulares, raspões sutis contra a poeira fina da passagem. Mais de uma criatura passara por ali recentemente, e sua experiência dizia que não eram rastros humanos.</h3>
 			<h4>Ela continuou, os sentidos atentos a qualquer movimento.</h4>
@@ -463,7 +463,7 @@ function getStory() {
 
 		EmboscarKobolds: {
 			title: "Emboscar os kobolds",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h4>Thaynara não hesitou.</h4>
 			<h3>Os kobolds continuavam distraídos, os chiados de suas vozes misturando-se ao som distante da caverna viva. Não notaram a presença dela, não tiveram tempo para reagir quando a magia se formou em suas mãos.</h3>
 			<h3>O ar ao redor resfriou num instante. O feitiço surgiu antes mesmo que os primeiros estalos de gelo se propagassem, e então, num lampejo azulado, a magia explodiu. Um raio de gelo cortou o espaço entre ela e suas presas, o impacto atingindo-os em cheio. Os kobolds grasnaram em surpresa, seus corpos se enrijecendo sob a geada que os envolveu. Eles tentaram se mover, mas já era tarde.</h3>
@@ -493,7 +493,7 @@ function getStory() {
 
 		UsarInvisibilidade: {
 			title: "Usar Invisibilidade para passar despercebida",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `<h3>Thaynara observa os kobolds com atenção. Eles estavam agitados, mas desavisados. Pequenos, ágeis, armados com lanças improvisadas e lâminas tortas, mas em número suficiente para torná-los uma ameaça. Ela decide não lutar.</h3>
 			<h3>Ela murmura as palavras do encantamento em voz baixa, e seu corpo começou a desaparecer. O efeito era instantâneo, a magia envolvendo-a como um manto invisível, apagando sua presença do olhar curioso das criaturas. Mas ainda assim, não podia relaxar. Invisível não significava intangível.</h3>
 			<h3>Prendeu a respiração e começou a se mover. Cada passo era medido, calculado. Seu corpo parecia mais leve, mas cada pequeno som ecoava em sua mente como um trovão distante. O farfalhar da capa ao roçar na parede, a leve batida de uma bota contra uma pedra solta... qualquer ruído poderia ser sua ruína.</h3>
@@ -518,7 +518,7 @@ function getStory() {
 
 		SalaodePedra: {
 			title: "O salão de pedra",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `
 			<h3>O salão se abria diante de Thaynara como a boca de uma criatura antiga, imensa e vazia, esperando para devorar aqueles que ousassem entrar. As paredes eram repletas de rachaduras que se estendiam como cicatrizes profundas. O teto se perdia na escuridão, como se a própria caverna não tivesse fim.</h3>
 			<h3>O frio era pior ali. Não o frio comum de uma caverna úmida, mas algo mais fundo, mais insidioso. Uma sensação que se enroscava ao redor da pele e se infiltrava pelos ossos, sugando o calor do corpo de forma quase sutil. O ar parecia denso, difícil de respirar, como se cada inspiração fosse um esforço para não ser esmagada por uma presença invisível.</h3>
@@ -544,7 +544,7 @@ function getStory() {
 
 		UsarQuedaLenta: {
 			title: "Usar Queda lenta para descender",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `
 			<h3>Thaynara inspirou profundamente, sentindo o frio do abismo rastejar por sua pele. O vazio à sua frente parecia chamá-la, silencioso e interminável. A pedra sob seus pés era firme, mas o peso da decisão tornava-a estranhamente instável.</h3>
 			<h3>Murmurando as palavras do encantamento, sentiu a magia envolver seu corpo como uma brisa sutil. Seus músculos relaxaram ligeiramente, e a gravidade perdeu parte de seu domínio sobre ela. Então, deu um passo à frente.</h3>
@@ -568,7 +568,7 @@ function getStory() {
 
 		EscalarBaixo: {
 			title: "Tentar escalar para baixo",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `
 			<h3>Thaynara se aproximou da borda do abismo e olhou para baixo. A escuridão se estendia como uma garganta faminta, o fundo invisível mesmo para seus olhos élficos. Um frio profundo emanava das profundezas, carregado pelo cheiro de pedra úmida e algo mais... algo que ela não queria nomear.</h3>
 			<h4>Ela inspirou fundo.</h4>
@@ -587,7 +587,7 @@ function getStory() {
 
 		sucesso_Atletismo: {
 			title: "Sucesso no teste de atletismo",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `
 			<h1>Sucesso!</h1>
 			<h3>Cada movimento exigia esforço, cada pegada precisava ser calculada com precisão. Seus músculos tremiam, acostumados a conjurações e não a escaladas perigosas, mas Thaynara se obrigou a continuar.</h3>
@@ -609,7 +609,7 @@ function getStory() {
 
 		falha_Atletismo: {
 			title: "falha no teste de atletismo",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `
 			<h1>Falha!</h1>
 			<h3>O vento soprou de dentro do abismo, úmido e opressor, e o frio fez seus dedos endurecerem por um instante. O suficiente para que seu pé escorregasse.</h3>
@@ -633,7 +633,7 @@ function getStory() {
 
 		AvançarEscadaria: {
 			title: "Avançar pela nova escadaria",
-			image: "../Assets/img/ato1.jpg",
+			image: "img/ato1.jpg",
 			story: `
 			<h3>Os passos de Thaynara ecoavam pela escadaria estreita, cada degrau de pedra afundando-a ainda mais na escuridão da caverna. O ar ficava mais frio a cada metro descido, um frio que não vinha apenas da profundidade ou da umidade das paredes, mas de algo mais... denso.</h3>
 			<h3>A opressão invisível que a acompanhava desde sua chegada à caverna agora era esmagadora. Não era apenas a sensação de estar sendo observada – era como se estivesse atravessando um véu invisível, um limiar entre o mundo dos vivos e algo além.</h3>
@@ -655,7 +655,7 @@ function getStory() {
 
 		AtoII: {
 			title: "Inicio da jornada",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h1>Ato II</h1>
 			<h2>A Princesa</h2>
@@ -670,7 +670,7 @@ function getStory() {
 
 		IntroAtoII: {
 			title: "A princesa",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>O ar dentro do calabouço era denso, quase sufocante. O cheiro de pedra úmida e ferrugem misturava-se ao fedor de algo muito mais antigo, um resquício de morte impregnado nas paredes, impossível de dissipar. A cada passo, Thaynara sentia a umidade do chão frio se infiltrando em suas botas, tornando sua presença ainda mais silenciosa naquele corredor onde o tempo parecia ter parado.</h3>
 			<h3>Correntes pendiam das paredes e do teto, algumas balançando levemente, rangendo em um lamento mecânico. Outras estavam enrijecidas pela ferrugem, mas ainda assim, exibiam manchas escuras que o tempo não conseguiu apagar. Sangue seco, espalhado como vestígios de uma dor esquecida. As celas parecem ter sido amplamente utilizadas em um passado distante - tortura, sua mente evocou.</h3>
@@ -696,7 +696,7 @@ function getStory() {
 
 		SeguirFurtiva: {
 			title: "Seguir o choro furtivamente",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>O senso de autopreservação falou mais alto. Thaynara permaneceu em silêncio, controlando sua respiração enquanto avançava pelas sombras do calabouço. Seus passos eram leves, cuidadosos, mal tocando o chão úmido de pedra. Tudo naquela caverna tentou matá-la até agora. Não cometeria o erro de se expor tão facilmente.</h3>
 			<h3>O choro continuava. Cada soluço parecia cuidadosamente medido, oscilando entre desespero e resignação. Mas conforme se aproximava, algo incomodava Thaynara. O eco do som era estranho, como se não pertencesse inteiramente àquele lugar. Como se não fosse... natural.</h3>
@@ -722,7 +722,7 @@ function getStory() {
 
 		PerguntarVoz: {
 			title: "Perguntar pela voz",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>Thaynara parou por um instante, os olhos percorrendo as paredes escuras do calabouço. O choro ainda ecoava pelo ambiente, os soluços reverberando pelas pedras frias como se fossem parte do próprio local.</h3>
 			<h3>Ela sentiu um arrepio percorrer sua espinha. Algo dentro dela dizia para manter-se em silêncio, para não atrair atenção. Mas e se fosse realmente uma sobrevivente? Se houvesse alguém ali, alguém que precisasse de ajuda?</h3>
@@ -748,7 +748,7 @@ function getStory() {
 
 		AdentrarCela: {
 			title: "Adentrar a cela",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>A cela era ainda pior por dentro. O cheiro de mofo e ferrugem se intensificava, misturado a um odor quase imperceptível, algo doce demais para pertencer a um lugar como aquele. As paredes estavam cobertas de arranhões antigos, alguns profundos, como se unhas desesperadas tivessem tentado se cravar na pedra. O chão era irregular e frio, com um líquido carmesim acumulado em poças escuras que se espalhavam pelo espaço claustrofóbico.</h3>
 			<h4>No centro da sala, ajoelhada sobre a pedra gelada, estava a origem da voz.</h4>
@@ -777,7 +777,7 @@ function getStory() {
 
 		InvestigarAlgema: {
 			title: "Aproximar-se e investigar as algemas",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>Thaynara se aproximou lentamente, seus passos ecoando pelo chão de pedra fria. A jovem continuava ajoelhada, ainda sem demonstrar qualquer tipo de desconforto. De perto, as algemas pareciam ainda mais estranhas. Elas eram de metal escuro, lisas e sem adornos, mas não havia sinal de fechaduras, travas ou qualquer mecanismo que permitisse sua remoção. Como alguém poderia ser aprisionado ali sem um meio físico de soltura?</h3>
 			<h4>Realize um Teste de Investigação</h4>
@@ -792,7 +792,7 @@ function getStory() {
 
 		sucesso_Investigacao: {
 			title: "sucesso investigação",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h1>Sucesso!</h1>
 			<h3>Thaynara fechou os olhos por um instante e estendeu a mão, deixando a ponta dos dedos roçar suavemente sobre a superfície metálica. Uma leve pulsação percorreu sua pele – uma sensação sutil, quase imperceptível, mas que ela reconheceu imediatamente. Magia.</h3>
@@ -817,7 +817,7 @@ function getStory() {
 
 		falha_Investigacao: {
 			title: "Falha na investigação",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h1>Falha!</h1>
 			<h3>Thaynara passou os dedos pelas algemas, tentando sentir qualquer irregularidade, qualquer traço de um mecanismo oculto que pudesse libertar a jovem. Mas quanto mais tentava focar, mais a opressão ao seu redor se intensificava.</h3>
@@ -841,7 +841,7 @@ function getStory() {
 
 		Questionar: {
 			title: "Questioná-la",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>Thaynara manteve uma expressão cautelosa enquanto analisava a jovem à sua frente. Algo nela não fazia sentido. O ambiente ao redor era opressor, frio e carregado de morte. As correntes presas às paredes indicavam anos de sofrimento, marcas de dor antigas ainda manchavam as pedras do chão.</h3>
 			<h3>E, no entanto, ali estava ela. <h4>Linda, intocada, serena<h/4></h3>
@@ -878,7 +878,7 @@ function getStory() {
 
 		ContinuarQuestionando: {
 			title: "Continuar Questionando-a",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>O silêncio entre as duas se prolongou, pesado e desconfortável. Thaynara sentia o frio da caverna se entranhar cada vez mais em sua pele, mas não era apenas isso que fazia sua espinha se arrepiar. Algo na presença daquela mulher – algo invisível, mas presente – fazia cada fibra de seu ser gritar em alerta.</h3>
 			<h3>Seus olhos percorreram a figura ajoelhada diante dela. A postura da princesa era impecável, como se mesmo em cativeiro sua dignidade permanecesse intocada. Seu rosto mantinha a doçura e a fragilidade de alguém que havia sofrido, mas seus olhos… seus olhos não carregavam o peso da angústia que sua voz transmitia.</h3>
@@ -917,7 +917,7 @@ function getStory() {
 
 		ConfiarPrincesa: {
 			title: "Confiar na Princesa",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>Thaynara respirou fundo. Mesmo com todas as suspeitas que pesavam sobre sua mente, mesmo com a inquietação que se alojava fundo em seu peito, algo na jovem a fazia hesitar. Se fosse realmente apenas uma prisioneira sem memória, seria cruel abandoná-la ali A maga afastou seus temores e assentiu lentamente.</h3>
 			<h6>— Tudo bem. Vou tirá-la daqui.</h6>
@@ -956,7 +956,7 @@ function getStory() {
 
 		Resistir: {
 			title: "Resistir",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>O corpo de Thaynara tremia, esgotado, enfraquecido, mas sua mente ardia com a única coisa que ainda não havia arrancado dela: determinação.</h3>
 			<h3>Ela não imploraria.</h3>
@@ -992,7 +992,7 @@ function getStory() {
 
 		Barganhar: {
 			title: "Barganhar",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>A respiração de Thaynara estava irregular, o frio da caverna arranhando sua pele como garras invisíveis. Seu corpo não respondia, sua magia havia sido drenada até a última centelha. Não havia para onde correr, não havia meios de lutar.</h3>
 			<h3>O demônio se aproximava, seus olhos ardendo em malícia, seu sorriso cada vez mais largo. As garras negras se ergueram, prontas para atravessar sua carne e arrancar o que restava de sua alma. Foi então que os instintos de Thaynara gritaram mais alto.</h3>
@@ -1031,7 +1031,7 @@ function getStory() {
 
 		NaoConfiarPrincesa: {
 			title: "Não confiar na princesa",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>O silêncio dentro da cela tornou-se sufocante. Thaynara sentiu o peso de sua escolha afundando em seu âmago. O frio rastejava por sua pele como dedos espectrais, mas o que realmente a fez recuar foi o sorriso da princesa. Doce. Perfeito. Ensaiado.</h3>
 			<h3>Falso.</h3>
@@ -1059,7 +1059,7 @@ function getStory() {
 
 		ConjurarMaos: {
 			title: "Conjurar Mãos Mágicas e imobilizá-la",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>Thaynara não perdeu tempo.</h3>
 			<h3>Enquanto a carne da criatura ainda se contorcia em meio à transformação grotesca, ela ergueu as mãos e conjurou o feitiço. Energias invisíveis tomaram forma ao redor do demônio, materializando-se como mãos espectrais que se fecharam sobre seus membros deformados.</h3>
@@ -1097,7 +1097,7 @@ function getStory() {
 
 		AnalisarAmbiente: {
 			title: "Analisar o ambiente",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>O demônio rugia, seu corpo retorcendo-se enquanto puxava contra as Mãos Mágicas que o prendiam. A magia tremulava sob o esforço titânico da criatura, e Thaynara sabia que não teria muito tempo antes que ele se libertasse completamente.</h3>
 			<h3>Ela precisava agir.</h3>
@@ -1114,7 +1114,7 @@ function getStory() {
 
 		sucesso_Sobrevivencia: {
 			title: "Sucesso",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h1>Sucesso!</h1>
 			<h3>Thaynara inspirou fundo, empurrando o medo para o fundo de sua mente. Precisava pensar rápido. Foi então que percebeu.</h3>
@@ -1141,7 +1141,7 @@ function getStory() {
 
 		falha_Sobrevivencia: {
 			title: "Falha!",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h1>Falha!</h1>
 			<h3>A mente de Thaynara disparava, tentando processar suas opções, buscando qualquer vantagem no ambiente. Mas o pânico era como um peso amarrado a seus pensamentos, afundando-os antes que pudessem se formar.</h3>
@@ -1169,7 +1169,7 @@ function getStory() {
 
 		ProcurarPontos: {
 			title: "Procurar pontos fracos",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>O demônio rugia, seus membros puxando contra as Mãos Mágicas que o seguravam, mas Thaynara sabia que a magia não duraria muito tempo. Sua mente trabalhava freneticamente. Se não conseguisse derrotá-lo agora, não teria outra chance.</h3>
 			<h3>Ela precisava de um ponto fraco.</h3>
@@ -1185,7 +1185,7 @@ function getStory() {
 
 		sucesso_Investigacao2: {
 			title: "Sucesso",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h1>Sucesso!</h1>
 			<h3>Thaynara respirou fundo, empurrando o pavor para o fundo da mente. Seu olhar percorreu a criatura, analisando cada detalhe com precisão. A carapaça escamosa do demônio parecia resistente demais para ataques convencionais, sua pele densa e endurecida, um escudo natural contra magia e lâminas.</h3>
@@ -1214,7 +1214,7 @@ function getStory() {
 
 		falha_Investigacao2: {
 			title: "Falha",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h1>Falha!</h1>
 			<h3>A mente de Thaynara disparava, tentando encontrar qualquer fraqueza, qualquer ponto vulnerável. Mas o pânico apertava seu peito como um nó sufocante.</h3>
@@ -1242,7 +1242,7 @@ function getStory() {
 
 		LançarFeitiço: {
 			title: "Lançar feitiço ofensivo",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>Thaynara não esperou.</h3>
 			<h3>Enquanto a carne da criatura se retorcia, suas feições belas se deformando na monstruosidade que realmente era, ela ergueu as mãos e conjurou feitiço após feitiço, desesperada para impedir a transformação.</h3>
@@ -1276,7 +1276,7 @@ function getStory() {
 
 		ArmaduraArcana: {
 			title: "Usar Armadura Arcana para tentar se proteger",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 
 			<h3>O tempo pareceu desacelerar.</h3>
@@ -1321,7 +1321,7 @@ function getStory() {
 
 		tentarDesviar: {
 			title: "Tentar desviar do ataque",
-			image: "../Assets/img/ato2.jpg",
+			image: "img/ato2.jpg",
 			story: `
 			<h3>O pânico nublou a mente de Thaynara.</h3>
 			<h3>Seus instintos gritavam, o medo corroendo qualquer racionalidade. A energia necromântica que crescia nas mãos do demônio era pura destruição, e ela sabia — sabia que não havia defesa capaz de suportá-la.</h3>
@@ -1352,7 +1352,7 @@ function getStory() {
 
 		AtoIII: {
 			title: "O Necromante",
-			image: "../Assets/img/ato3.jpg",
+			image: "img/ato3.jpg",
 			story: `
 			<h1>Ato III</h1>
 			<h2>O Necromante</h2>
@@ -1367,7 +1367,7 @@ function getStory() {
 
 		IntroAtoIII: {
 			title: "O necromante",
-			image: "../Assets/img/ato3.jpg",
+			image: "img/ato3.jpg",
 			story: `
 			<h3>O ar estava denso, pesado como um manto invisível que pressionava os ombros de Thaynara. Cada respiração parecia mais fria que a anterior, como se o próprio espaço ao seu redor estivesse se curvando diante a opressão da magia necromante. Seu corpo ainda tremia, os músculos exaustos após o confronto brutal com a criatura. Mas não havia tempo para descanso. Ela sabia que aquilo ainda não havia acabado.</h3>
 			<h3>Seus olhos varreram a cela, analisando cada detalhe, cada sombra, cada resquício de magia que ainda pairava no ar. A energia necromântica estava impregnada por todo o lugar com um cheiro de morte que nunca se dissipava, mas algo se destacava.</h3>
@@ -1416,7 +1416,7 @@ function getStory() {
 
 		ouvirNecro: {
 			title: "Ouvir o que o necromante tem a dizer",
-			image: "../Assets/img/ato3.jpg",
+			image: "img/ato3.jpg",
 			story: `
 			<h3>O silêncio que se seguiu foi denso, carregado com a promessa de algo que Thaynara não sabia se queria ouvir. Se o necromante estivesse blefando, sua hesitação custaria a destruição definitiva de um mal antigo. Mas se ele estivesse dizendo a verdade… então todas as almas presas ali estariam condenadas ao completo esquecimento.</h3>
 			<h3>E havia outro fator. A necromancia era um tabu, um campo de estudo oculto e proibido, cujos segredos estavam trancafiados em poucas mãos no mundo. Se aquele ser realmente tinha poder suficiente para desafiar a morte, o que poderia aprender com ele? Quais conhecimentos extraordinários ele possuía?</h3>
@@ -1468,7 +1468,7 @@ function getStory() {
 
 		Aceitar: {
 			title: "Aceitar a oferta",
-			image: "../Assets/img/ato3.jpg",
+			image: "img/ato3.jpg",
 			story: `
 			<h3>O silêncio que se seguiu foi esmagador. Thaynara ficou imóvel, os olhos fixos no filactério à sua frente. O necromante aguardava, sua presença invisível preenchendo a câmara com uma paciência inquietante.</h3>
 			<h3>Ela sabia que essa escolha mudaria tudo. Sabia que estava à beira de algo irreversível. E, ainda assim, seu coração batia forte não por medo, mas por antecipação.</h3>
@@ -1502,7 +1502,7 @@ function getStory() {
 
 		Destruir: {
 			title: "Destruir o filactério",
-			image: "../Assets/img/ato3.jpg",
+			image: "img/ato3.jpg",
 			story: `
 			<h3>Thaynara ficou ali, parada, encarando o filactério.</h3>
 			<h3>O artefato parecia insignificante diante do peso da decisão que carregava. Pequeno, inofensivo à primeira vista… mas pulsava com uma presença sufocante, opressora. Dentro dele, residia uma entidade que já desafiara a morte uma vez e tentaria fazê-lo de novo.</h3>
@@ -1545,7 +1545,7 @@ function getStory() {
 
 		Levar: {
 			title: "… Levar o filactério…?",
-			image: "../Assets/img/ato3.jpg",
+			image: "img/ato3.jpg",
 			story: `
 			<h3>Thaynara ficou imóvel diante do filactério. Ela sentia o peso de sua decisão antes mesmo de tomá-la.</h3>
 			<h3>Destruí-lo agora? Impossível. Mesmo se tentasse, não havia garantia de que conseguiria erradicar completamente o necromante. Selá-lo? Sim, poderia enterrar a ameaça por séculos… mas e se alguém o encontrasse novamente? E se outra alma ambiciosa viesse em busca dos mesmos segredos?</h3>
@@ -1659,7 +1659,7 @@ function getStory() {
 		//trechos de finais 
 		FinalRuim_mimico: {
 			title: "Final Ruim: Ouro dos Tolos",
-			image: '../Assets/img/final ruim mimico.jpg',
+			image: 'img/final ruim mimico.jpg',
 			story: `<h2>Final Ruim: Ouro dos Tolos</h2>
 			<h3>Thaynara é devorada por um mímico, sua jornada encerrada de forma brutal. Seu corpo nunca é encontrado—apenas mais uma vítima da caverna insaciável.</h3>
 			
@@ -1674,7 +1674,7 @@ function getStory() {
 
 		FinalRuim_machado: {
 			title: "Final Ruim: Entre uma Rocha e um Machado",
-			image: '../Assets/img/final ruim kobolds.jpg',
+			image: 'img/final ruim mimico.jpg',
 			story: `<h2>Final Ruim: Entre uma Rocha e um Machado</h2>
 			<h3>Thaynara encontra um fim prematuro e doloroso nas mãos de um bando de kobolds. Às vezes, evitar conflitos é a melhor escolha</h3>`,
 			choices: [
@@ -1687,7 +1687,7 @@ function getStory() {
 
 		FinalRuim_lobo: {
 			title: "Final Ruim: Lobo em Pele de Cordeiro",
-			image: '../Assets/img/final ruim demonio.jpg',
+			image: 'img/final ruim demonio.jpg',
 			story: `<h2>Final Ruim: Lobo em Pele de Cordeiro</h2>
 			<h3>Nem toda beleza esconde bondade. Nem toda promessa leva à salvação. Afinal, toda rosa tem espinhos. Que esta lição fique marcada em sua próxima vida.</h3>`,
 			choices: [
@@ -1700,7 +1700,7 @@ function getStory() {
 
 		FinalNeutro_correntesInvisiveis: {
 			title: "Final Neutro: O Diabo Veste Algemas",
-			image: '../Assets/img/final neutro demonio.jpg',
+			image: 'img/final neutro demonio.jpg',
 			story: `<h2>Final Neutro: O Diabo Veste Algemas</h2>
 			<h3>Ela respirava. Seu coração ainda batia. Mas a liberdade? Essa foi a verdadeira barganha.</h3>`,
 			choices: [
@@ -1713,7 +1713,7 @@ function getStory() {
 
 		FinalNeutro_Cinzas: {
 			title: "Final Neutro: À Cinzas e Sangue",
-			image: '../Assets/img/final neutro necromante.jpg',
+			image: 'img/final neutro necromante.jpg',
 			story: `<h2>Final Neutro: À Cinzas e Sangue</h2>
 			<h3>Poder e conhecimento não devem ser temidos. Os fracos e os justos nunca alcançarão o topo.</h3>`,
 			choices: [
@@ -1726,7 +1726,7 @@ function getStory() {
 
 		FinalBom_tempestade: {
 			title: "Final Bom: A Tempestade",
-			image: '../Assets/img/final bom.jpg',
+			image: 'img/final bom.jpg',
 			story: `<h2>Final Bom: A Tempestade</h2>
 			<h3>"Enterrai meu cajado a várias braças na terra, e a pedra selará meu nome."</h3>`,
 			choices: [
@@ -1739,7 +1739,7 @@ function getStory() {
 
 		FinalVerdadeiro: {
 			title: "Final Verdadeiro: Ventos Áureos",
-			image: '../Assets/img/final verdadeiro.jpg',
+			image: 'img/final verdadeiro.jpg',
 			story: `<h2>Final Verdadeiro: Ventos Áureos</h2>
 			<h3>"E, no fim, os ventos da mudança sopravam para ambos."</h3>`,
 			choices: [
